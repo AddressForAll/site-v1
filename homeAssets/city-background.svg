@@ -1,0 +1,1184 @@
+<svg width="1044" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+ <title>city-background</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <polygon points="16.9520548 0 79.3356164 0 96.2876712 40.6034483 0 40.6034483" id="path-1"/>
+  <polygon points="16.9520548 0 79.3356164 0 96.2876712 40.6034483 0 40.6034483" id="path-3"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="building-grey">
+   <g id="svg_1">
+    <rect height="368" width="147" y="195" x="-26.6875" opacity="0.504488" fill="#D8D8D8" id="wall"/>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="42" width="26" y="212.984962" x="-17.5" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="212.984962" x="50.75" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="212.984962" x="16.625" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="212.984962" x="84.875" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="42" width="26" y="261.406013" x="-17.5" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="261.406013" x="50.75" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="261.406013" x="16.625" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="261.406013" x="84.875" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="42" width="26" y="309.827065" x="-17.5" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="309.827065" x="50.75" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="309.827065" x="16.625" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="309.827065" x="84.875" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="42" width="26" y="358.248123" x="-17.5" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="358.248123" x="50.75" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="358.248123" x="16.625" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="358.248123" x="84.875" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="42" width="26" y="406.669174" x="-17.5" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="406.669174" x="50.75" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="406.669174" x="16.625" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="406.669174" x="84.875" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="42" width="26" y="455.09024" x="-17.5" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="455.09024" x="50.75" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="455.09024" x="16.625" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="42" width="26" y="455.09024" x="84.875" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="building-grey">
+   <g id="svg_2">
+    <rect height="295" width="119" y="264.865044" x="584.74353" opacity="0.504488" fill="#D8D8D8" id="wall"/>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="279.282336" x="592.18103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="279.282336" x="647.43103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="279.282336" x="619.80603" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="279.282336" x="675.05603" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="318.098125" x="592.18103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="318.098125" x="647.43103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="318.098125" x="619.80603" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="318.098125" x="675.05603" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="356.913918" x="592.18103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="356.913918" x="647.43103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="356.913918" x="619.80603" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="356.913918" x="675.05603" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="395.729698" x="592.18103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="395.729698" x="647.43103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="395.729698" x="619.80603" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="395.729698" x="675.05603" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="434.545494" x="592.18103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="434.545494" x="647.43103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="434.545494" x="619.80603" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="434.545494" x="675.05603" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="473.36129" x="592.18103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="473.36129" x="647.43103" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="473.36129" x="619.80603" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="473.36129" x="675.05603" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="building-grey">
+   <g id="svg_3">
+    <rect height="295" width="119" y="360.128204" x="428.160309" opacity="0.504488" fill="#D8D8D8" id="wall"/>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="374.545497" x="435.597809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="374.545497" x="490.847809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="374.545497" x="463.222809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="374.545497" x="518.472809" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="413.361286" x="435.597809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="413.361286" x="490.847809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="413.361286" x="463.222809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="413.361286" x="518.472809" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="452.177078" x="435.597809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="452.177078" x="490.847809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="452.177078" x="463.222809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="452.177078" x="518.472809" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="490.992859" x="435.597809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="490.992859" x="490.847809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="490.992859" x="463.222809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="490.992859" x="518.472809" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="529.808655" x="435.597809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="529.808655" x="490.847809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="529.808655" x="463.222809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="529.808655" x="518.472809" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="33" width="21" y="568.624451" x="435.597809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="568.624451" x="490.847809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="568.624451" x="463.222809" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="33" width="21" y="568.624451" x="518.472809" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="building-grey">
+   <g id="svg_4">
+    <rect height="300" width="147" y="281.05938" x="281.284302" opacity="0.504488" fill="#D8D8D8" id="wall"/>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="34" width="26" y="295.721034" x="290.471802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="295.721034" x="358.721802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="295.721034" x="324.596802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="295.721034" x="392.846802" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="34" width="26" y="335.194717" x="290.471802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="335.194717" x="358.721802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="335.194717" x="324.596802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="335.194717" x="392.846802" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="34" width="26" y="374.668404" x="290.471802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="374.668404" x="358.721802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="374.668404" x="324.596802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="374.668404" x="392.846802" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="34" width="26" y="414.142082" x="290.471802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="414.142082" x="358.721802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="414.142082" x="324.596802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="414.142082" x="392.846802" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="34" width="26" y="453.615776" x="290.471802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="453.615776" x="358.721802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="453.615776" x="324.596802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="453.615776" x="392.846802" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+    <g opacity="0.500233" fill="#9B9B9B" id="windows">
+     <g id="windows-line">
+      <g id="window-grey">
+       <rect height="34" width="26" y="493.089455" x="290.471802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="493.089455" x="358.721802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="493.089455" x="324.596802" id="Rectangle"/>
+      </g>
+      <g id="window-grey">
+       <rect height="34" width="26" y="493.089455" x="392.846802" id="Rectangle"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="road">
+   <rect id="svg_5" height="58.02969" width="691.087225" y="590.77597" x="-1.457268" fill="#1C1C1C"/>
+   <g fill="#FFFFFF" id="Group">
+    <rect height="9.446694" width="33.744493" y="615.067469" x="-1.457268" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="72.780618" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="147.018503" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="221.256388" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="295.494274" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="369.732159" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="443.970045" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="518.20793" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="592.445816" id="Rectangle"/>
+    <rect height="9.446694" width="33.744493" y="615.067469" x="666.683701" id="Rectangle"/>
+   </g>
+  </g>
+  <g transform="translate(74.5753, 353.576) scale(-1, 1) translate(-74.5753, -353.576) translate(47.9172, 287.449)" id="tree">
+   <path fill="#BCD280" id="Rectangle" d="m72.5,165c23.382355,43.049377 31.176468,70.753082 23.382355,83.111115c-11.691177,18.537018 -35.073536,18.537018 -46.764706,0c-7.794117,-12.358032 0,-40.061737 23.382351,-83.111115z"/>
+   <rect height="79.851852" width="4.156863" y="217.148148" x="70.941176" fill="#65402D" id="Rectangle"/>
+   <polygon points="109.466552734375,286.2661361694336 113.34273529052734,285.8499984741211 111.57421875,300.89473724365234 107.69802856445312,301.3108596801758 " transform="rotate(34, 78.2602, 229.29) translate(-32.2602, -64.2902)" fill="#65402D" id="Rectangle"/>
+   <polygon points="-57.261131286621094,319.16371154785156 -61.13731384277344,318.7475891113281 -59.368797302246094,333.7923278808594 -55.49261474609375,334.2084503173828 " transform="rotate(34, 113.868, 411.401)" fill="#65402D" id="Rectangle"/>
+  </g>
+  <g id="tree">
+   <path fill="#BCD280" id="Rectangle" d="m219.110138,488.464233c19.411758,32.287048 25.882339,53.064819 19.411758,62.333313c-9.705887,13.902771 -29.117645,13.902771 -38.823532,0c-6.470581,-9.268494 0,-30.046265 19.411774,-62.333313z"/>
+   <rect height="59.888889" width="3.45098" y="527.575344" x="217.816013" fill="#65402D" id="Rectangle"/>
+   <polygon points="250.09767150878906,579.2695922851562 253.2339096069336,578.802978515625 251.25076293945312,590.529541015625 248.1145248413086,590.99609375 " transform="rotate(34, 223.892, 536.682) translate(-26.782, -48.2177)" fill="#65402D" id="Rectangle"/>
+   <polygon points="84.67464447021484,566.9605712890625 81.53840637207031,566.493896484375 83.52155303955078,578.220458984375 86.65779113769531,578.6870727539062 " transform="rotate(34, 169.265, 714.515)" fill="#65402D" id="Rectangle"/>
+  </g>
+  <rect height="4.723347" width="690.412335" y="586.052632" x="-0.107489" fill="#D8D8D8" id="trottoire"/>
+  <path fill="#82C376" id="Combined-Shape" d="m559.000305,542.544189c6.533569,-10.386597 20.576965,-17.569824 36.847351,-17.569824c20.228271,0 37.014282,11.102966 40.206177,25.660828c12.166748,0.443359 21.856323,8.27063 21.856323,17.861389c0,9.699524 -9.9104,17.595276 -22.270874,17.873657c-0.13324,0.005127 -0.26947,0.007629 -0.40863,0.007629c-4.719116,0 -69.392944,0 -77.166992,0c-1.862671,0 -3.437317,-0.094177 -4.758972,-0.276428c-16.944092,-1.309692 -29.697632,-7.324585 -29.697632,-19.147095c0,-13.114929 15.694153,-23.816711 35.39325,-24.410156z"/>
+  <g id="yellow-short-house">
+   <polygon points="281.32347106933594,474.66783905029297 347.6466979980469,474.66783905029297 347.6466979980469,586.2723617553711 281.32347106933594,586.2723617553711 " fill-rule="evenodd" fill="#FFB02F" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="476.012461" x="286.060839" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="479.374043" x="289.444678" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="476.012461" x="321.252759" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="479.374043" x="318.545688" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <polygon points="281.32347106933594,560.0520248413086 347.6466979980469,560.0520248413086 347.6466979980469,586.2723617553711 281.32347106933594,586.2723617553711 " fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <polygon points="281.32347106933594,471.30626678466797 347.6466979980469,471.30626678466797 347.6466979980469,474.66783905029297 281.32347106933594,474.66783905029297 " fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <polygon points="281.32347106933594,521.0576705932617 347.6466979980469,521.0576705932617 347.6466979980469,524.4192428588867 281.32347106933594,524.4192428588867 " fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <g id="window-4">
+    <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m321.575104,536.283203l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502869 -5.865082,-2.247559 -8.470581,-2.247559c-2.605499,0 -5.428619,0.74469 -8.470581,2.247559z"/>
+    <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m321.92804,536.256165c2.89917,-1.664246 5.605042,-2.496399 8.117645,-2.496399c2.512604,0 5.218475,0.832153 8.117645,2.496399l-16.235291,22.321777l0,-22.321777z"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m321.92804,549.987061l15.897064,0"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m321.758911,543.941589l16.742645,0"/>
+    <rect height="1.909091" width="23" y="558.577947" x="318.545689" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m330.045685,534.077942l0.084564,24.5"/>
+   </g>
+   <g id="window-4">
+    <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m321.575104,486.531799l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.605499,0 -5.428619,0.74469 -8.470581,2.247589z"/>
+    <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m321.92804,486.50473c2.89917,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218475,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m321.92804,500.235626l15.897064,0"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m321.758911,494.190186l16.742645,0"/>
+    <rect height="1.909091" width="23" y="508.826533" x="318.545689" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m330.045685,484.326538l0.084564,24.5"/>
+   </g>
+   <g id="window-4">
+    <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m290.443787,486.531799l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.605499,0 -5.428619,0.74469 -8.470581,2.247589z"/>
+    <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m290.796722,486.50473c2.89917,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218475,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m290.796722,500.235626l15.897064,0"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m290.627594,494.190186l16.742645,0"/>
+    <rect height="1.909091" width="23" y="508.826533" x="287.414375" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m298.914368,484.326538l0.084564,24.5"/>
+   </g>
+   <polygon points="280.6466979980469,467.94466400146484 347.6466979980469,467.94466400146484 347.6466979980469,471.30626678466797 280.6466979980469,471.30626678466797 " fill-rule="evenodd" fill="#8593A4" id="Rectangle"/>
+   <g fill-rule="evenodd" id="door">
+    <rect height="52" width="21" y="533.487038" x="288.414375" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <rect height="25.333333" width="16.235294" y="534.487038" x="290.796728" fill="#4F5666" id="Rectangle"/>
+    <polygon points="290.79672956466675,534.4870452880859 307.0320200920105,534.4870452880859 290.79672956466675,559.8203887939453 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+    <rect height="22.666667" width="16.235294" y="563.153704" x="290.796728" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <rect height="2.689266" width="6.090909" y="512.989862" x="311.778011" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="517.02376" x="318.545688" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+  </g>
+  <g id="green-short-house">
+   <polygon points="534.0697326660156,473.66783905029297 600.3929595947266,473.66783905029297 600.3929595947266,585.2723617553711 534.0697326660156,585.2723617553711 " fill-rule="evenodd" fill="#22B778" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="475.012461" x="538.807101" fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="513.334495" x="580.089929" fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="475.684777" x="588.211141" fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="478.374043" x="583.473768" fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <polygon points="534.0697326660156,559.0520248413086 600.3929595947266,559.0520248413086 600.3929595947266,585.2723617553711 534.0697326660156,585.2723617553711 " fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <polygon points="534.0697326660156,470.30626678466797 600.3929595947266,470.30626678466797 600.3929595947266,473.66783905029297 534.0697326660156,473.66783905029297 " fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <polygon points="534.0697326660156,520.0576705932617 600.3929595947266,520.0576705932617 600.3929595947266,523.4192428588867 534.0697326660156,523.4192428588867 " fill-rule="evenodd" fill="#0B7F43" id="Rectangle"/>
+   <g id="window-3">
+    <rect height="23.268293" width="16.941177" y="533.852891" x="541.836513" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <polygon points="542.1894707679749,534.2187652587891 558.4247612953186,534.2187652587891 542.1894707679749,556.7553253173828 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m542.189453,548.560181l15.897034,0"/>
+    <rect height="1.365854" width="21.647059" y="531.487038" x="539.483571" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <rect height="2.04878" width="23" y="557.438257" x="538.807101" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <g id="window-3">
+    <rect height="23.268293" width="16.941177" y="484.101478" x="574.321362" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <polygon points="574.6743202209473,484.46735191345215 590.909610748291,484.46735191345215 574.6743202209473,507.0039119720459 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m574.674316,498.808777l15.897034,0"/>
+    <rect height="1.365854" width="21.647059" y="481.735624" x="571.968421" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <rect height="2.04878" width="23" y="507.686844" x="571.29195" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <g id="window-3">
+    <rect height="23.268293" width="16.941177" y="484.101478" x="543.190048" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <polygon points="543.5430064201355,484.46735191345215 559.7782969474792,484.46735191345215 543.5430064201355,507.0039119720459 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m543.54303,498.808777l15.897034,0"/>
+    <rect height="1.365854" width="21.647059" y="481.735624" x="540.837107" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <rect height="2.04878" width="23" y="507.686844" x="540.160636" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <polygon points="533.3929595947266,466.94466400146484 600.3929595947266,466.94466400146484 600.3929595947266,470.30626678466797 533.3929595947266,470.30626678466797 " fill-rule="evenodd" fill="#8593A4" id="Rectangle"/>
+   <g fill-rule="evenodd" id="door">
+    <rect height="52" width="21" y="532.487038" x="572.29195" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <rect height="25.333333" width="16.235294" y="533.487038" x="574.674303" fill="#4F5666" id="Rectangle"/>
+    <polygon points="574.6743202209473,533.4870452880859 590.909610748291,533.4870452880859 574.6743202209473,558.8203887939453 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+    <rect height="22.666667" width="16.235294" y="562.153704" x="574.674303" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <rect height="2.689266" width="6.090909" y="511.989862" x="544.89801" fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+   <rect height="2.689266" width="6.090909" y="516.02376" x="551.665687" fill-rule="evenodd" fill="#09894D" id="Rectangle"/>
+  </g>
+  <rect height="65.608414" width="189.890785" y="519.91467" x="347.466076" fill-rule="evenodd" fill="#5D5153" id="Rectangle"/>
+  <polygon points="537.3568572998047,519.9146537780762 537.3568572998047,559.8208122253418 478.8249206542969,547.5201530456543 444.25938415527344,540.2560844421387 405.42144775390625,532.0941581726074 383.794921875,527.5492973327637 369.67073822021484,524.5810356140137 347.46607971191406,519.9146537780762 " fill-rule="evenodd" fill="#000000" fill-opacity="0.119728" id="Rectangle"/>
+  <rect height="27.055016" width="189.890785" y="559.144443" x="347.466076" fill-rule="evenodd" fill="#655E56" id="Rectangle"/>
+  <g fill-rule="evenodd" id="door">
+   <rect height="53" width="38" y="533.089428" x="424.152084" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <rect height="25.802469" width="28.235294" y="534.126465" x="429.034437" fill="#4F5666" id="Rectangle"/>
+   <polygon points="429.03443908691406,534.1264343261719 457.2697296142578,534.1264343261719 429.03443908691406,559.9289245605469 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+   <rect height="23.08642" width="28.235294" y="563.323996" x="429.034437" fill="#FFFFFF" id="Rectangle"/>
+  </g>
+  <g fill-rule="evenodd" id="big-window">
+   <rect height="25" width="27" y="533.589428" x="373.969488" fill="#4F5666" stroke-width="3" stroke="#FFFFFF" id="Rectangle"/>
+   <polygon points="373.994909286499,533.5376892089844 400.9440670013428,533.5376892089844 373.994909286499,558.6411437988281 " fill="#FFFFFF" fill-opacity="0.028191" id="Rectangle"/>
+  </g>
+  <g fill-rule="evenodd" id="big-window">
+   <rect height="25" width="27" y="533.589428" x="482.768127" fill="#4F5666" stroke-width="3" stroke="#FFFFFF" id="Rectangle"/>
+   <polygon points="482.7935485839844,533.5376892089844 509.7427062988281,533.5376892089844 482.7935485839844,558.6411437988281 " fill="#FFFFFF" fill-opacity="0.028191" id="Rectangle"/>
+  </g>
+  <g id="double-window">
+   <rect height="23.268293" width="17.111111" y="404.929391" x="360.650213" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m361.015289,419.636688l16.039673,0"/>
+   <rect height="1.365854" width="21.84127" y="402.563538" x="358.285134" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="428.514757" x="357.602594" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="23.268293" width="17.111111" y="404.929391" x="378.396245" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <polygon points="361.0152835845947,405.2952461242676 395.142297744751,405.2952461242676 361.0152835845947,427.8318061828613 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m378.761322,419.636688l16.039673,0"/>
+   <rect height="1.365854" width="21.84127" y="402.563538" x="376.031166" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="428.514757" x="375.348626" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+  </g>
+  <g id="double-window">
+   <rect height="23.268293" width="17.111111" y="458.701238" x="360.650213" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m361.015289,473.408508l16.039673,0"/>
+   <rect height="1.365854" width="21.84127" y="456.335384" x="358.285134" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="482.286604" x="357.602594" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="23.268293" width="17.111111" y="458.701238" x="378.396245" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <polygon points="361.0152835845947,459.0670928955078 395.142297744751,459.0670928955078 361.0152835845947,481.60365295410156 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m378.761322,473.408508l16.039673,0"/>
+   <rect height="1.365854" width="21.84127" y="456.335384" x="376.031166" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="482.286604" x="375.348626" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+  </g>
+  <g id="double-window">
+   <rect height="23.268293" width="17.111111" y="404.591205" x="490.397656" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m490.762726,419.298492l16.039673,0"/>
+   <rect height="1.365854" width="21.84127" y="402.225351" x="488.032576" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="428.176571" x="487.350037" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="23.268293" width="17.111111" y="404.591205" x="508.143687" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <polygon points="490.7627258300781,404.9570598602295 524.8897399902344,404.9570598602295 490.7627258300781,427.49361991882324 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m508.508759,419.298492l16.039703,0"/>
+   <rect height="1.365854" width="21.84127" y="402.225351" x="505.778608" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="428.176571" x="505.096068" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+  </g>
+  <g id="double-window">
+   <rect height="23.268293" width="17.111111" y="458.701238" x="490.397656" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m490.762726,473.408508l16.039673,0"/>
+   <rect height="1.365854" width="21.84127" y="456.335384" x="488.032576" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="482.286604" x="487.350037" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="23.268293" width="17.111111" y="458.701238" x="508.143687" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+   <polygon points="490.7627258300781,459.0670928955078 524.8897399902344,459.0670928955078 490.7627258300781,481.60365295410156 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+   <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m508.508759,473.408508l16.039703,0"/>
+   <rect height="1.365854" width="21.84127" y="456.335384" x="505.778608" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   <rect height="2.04878" width="23.206349" y="482.286604" x="505.096068" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+  </g>
+  <g id="blue-long-house">
+   <polygon points="89.33414459228516,526.7131042480469 185.62181854248047,526.7131042480469 185.62181854248047,586.1131286621094 89.33414459228516,586.1131286621094 " fill-rule="evenodd" fill="#989CB8" id="wall"/>
+   <g fill-rule="evenodd" id="floor">
+    <rect height="45.9" width="96.287671" y="477.43811" x="89.334146" fill="#989CB8" id="Rectangle"/>
+    <polygon points="89.33414554595947,474.0631103515625 185.62181949615479,474.0631103515625 185.62181949615479,477.4381103515625 89.33414554595947,477.4381103515625 " fill="#B1B5CE" id="Rectangle"/>
+    <polygon points="89.33414554595947,523.3381042480469 185.62181949615479,523.3381042480469 185.62181949615479,526.7131042480469 89.33414554595947,526.7131042480469 " fill="#B1B5CE" id="Rectangle"/>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m128.979996,493.384277l0,21.931091l16.941177,0l0,-21.931091c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.60553,0 -5.428619,0.74469 -8.470596,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m129.332947,493.357208c2.899139,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218475,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m129.332947,507.088104l15.897049,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m129.163818,501.042664l16.742645,0"/>
+     <rect height="1.909091" width="23" y="515.679019" x="125.950585" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m137.450592,491.179016l0.084564,24.5"/>
+    </g>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m97.788216,493.384277l0,21.931091l16.941177,0l0,-21.931091c-3.041969,-1.502899 -5.865074,-2.247589 -8.470589,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m98.141159,493.357208c2.899155,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m98.141159,507.088104l15.897057,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m97.972046,501.042664l16.742638,0"/>
+     <rect height="1.909091" width="23" y="515.679019" x="94.758803" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m106.258804,491.179016l0.084564,24.5"/>
+    </g>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m160.171783,493.384277l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502899 -5.865067,-2.247589 -8.470581,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470581,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m160.524719,493.357208c2.899155,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.524719,507.088104l15.897064,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.355606,501.042664l16.74263,0"/>
+     <rect height="1.909091" width="23" y="515.679019" x="157.142365" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m168.642365,491.179016l0.084564,24.5"/>
+    </g>
+   </g>
+   <g fill-rule="evenodd" id="floor">
+    <rect height="45.9" width="96.287671" y="477.43811" x="89.334146" fill="#989CB8" id="Rectangle"/>
+    <polygon points="89.33414554595947,474.0631103515625 185.62181949615479,474.0631103515625 185.62181949615479,477.4381103515625 89.33414554595947,477.4381103515625 " fill="#B1B5CE" id="Rectangle"/>
+    <polygon points="89.33414554595947,523.3381042480469 185.62181949615479,523.3381042480469 185.62181949615479,526.7131042480469 89.33414554595947,526.7131042480469 " fill="#B1B5CE" id="Rectangle"/>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m128.979996,493.384277l0,21.931091l16.941177,0l0,-21.931091c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.60553,0 -5.428619,0.74469 -8.470596,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m129.332947,493.357208c2.899139,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218475,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m129.332947,507.088104l15.897049,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m129.163818,501.042664l16.742645,0"/>
+     <rect height="1.909091" width="23" y="515.679019" x="125.950585" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m137.450592,491.179016l0.084564,24.5"/>
+    </g>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m97.788216,493.384277l0,21.931091l16.941177,0l0,-21.931091c-3.041969,-1.502899 -5.865074,-2.247589 -8.470589,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m98.141159,493.357208c2.899155,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m98.141159,507.088104l15.897057,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m97.972046,501.042664l16.742638,0"/>
+     <rect height="1.909091" width="23" y="515.679019" x="94.758803" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m106.258804,491.179016l0.084564,24.5"/>
+    </g>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m160.171783,493.384277l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502899 -5.865067,-2.247589 -8.470581,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470581,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m160.524719,493.357208c2.899155,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.524719,507.088104l15.897064,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.355606,501.042664l16.74263,0"/>
+     <rect height="1.909091" width="23" y="515.679019" x="157.142365" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m168.642365,491.179016l0.084564,24.5"/>
+    </g>
+   </g>
+   <g fill-rule="evenodd" id="floor">
+    <rect height="45.9" width="96.287671" y="428.163116" x="89.334146" fill="#989CB8" id="Rectangle"/>
+    <polygon points="89.33414554595947,424.7881164550781 185.62181949615479,424.7881164550781 185.62181949615479,428.1631164550781 89.33414554595947,428.1631164550781 " fill="#B1B5CE" id="Rectangle"/>
+    <polygon points="89.33414554595947,474.0631103515625 185.62181949615479,474.0631103515625 185.62181949615479,477.4381103515625 89.33414554595947,477.4381103515625 " fill="#B1B5CE" id="Rectangle"/>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m128.979996,444.109283l0,21.931091l16.941177,0l0,-21.931091c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.60553,0 -5.428619,0.74469 -8.470596,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m129.332947,444.082214c2.899139,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218475,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m129.332947,457.81311l15.897049,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m129.163818,451.76767l16.742645,0"/>
+     <rect height="1.909091" width="23" y="466.404025" x="125.950585" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m137.450592,441.904022l0.084564,24.5"/>
+    </g>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m97.788216,444.109283l0,21.931091l16.941177,0l0,-21.931091c-3.041969,-1.502899 -5.865074,-2.247589 -8.470589,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m98.141159,444.082214c2.899155,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m98.141159,457.81311l15.897057,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m97.972046,451.76767l16.742638,0"/>
+     <rect height="1.909091" width="23" y="466.404025" x="94.758803" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m106.258804,441.904022l0.084564,24.5"/>
+    </g>
+    <g id="window-4">
+     <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m160.171783,444.109283l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502899 -5.865067,-2.247589 -8.470581,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470581,2.247589z"/>
+     <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m160.524719,444.082214c2.899155,-1.664246 5.605042,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.524719,457.81311l15.897064,0"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.355606,451.76767l16.74263,0"/>
+     <rect height="1.909091" width="23" y="466.404025" x="157.142365" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+     <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m168.642365,441.904022l0.084564,24.5"/>
+    </g>
+   </g>
+   <g fill="#878A9A" transform="translate(47.8048, 170.1) scale(-1, 1) translate(-47.8048, -170.1) translate(14.9178, 138.375)" fill-rule="evenodd" id="bricks">
+    <rect height="2.7" width="6.10274" y="343.788116" x="-87.977981" id="Rectangle"/>
+    <rect height="2.7" width="6.10274" y="343.788116" x="-35.087572" id="Rectangle"/>
+    <rect height="2.7" width="6.10274" y="347.163116" x="-31.69716" id="Rectangle"/>
+    <rect height="2.7" width="6.10274" y="404.538116" x="-43.224557" id="Rectangle"/>
+    <rect height="2.7" width="6.10274" y="343.788116" x="-28.306749" id="Rectangle"/>
+   </g>
+   <polygon points="89.33414459228516,559.7881164550781 185.62181854248047,559.7881164550781 185.62181854248047,586.1131286621094 89.33414459228516,586.1131286621094 " fill-rule="evenodd" fill="#878A9A" id="wall-down"/>
+   <g id="window-3">
+    <rect height="23.268293" width="16.941177" y="533.803964" x="97.788215" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <polygon points="98.14115810394287,534.1698303222656 114.37644863128662,534.1698303222656 98.14115810394287,556.7063903808594 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m98.141159,548.51123l15.897057,0"/>
+    <rect height="1.365854" width="21.647059" y="531.43811" x="95.435274" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <rect height="2.04878" width="23" y="557.38933" x="94.758803" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <g id="window-3">
+    <rect height="23.268293" width="16.941177" y="534.478967" x="160.171776" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <polygon points="160.52471923828125,534.8448333740234 176.760009765625,534.8448333740234 160.52471923828125,557.3813934326172 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+    <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m160.524719,549.186279l15.897064,0"/>
+    <rect height="1.365854" width="21.647059" y="532.113113" x="157.818835" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+    <rect height="2.04878" width="23" y="558.064333" x="157.142365" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <g fill-rule="evenodd" id="door">
+    <rect height="53" width="21" y="533.113113" x="126.950584" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+    <rect height="25.802469" width="16.235294" y="534.15015" x="129.332937" fill="#4F5666" id="Rectangle"/>
+    <polygon points="129.33293914794922,534.1501312255859 145.56822967529297,534.1501312255859 129.33293914794922,559.9526214599609 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+    <rect height="23.08642" width="16.235294" y="563.347681" x="129.332937" fill="#FFFFFF" id="Rectangle"/>
+   </g>
+   <rect height="2.7" width="6.10274" y="455.163116" x="150.361538" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+   <rect height="2.7" width="6.10274" y="438.288116" x="119.847847" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+   <rect height="2.7" width="6.10274" y="434.913116" x="121.88209" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+   <g fill-rule="evenodd" id="floor">
+    <polygon points="89.33414554595947,415.3346366882324 137.47799015045166,399.13813400268555 185.62181949615479,415.3346366882324 185.62181949615479,428.1630973815918 89.33414554595947,428.1630973815918 " fill="#989CB8" id="Rectangle"/>
+    <polygon points="89.33414554595947,411.56574630737305 137.47799015045166,395.0881156921387 185.62181949615479,411.56574630737305 185.62181949615479,415.3381156921387 137.47799015045166,399.6133232116699 89.33414554595947,415.3381156921387 " fill="#878A9A" id="Rectangle"/>
+    <polygon points="89.33414554595947,427.48810958862305 185.62181949615479,427.48810958862305 185.62181949615479,430.86310958862305 89.33414554595947,430.86310958862305 " fill="#B1B5CE" id="Rectangle"/>
+   </g>
+   <rect height="2.7" width="6.10274" y="417.363116" x="156.464283" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+   <rect height="2.7" width="6.10274" y="417.363116" x="163.245105" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+   <rect height="2.7" width="6.10274" y="413.988116" x="158.498529" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+   <g fill-rule="evenodd" id="oval-window">
+    <ellipse ry="10.16129" rx="10" cy="414.026828" cx="137.306747" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Oval"/>
+    <path fill="#FFFFFF" fill-opacity="0.091947" id="Oval" d="m129.640076,421.946106c9.170639,-6.850647 13.755966,-12.021912 13.755966,-15.513763c0,-5.237793 -0.934631,-1.889404 -6.089294,-1.889404c-5.154663,0 -9.333328,4.246094 -9.333328,9.483887c0,3.491852 0.555542,6.131622 1.666656,7.919281z"/>
+   </g>
+  </g>
+  <g id="bushes">
+   <path fill="#6DB660" id="Combined-Shape" d="m652.912537,561.10498c4.357483,-6.382935 13.937073,-10.814819 25.054016,-10.814819c13.690186,0 25.04895,6.721008 27.194824,15.529846c8.255554,0.248901 14.838623,4.982727 14.838623,10.78595c0,5.890137 -6.781921,10.67865 -15.210938,10.794067c-0.062195,0.001404 -0.125305,0.002136 -0.189392,0.002136c-3.191345,0 -46.927612,0 -52.184875,0c-1.215027,0 -2.248901,-0.052979 -3.122742,-0.155579c-11.629333,-0.76416 -20.402161,-4.373596 -20.402161,-11.498535c0,-7.847656 10.642639,-14.255249 24.022644,-14.643066z"/>
+   <path fill="#82C376" id="Combined-Shape" d="m73.656342,553.016907c-3.658226,-8.355774 -12.035164,-14.197754 -21.784157,-14.197754c-11.967659,0 -21.867683,8.803528 -23.509117,20.253906c-7.199753,0.28833 -12.94809,6.215149 -12.94809,13.484314c0,7.453247 6.043167,13.495239 13.497787,13.495239c0.002007,0 0.004013,0 0.006012,0c0.001198,0 0.002419,0 0.003624,0c2.75,0 40.437607,0 44.967819,0c0.965645,0 1.798485,-0.057312 2.51284,-0.168701c10.223618,-0.899902 17.97403,-5.435486 17.97403,-14.473633c0,-9.831787 -9.171249,-17.864624 -20.720749,-18.393372z"/>
+   <path fill="#74B863" id="Combined-Shape" d="m-26.00635,559.750977c3.61693,-6.380493 11.564419,-10.810364 20.78702,-10.810364c11.360199,0 20.785709,6.721375 22.566021,15.530457c6.81181,0.256165 12.240971,4.986938 12.240971,10.785339c0,5.879211 -5.581535,10.660767 -12.526543,10.793396c-0.0592,0.001831 -0.119408,0.002808 -0.180649,0.002808c-2.648151,0 -38.93992,0 -43.302351,0c-0.935709,0 -1.741919,-0.045593 -2.43268,-0.134216c-9.752239,-0.716003 -17.145439,-4.325989 -17.145439,-11.519897c0,-7.879517 8.86956,-14.307251 19.99365,-14.647522z"/>
+  </g>
+  <g id="lamps">
+   <g id="lamp">
+    <g id="svg_7">
+     <rect height="49.604396" width="4.061538" y="539.36997" x="78.24073" fill="#545665" id="Rectangle"/>
+     <polygon points="74.17919254302979,529.3150024414062 86.3638048171997,529.3150024414062 83.65611743927002,539.3699951171875 77.56380558013916,539.3699951171875 " fill="#D8D8D8" id="Rectangle"/>
+     <ellipse ry="1.340659" rx="7.446154" cy="529.315025" cx="80.271499" fill="#545665" id="Oval"/>
+    </g>
+   </g>
+   <g id="lamp">
+    <g id="svg_8">
+     <rect height="49.604396" width="4.061538" y="538.719498" x="282.057472" fill="#545665" id="Rectangle"/>
+     <polygon points="277.99594593048096,528.66455078125 290.1805467605591,528.66455078125 287.47287464141846,538.7195434570312 281.38055896759033,538.7195434570312 " fill="#D8D8D8" id="Rectangle"/>
+     <ellipse ry="1.340659" rx="7.446154" cy="528.664553" cx="284.088241" fill="#545665" id="Oval"/>
+    </g>
+   </g>
+  </g>
+  <g stroke="#EAEAEA" fill="#FFFFFF" id="clouds">
+   <g id="Cloud">
+    <path id="Combined-Shape" d="m525.207397,327.012207c3.612488,-6.412781 11.550293,-10.865112 20.761719,-10.865112c11.346375,0 20.760376,6.755371 22.538574,15.609131c6.670532,0.252441 12.01355,4.828003 12.219849,10.499451c2.455322,0.361145 4.219604,2.531799 9.785217,4.464783c1.017761,0.353516 7.408875,1.714233 8.299683,1.947876c8.044556,2.109985 13.56134,4.451355 12.005188,4.778687c-3.288574,0.691711 -19.640259,0 -26.713501,0c-3.84552,0 -10.325806,0.242493 -15.439331,-0.0177c-0.146851,0.007019 -0.294312,0.012024 -0.442383,0.014893c-0.059082,0.001831 -0.119263,0.002808 -0.18042,0.002808c-2.644897,0 -38.892517,0 -43.249634,0c-0.610962,0 -1.166626,-0.019592 -1.670898,-0.058044c-9.575989,0.037231 -43.478027,0.368774 -46.592102,-0.247437c-2.802216,-0.554504 22.186646,-3.703491 28.445221,-6.60144c0.492279,-0.227966 0.889496,-0.460327 1.207855,-0.693359c-0.613708,-1.21405 -0.944397,-2.582825 -0.944397,-4.112854c0,-7.919434 8.858765,-14.3797 19.96936,-14.72168z"/>
+   </g>
+   <g id="Cloud">
+    <path id="Combined-Shape" d="m97.327179,270.118835c3.612526,-6.412811 11.550346,-10.865112 20.761726,-10.865112c11.346382,0 20.760429,6.755371 22.538567,15.609131c6.670547,0.252411 12.013596,4.828003 12.21991,10.499451c2.455307,0.361145 4.219589,2.531799 9.785172,4.464783c1.017776,0.353516 7.408875,1.714233 8.299683,1.947876c8.044571,2.109985 13.561371,4.451355 12.005219,4.778687c-3.288589,0.691711 -19.640274,0 -26.713547,0c-3.845474,0 -10.325745,0.242493 -15.439331,-0.0177c-0.14679,0.007019 -0.29425,0.012024 -0.442322,0.014862c-0.059128,0.001862 -0.119263,0.002838 -0.180435,0.002838c-2.644913,0 -38.89254,0 -43.249664,0c-0.610931,0 -1.166588,-0.019592 -1.670891,-0.058044c-9.575996,0.037231 -43.478027,0.368774 -46.59211,-0.247437c-2.802189,-0.554504 22.186646,-3.703491 28.445236,-6.601471c0.492294,-0.227936 0.889511,-0.460297 1.207855,-0.693329c-0.613724,-1.21405 -0.944397,-2.582825 -0.944397,-4.112854c0,-7.919434 8.858765,-14.3797 19.96933,-14.72168z"/>
+   </g>
+  </g>
+  <g transform="translate(695.5, 407.5) scale(-1, 1) translate(-695.5, -407.5) translate(308, 165)" id="city">
+   <g id="building-grey">
+    <g id="svg_9">
+     <rect height="345" width="138" y="54.46019" x="39.070911" opacity="0.504488" fill="#D8D8D8" id="wall"/>
+     <g opacity="0.500233" fill="#9B9B9B" id="windows">
+      <g id="windows-line">
+       <g id="window-grey">
+        <rect height="39" width="25" y="71.321093" x="47.695911" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="71.321093" x="111.767337" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="71.321093" x="79.731624" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="71.321093" x="143.803051" id="Rectangle"/>
+       </g>
+      </g>
+     </g>
+     <g opacity="0.500233" fill="#9B9B9B" id="windows">
+      <g id="windows-line">
+       <g id="window-grey">
+        <rect height="39" width="25" y="116.715828" x="47.695911" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="116.715828" x="111.767337" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="116.715828" x="79.731624" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="116.715828" x="143.803051" id="Rectangle"/>
+       </g>
+      </g>
+     </g>
+     <g opacity="0.500233" fill="#9B9B9B" id="windows">
+      <g id="windows-line">
+       <g id="window-grey">
+        <rect height="39" width="25" y="162.110565" x="47.695911" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="162.110565" x="111.767337" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="162.110565" x="79.731624" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="162.110565" x="143.803051" id="Rectangle"/>
+       </g>
+      </g>
+     </g>
+     <g opacity="0.500233" fill="#9B9B9B" id="windows">
+      <g id="windows-line">
+       <g id="window-grey">
+        <rect height="39" width="25" y="207.50531" x="47.695911" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="207.50531" x="111.767337" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="207.50531" x="79.731624" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="207.50531" x="143.803051" id="Rectangle"/>
+       </g>
+      </g>
+     </g>
+     <g opacity="0.500233" fill="#9B9B9B" id="windows">
+      <g id="windows-line">
+       <g id="window-grey">
+        <rect height="39" width="25" y="252.90004" x="47.695911" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="252.90004" x="111.767337" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="252.90004" x="79.731624" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="252.90004" x="143.803051" id="Rectangle"/>
+       </g>
+      </g>
+     </g>
+     <g opacity="0.500233" fill="#9B9B9B" id="windows">
+      <g id="windows-line">
+       <g id="window-grey">
+        <rect height="39" width="25" y="298.294769" x="47.695911" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="298.294769" x="111.767337" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="298.294769" x="79.731624" id="Rectangle"/>
+       </g>
+       <g id="window-grey">
+        <rect height="39" width="25" y="298.294769" x="143.803051" id="Rectangle"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="road">
+    <rect id="svg_10" height="58.02969" width="691.087225" y="425.77597" x="9.542731" fill="#1C1C1C"/>
+    <g fill="#FFFFFF" id="Group">
+     <rect height="9.446694" width="33.744493" y="450.067469" x="9.542731" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="83.780617" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="158.018502" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="232.256387" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="306.494273" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="380.732158" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="454.970044" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="529.207929" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="603.445815" id="Rectangle"/>
+     <rect height="9.446694" width="33.744493" y="450.067469" x="677.6837" id="Rectangle"/>
+    </g>
+   </g>
+   <g transform="translate(70.575330, 353.576248) scale(-1, 1) translate(-70.575330, -353.576248) translate(43.917181, 287.449393)" id="tree">
+    <path fill="#BCD280" id="Rectangle" d="m26.5,0c23.382351,43.049381 31.176472,70.75309 23.382351,83.111107c-11.69117,18.537041 -35.073531,18.537041 -46.764701,0c-7.79412,-12.358017 0,-40.061726 23.38235,-83.111107z"/>
+    <rect height="79.851852" width="4.156863" y="52.148148" x="24.941177" fill="#65402D" id="Rectangle"/>
+    <polygon points="63.466548919677734,121.26612854003906 67.34273529052734,120.85000610351562 65.57421875,135.89473724365234 61.69803237915039,136.31085968017578 " transform="rotate(34, 32.2602, 64.2902) translate(-32.2602, -64.2902)" fill="#65402D" id="Rectangle"/>
+    <polygon points="-18.858564376831055,100.23204040527344 -22.734750747680664,99.81592559814453 -20.966232299804688,114.86065673828125 -17.09004783630371,115.27677917480469 " transform="rotate(34, 21.868, 81.4013)" fill="#65402D" id="Rectangle"/>
+   </g>
+   <g id="tree">
+    <path fill="#BCD280" id="Rectangle" d="m109.11013,316.464233c19.411766,32.287048 25.882347,53.064819 19.411766,62.333313c-9.705887,13.902802 -29.117645,13.902802 -38.823524,0c-6.470589,-9.268494 0,-30.046265 19.411758,-62.333313z"/>
+    <rect height="59.888889" width="3.45098" y="355.575344" x="107.816013" fill="#65402D" id="Rectangle"/>
+    <polygon points="140.0976734161377,407.26960372924805 143.23391151428223,406.8029899597168 141.25076484680176,418.5295219421387 138.11452674865723,418.9961357116699 " transform="rotate(34, 113.892, 364.682) translate(-26.782, -48.2177)" fill="#65402D" id="Rectangle"/>
+    <polygon points="-87.2662582397461,495.2894744873047 -90.4024887084961,494.82286071777344 -88.41934967041016,506.5493927001953 -85.28311920166016,507.0160217285156 " transform="rotate(34, 192.375, 693.979)" fill="#65402D" id="Rectangle"/>
+   </g>
+   <rect height="4.723347" width="690.412335" y="421.052632" x="38.892511" fill="#D8D8D8" id="trottoire"/>
+   <g id="tree">
+    <path fill="#BCD280" id="Rectangle" d="m455.338318,287.124146c19.411774,43.70163 25.882355,71.825104 19.411774,84.370361c-9.705902,18.817902 -29.117645,18.817902 -38.823547,0c-6.470581,-12.545258 0,-40.668732 19.411774,-84.370361z"/>
+    <rect height="81.061728" width="3.45098" y="340.062417" x="454.0442" fill="#65402D" id="Rectangle"/>
+    <polygon points="485.33938789367676,410.5603332519531 488.74585151672363,410.49432373046875 488.465425491333,424.7452087402344 485.05896186828613,424.81121826171875 " transform="rotate(34, 460.12, 352.388) translate(-26.782, -65.2643)" fill="#65402D" id="Rectangle"/>
+    <polygon points="323.4777374267578,678.3528747558594 320.0712661743164,678.286865234375 320.3517150878906,692.5377807617188 323.75818634033203,692.603759765625 " transform="rotate(34, 884.831, 656.883)" fill="#65402D" id="Rectangle"/>
+   </g>
+   <g transform="translate(261.977974, 300.788124) scale(-1, 1) translate(-261.977974, -300.788124) translate(131.977974, 178.788124)" id="houses">
+    <g id="yellow-short-house">
+     <polygon points="193.34548407793045,130.87971115112305 259.66871643066406,130.87971115112305 259.66871643066406,242.4842300415039 193.34548407793045,242.4842300415039 " fill-rule="evenodd" fill="#FFB02F" id="Rectangle"/>
+     <rect height="2.689266" width="6.090909" y="132.224344" x="198.082858" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <rect height="2.689266" width="6.090909" y="135.585926" x="201.466696" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <rect height="2.689266" width="6.090909" y="132.224344" x="233.274777" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <rect height="2.689266" width="6.090909" y="135.585926" x="230.567706" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <polygon points="193.34548407793045,216.2638931274414 259.66871643066406,216.2638931274414 259.66871643066406,242.4842300415039 193.34548407793045,242.4842300415039 " fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <polygon points="193.34548407793045,127.51812934875488 259.66871643066406,127.51812934875488 259.66871643066406,130.87971115112305 193.34548407793045,130.87971115112305 " fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <polygon points="193.34548407793045,177.2695426940918 259.66871643066406,177.2695426940918 259.66871643066406,180.63112258911133 193.34548407793045,180.63112258911133 " fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m233.597107,192.495087l0,21.931107l16.941193,0l0,-21.931107c-3.041977,-1.502899 -5.865082,-2.247589 -8.470596,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470596,2.247589z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m233.950058,192.468033c2.899155,-1.664261 5.605042,-2.496384 8.117645,-2.496384c2.512604,0 5.218491,0.832123 8.117645,2.496384l-16.235291,22.321793l0,-22.321793z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m233.950058,206.198929l15.897049,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m233.780945,200.153473l16.742645,0"/>
+      <rect height="1.909091" width="23" y="214.78983" x="230.567707" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m242.067703,190.289825l0.084564,24.5"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m233.597107,142.743683l0,21.931091l16.941193,0l0,-21.931091c-3.041977,-1.502914 -5.865082,-2.247604 -8.470596,-2.247604c-2.605515,0 -5.428619,0.74469 -8.470596,2.247604z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m233.950058,142.716614c2.899155,-1.664246 5.605042,-2.496384 8.117645,-2.496384c2.512604,0 5.218491,0.832138 8.117645,2.496384l-16.235291,22.321793l0,-22.321793z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m233.950058,156.44751l15.897049,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m233.780945,150.402054l16.742645,0"/>
+      <rect height="1.909091" width="23" y="165.038417" x="230.567707" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m242.067703,140.538422l0.084564,24.499985"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m202.46579,142.743683l0,21.931091l16.941193,0l0,-21.931091c-3.041977,-1.502914 -5.865082,-2.247604 -8.470596,-2.247604c-2.605515,0 -5.428619,0.74469 -8.470596,2.247604z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m202.818741,142.716614c2.899155,-1.664246 5.605042,-2.496384 8.117645,-2.496384c2.512604,0 5.218491,0.832138 8.117645,2.496384l-16.235291,22.321793l0,-22.321793z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m202.818741,156.44751l15.897049,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m202.649628,150.402054l16.742645,0"/>
+      <rect height="1.909091" width="23" y="165.038417" x="199.436393" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m210.936386,140.538422l0.084564,24.499985"/>
+     </g>
+     <polygon points="192.66871643066406,124.15654754638672 259.66871643066406,124.15654754638672 259.66871643066406,127.51812934875488 192.66871643066406,127.51812934875488 " fill-rule="evenodd" fill="#8593A4" id="Rectangle"/>
+     <g fill-rule="evenodd" id="door">
+      <rect height="52" width="21" y="189.698921" x="200.436393" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+      <rect height="25.333333" width="16.235294" y="190.698921" x="202.818746" fill="#4F5666" id="Rectangle"/>
+      <polygon points="202.81874799728394,190.69892120361328 219.05403852462769,190.69892120361328 202.81874799728394,216.03225708007812 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+      <rect height="22.666667" width="16.235294" y="219.365588" x="202.818746" fill="#FFFFFF" id="Rectangle"/>
+     </g>
+     <rect height="2.689266" width="6.090909" y="169.201745" x="223.80003" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+     <rect height="2.689266" width="6.090909" y="173.235644" x="230.567706" fill-rule="evenodd" fill="#FF9F00" id="Rectangle"/>
+    </g>
+    <g id="red-long-house-copy">
+     <polygon points="97.51563394069672,130.03160095214844 193.80330657958984,130.03160095214844 193.80330657958984,242.36780548095703 97.51563394069672,242.36780548095703 " fill-rule="evenodd" fill="#989CB8" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="138.152291" x="175.495085" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <polygon points="97.51563394069672,215.9755630493164 193.80330657958984,215.9755630493164 193.80330657958984,242.36780548095703 97.51563394069672,242.36780548095703 " fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <polygon points="97.51563394069672,126.64797973632812 193.80330657958984,126.64797973632812 193.80330657958984,130.03160095214844 97.51563394069672,130.03160095214844 " fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m137.161484,192.026062l0,21.931091l16.941177,0l0,-21.931091c-3.041962,-1.502914 -5.865082,-2.247604 -8.470581,-2.247604c-2.605515,0 -5.428619,0.74469 -8.470596,2.247604z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m137.51442,191.998993c2.899155,-1.664246 5.605057,-2.496384 8.117661,-2.496384c2.512604,0 5.218475,0.832138 8.117645,2.496384l-16.235306,22.321808l0,-22.321808z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m137.51442,205.729889l15.897064,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m137.345306,199.684433l16.742645,0"/>
+      <rect height="1.909091" width="23" y="214.32079" x="134.132072" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m145.63208,189.820801l0.084564,24.5"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m168.353271,192.026062l0,21.931091l16.941162,0l0,-21.931091c-3.041962,-1.502914 -5.865082,-2.247604 -8.470581,-2.247604c-2.605499,0 -5.428619,0.74469 -8.470581,2.247604z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m168.706207,191.998993c2.899155,-1.664246 5.605042,-2.496384 8.117645,-2.496384c2.512604,0 5.218491,0.832138 8.117645,2.496384l-16.235291,22.321808l0,-22.321808z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m168.706207,205.729889l15.897064,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m168.537094,199.684433l16.74263,0"/>
+      <rect height="1.909091" width="23" y="214.32079" x="165.323853" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m176.823853,189.820801l0.084564,24.5"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m137.161484,149.392426l0,21.931107l16.941177,0l0,-21.931107c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.605515,0 -5.428619,0.74469 -8.470596,2.247589z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m137.51442,149.365372c2.899155,-1.664261 5.605057,-2.496384 8.117661,-2.496384c2.512604,0 5.218475,0.832123 8.117645,2.496384l-16.235306,22.321793l0,-22.321793z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m137.51442,163.096252l15.897064,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m137.345306,157.050812l16.742645,0"/>
+      <rect height="1.909091" width="23" y="171.687165" x="134.132072" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m145.63208,147.187164l0.084564,24.5"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m105.969704,149.392426l0,21.931107l16.941177,0l0,-21.931107c-3.041969,-1.502899 -5.865082,-2.247589 -8.470589,-2.247589c-2.605507,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m106.322639,149.365372c2.899162,-1.664261 5.605049,-2.496384 8.117653,-2.496384c2.512604,0 5.218491,0.832123 8.117645,2.496384l-16.235298,22.321793l0,-22.321793z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m106.322639,163.096252l15.897064,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m106.153534,157.050812l16.742638,0"/>
+      <rect height="1.909091" width="23" y="171.687165" x="102.940291" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m114.440292,147.187164l0.084564,24.5"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m168.353271,149.392426l0,21.931107l16.941162,0l0,-21.931107c-3.041962,-1.502899 -5.865082,-2.247589 -8.470581,-2.247589c-2.605499,0 -5.428619,0.74469 -8.470581,2.247589z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m168.706207,149.365372c2.899155,-1.664261 5.605042,-2.496384 8.117645,-2.496384c2.512604,0 5.218491,0.832123 8.117645,2.496384l-16.235291,22.321793l0,-22.321793z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m168.706207,163.096252l15.897064,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m168.537094,157.050812l16.74263,0"/>
+      <rect height="1.909091" width="23" y="171.687165" x="165.323853" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m176.823853,147.187164l0.084564,24.5"/>
+     </g>
+     <g fill-rule="evenodd" id="door">
+      <rect height="53" width="21" y="189.229881" x="103.940291" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+      <rect height="25.802469" width="16.235294" y="190.266918" x="106.322644" fill="#4F5666" id="Rectangle"/>
+      <polygon points="106.32264614105225,190.2669219970703 122.557936668396,190.2669219970703 106.32264614105225,216.06938934326172 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+      <rect height="23.08642" width="16.235294" y="219.464449" x="106.322644" fill="#FFFFFF" id="Rectangle"/>
+     </g>
+     <g fill-rule="evenodd" id="Line-+-Line-+-Line-+-Line-+-Line-Mask">
+      <mask id="mask-4">
+       <use id="svg_11" xlink:href="#path-3"/>
+      </mask>
+      <use x="97.515634" y="86.044533" xlink:href="#path-3" fill="#243655" id="Mask"/>
+      <path mask="url(#mask-4)" stroke-linecap="square" stroke-width="3" stroke="#2F4771" id="Line" d="m110.06015,92.473412l71.198639,0"/>
+      <path mask="url(#mask-4)" stroke-linecap="square" stroke-width="3" stroke="#2F4771" id="Line" d="m110.399193,98.90229l71.198647,0"/>
+      <path mask="url(#mask-4)" stroke-linecap="square" stroke-width="3" stroke="#2F4771" id="Line" d="m105.144051,104.992813l81.708916,0"/>
+      <path mask="url(#mask-4)" stroke-linecap="square" stroke-width="3" stroke="#2F4771" id="Line" d="m102.60125,111.083321l90.184944,0"/>
+      <path mask="url(#mask-4)" stroke-linecap="square" stroke-width="3" stroke="#2F4771" id="Line" d="m100.567001,117.173843l90.863022,0"/>
+     </g>
+     <polygon points="96.15946960449219,123.26435852050781 195.1594696044922,123.26435852050781 195.1594696044922,126.64797973632812 96.15946960449219,126.64797973632812 " fill-rule="evenodd" fill="#8593A4" id="Rectangle"/>
+     <polygon points="145.6594696044922,90.78160190582275 161.25536346435547,121.23418807983398 130.06357955932617,121.23418807983398 " fill-rule="evenodd" fill="#878A9A" stroke-width="2" stroke="#2F4771" id="Triangle"/>
+     <g fill-rule="evenodd" id="oval-window">
+      <ellipse ry="8.225806" rx="5.5" cy="110.383382" cx="145.73481" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Oval"/>
+      <path fill="#FFFFFF" fill-opacity="0.091947" id="Oval" d="m141.518143,116.794235c5.043854,-5.545761 7.565781,-9.73201 7.565781,-12.558762c0,-4.240128 -0.514053,-1.52951 -3.349121,-1.52951c-2.835052,0 -5.133331,3.437302 -5.133331,7.677414c0,2.826752 0.305557,4.963699 0.916672,6.410858z"/>
+     </g>
+     <rect height="2.706897" width="6.10274" y="134.091947" x="116.501934" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="137.475567" x="113.111526" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="176.725567" x="157.864953" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="182.13936" x="151.084129" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="182.13936" x="110.399195" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="179.432464" x="112.433442" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+     <rect height="2.706897" width="6.10274" y="134.091947" x="109.721115" fill-rule="evenodd" fill="#878A9A" id="Rectangle"/>
+    </g>
+    <g id="purple-long-house">
+     <polygon points="1.35616438 182.925 97.6438356 182.925 97.6438356 242.325 1.35616438 242.325" fill-rule="evenodd" fill="#9CB898" id="wall"/>
+     <g fill-rule="evenodd" id="floor">
+      <rect height="45.9" width="96.287671" y="133.649994" x="1.356164" fill="#989CB8" id="Rectangle"/>
+      <polygon points="1.3561639785766602,130.27499389648438 97.64383792877197,130.27499389648438 97.64383792877197,133.64999389648438 1.3561639785766602,133.64999389648438 " fill="#B1B5CE" id="Rectangle"/>
+      <polygon points="1.3561639785766602,179.54999542236328 97.64383792877197,179.54999542236328 97.64383792877197,182.92499542236328 1.3561639785766602,182.92499542236328 " fill="#B1B5CE" id="Rectangle"/>
+      <g id="window-4">
+       <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m41.002014,149.596161l0,21.931091l16.941181,0l0,-21.931091c-3.041973,-1.502899 -5.865082,-2.247589 -8.470592,-2.247589c-2.605507,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+       <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m41.354954,149.569092c2.899158,-1.664246 5.605049,-2.496368 8.117649,-2.496368c2.5126,0 5.218491,0.832123 8.117649,2.496368l-16.235298,22.321808l0,-22.321808z"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m41.354954,163.299988l15.89706,0"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m41.185844,157.254532l16.742638,0"/>
+       <rect height="1.909091" width="23" y="171.890903" x="37.972604" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m49.472603,147.3909l0.08456,24.5"/>
+      </g>
+      <g id="window-4">
+       <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m9.810232,149.596161l0,21.931091l16.941181,0l0,-21.931091c-3.041973,-1.502899 -5.865082,-2.247589 -8.470591,-2.247589c-2.605511,0 -5.428621,0.74469 -8.470591,2.247589z"/>
+       <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m10.163172,149.569092c2.89916,-1.664246 5.60505,-2.496368 8.117651,-2.496368c2.5126,0 5.218489,0.832123 8.117647,2.496368l-16.235298,22.321808l0,-22.321808z"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m10.163172,163.299988l15.89706,0"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m9.994061,157.254532l16.742639,0"/>
+       <rect height="1.909091" width="23" y="171.890903" x="6.780822" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m18.280823,147.3909l0.08456,24.5"/>
+      </g>
+      <g id="window-4">
+       <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m72.193794,149.596161l0,21.931091l16.941185,0l0,-21.931091c-3.041977,-1.502899 -5.865082,-2.247589 -8.470596,-2.247589c-2.605507,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+       <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m72.546738,149.569092c2.899155,-1.664246 5.605049,-2.496368 8.117645,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235291,22.321808l0,-22.321808z"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m72.546738,163.299988l15.897057,0"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m72.377625,157.254532l16.742638,0"/>
+       <rect height="1.909091" width="23" y="171.890903" x="69.164384" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m80.664383,147.3909l0.084564,24.5"/>
+      </g>
+     </g>
+     <g fill-rule="evenodd" id="floor">
+      <rect height="45.9" width="96.287671" y="133.649994" x="1.356164" fill="#9CB898" id="Rectangle"/>
+      <polygon points="1.3561639785766602,130.27499389648438 97.64383792877197,130.27499389648438 97.64383792877197,133.64999389648438 1.3561639785766602,133.64999389648438 " fill="#B1B5CE" id="Rectangle"/>
+      <polygon points="1.3561639785766602,179.54999542236328 97.64383792877197,179.54999542236328 97.64383792877197,182.92499542236328 1.3561639785766602,182.92499542236328 " fill="#82A18E" id="Rectangle"/>
+      <g id="window-3">
+       <rect height="23.268293" width="16.941177" y="148.165847" x="41.002016" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+       <polygon points="41.35495662689209,148.5316982269287 57.59025192260742,148.5316982269287 41.35495662689209,171.0682888031006 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m41.354954,162.873154l15.89706,0"/>
+       <rect height="1.365854" width="21.647059" y="145.799994" x="38.649074" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <rect height="2.04878" width="23" y="171.751213" x="37.972604" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      </g>
+      <g id="window-3">
+       <rect height="23.268293" width="16.941177" y="148.165847" x="9.810234" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+       <polygon points="10.163174629211426,148.5316982269287 26.398469924926758,148.5316982269287 10.163174629211426,171.0682888031006 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m10.163172,162.873154l15.89706,0"/>
+       <rect height="1.365854" width="21.647059" y="145.799994" x="7.457292" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <rect height="2.04878" width="23" y="171.751213" x="6.780822" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      </g>
+      <g id="window-3">
+       <rect height="23.268293" width="16.941177" y="148.165847" x="72.193796" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+       <polygon points="72.54673671722412,148.5316982269287 88.78203201293945,148.5316982269287 72.54673671722412,171.0682888031006 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m72.546738,162.873154l15.897057,0"/>
+       <rect height="1.365854" width="21.647059" y="145.799994" x="69.840854" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <rect height="2.04878" width="23" y="171.751213" x="69.164384" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      </g>
+     </g>
+     <g fill-rule="evenodd" id="floor">
+      <rect height="45.9" width="96.287671" y="84.375" x="1.356164" fill="#9CB898" id="Rectangle"/>
+      <polygon points="1.3561639785766602,81 97.64383792877197,81 97.64383792877197,84.375 1.3561639785766602,84.375 " fill="#B1B5CE" id="Rectangle"/>
+      <polygon points="1.3561639785766602,130.2750015258789 97.64383792877197,130.2750015258789 97.64383792877197,133.6500015258789 1.3561639785766602,133.6500015258789 " fill="#82A18E" id="Rectangle"/>
+      <g id="window-3">
+       <rect height="23.268293" width="16.941177" y="98.890853" x="41.002016" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+       <polygon points="41.35495662689209,99.25670433044434 57.59025192260742,99.25670433044434 41.35495662689209,121.79329490661621 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m41.354954,113.598167l15.89706,0"/>
+       <rect height="1.365854" width="21.647059" y="96.525" x="38.649074" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <rect height="2.04878" width="23" y="122.476219" x="37.972604" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      </g>
+      <g id="window-3">
+       <rect height="23.268293" width="16.941177" y="98.890853" x="9.810234" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+       <polygon points="10.163174629211426,99.25670433044434 26.398469924926758,99.25670433044434 10.163174629211426,121.79329490661621 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m10.163172,113.598167l15.89706,0"/>
+       <rect height="1.365854" width="21.647059" y="96.525" x="7.457292" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <rect height="2.04878" width="23" y="122.476219" x="6.780822" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      </g>
+      <g id="window-3">
+       <rect height="23.268293" width="16.941177" y="98.890853" x="72.193796" fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+       <polygon points="72.54673671722412,99.25670433044434 88.78203201293945,99.25670433044434 72.54673671722412,121.79329490661621 " fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.086593" id="Rectangle"/>
+       <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m72.546738,113.598167l15.897057,0"/>
+       <rect height="1.365854" width="21.647059" y="96.525" x="69.840854" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+       <rect height="2.04878" width="23" y="122.476219" x="69.164384" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      </g>
+     </g>
+     <g fill="#82A18E" transform="translate(47.804795, 170.100000) scale(-1, 1) translate(-47.804795, -170.100000) translate(14.917808, 138.375000)" fill-rule="evenodd" id="bricks">
+      <rect height="2.7" width="6.10274" y="0" x="0" id="Rectangle"/>
+      <rect height="2.7" width="6.10274" y="0" x="52.890409" id="Rectangle"/>
+      <rect height="2.7" width="6.10274" y="3.375" x="56.280821" id="Rectangle"/>
+      <rect height="2.7" width="6.10274" y="60.75" x="44.753424" id="Rectangle"/>
+      <rect height="2.7" width="6.10274" y="0" x="59.671233" id="Rectangle"/>
+     </g>
+     <polygon points="1.35616438 216 97.6438356 216 97.6438356 242.325 1.35616438 242.325" fill-rule="evenodd" fill="#82A18E" id="wall-down"/>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m9.810232,191.446167l0,21.931091l16.941179,0l0,-21.931091c-3.041969,-1.502899 -5.86508,-2.247589 -8.470589,-2.247589c-2.605511,0 -5.428621,0.74469 -8.470591,2.247589z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m10.163172,191.419098c2.89916,-1.664246 5.60505,-2.496368 8.117651,-2.496368c2.5126,0 5.218491,0.832123 8.117649,2.496368l-16.2353,22.321808l0,-22.321808z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m10.163172,205.149994l15.897058,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m9.994061,199.104538l16.74264,0"/>
+      <rect height="1.909091" width="23" y="213.740903" x="6.780822" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m18.280823,189.240906l0.08456,24.5"/>
+     </g>
+     <g id="window-4">
+      <path fill-rule="evenodd" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle" d="m72.193794,192.12117l0,21.931091l16.941177,0l0,-21.931091c-3.041969,-1.502899 -5.865082,-2.247589 -8.470589,-2.247589c-2.605507,0 -5.428619,0.74469 -8.470589,2.247589z"/>
+      <path fill-rule="evenodd" fill="#FFFFFF" fill-opacity="0.106862" id="Rectangle" d="m72.54673,192.094101c2.899162,-1.664246 5.605049,-2.496368 8.117653,-2.496368c2.512604,0 5.218491,0.832123 8.117645,2.496368l-16.235298,22.321808l0,-22.321808z"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m72.54673,205.824997l15.897064,0"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-2" d="m72.377625,199.779541l16.742638,0"/>
+      <rect height="1.909091" width="23" y="214.415906" x="69.164383" fill-rule="evenodd" fill="#FFFFFF" id="Rectangle"/>
+      <path stroke-linecap="square" stroke="#FFFFFF" id="Line-3" d="m80.664383,189.915909l0.084564,24.5"/>
+     </g>
+     <g fill-rule="evenodd" id="door">
+      <rect height="53" width="21" y="189.324997" x="38.972603" fill="#D8D8D8" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+      <rect height="25.802469" width="16.235294" y="190.362034" x="41.354956" fill="#4F5666" id="Rectangle"/>
+      <polygon points="41.35495567321777,190.36203408241272 57.59025001525879,190.36203408241272 41.35495567321777,216.16450309753418 " fill="#FFFFFF" fill-opacity="0.091674" id="Rectangle"/>
+      <rect height="23.08642" width="16.235294" y="219.559565" x="41.354956" fill="#FFFFFF" id="Rectangle"/>
+     </g>
+     <rect height="2.7" width="6.10274" y="111.375" x="62.383556" fill-rule="evenodd" fill="#82A18E" id="Rectangle"/>
+     <rect height="2.7" width="6.10274" y="94.5" x="31.869866" fill-rule="evenodd" fill="#82A18E" id="Rectangle"/>
+     <rect height="2.7" width="6.10274" y="91.125" x="33.904108" fill-rule="evenodd" fill="#82A18E" id="Rectangle"/>
+     <g fill-rule="evenodd" id="floor">
+      <polygon points="1.3561639785766602,71.5465202331543 49.500000953674316,55.34999942779541 97.64383792877197,71.5465202331543 97.64383792877197,84.375 1.3561639785766602,84.375 " fill="#9CB898" id="Rectangle"/>
+      <polygon points="1.3561639785766602,67.77762603759766 49.500000953674316,51.29999923706056 97.64383792877197,67.77762603759766 97.64383792877197,71.54999923706055 49.500000953674316,55.82521438598633 1.3561639785766602,71.54999923706055 " fill="#82A18E" id="Rectangle"/>
+      <polygon points="1.3561639785766602,83.70000076293945 97.64383792877197,83.70000076293945 97.64383792877197,87.07500076293945 1.3561639785766602,87.07500076293945 " fill="#82A18E" id="Rectangle"/>
+     </g>
+     <rect height="2.7" width="6.10274" y="73.575" x="68.486301" fill-rule="evenodd" fill="#82A18E" id="Rectangle"/>
+     <rect height="2.7" width="6.10274" y="73.575" x="75.267123" fill-rule="evenodd" fill="#82A18E" id="Rectangle"/>
+     <rect height="2.7" width="6.10274" y="70.2" x="70.520548" fill-rule="evenodd" fill="#82A18E" id="Rectangle"/>
+     <g fill-rule="evenodd" id="tiny-window">
+      <rect height="19" width="14" y="61.075001" x="42.363014" fill="#4F5666" stroke-width="2" stroke="#FFFFFF" id="Rectangle"/>
+      <polygon points="43.363014221191406,61.755000710487366 55.363014221191406,61.755000710487366 43.363014221191406,79.39500045776367 " fill="#FFFFFF" fill-opacity="0.130054" id="Rectangle"/>
+     </g>
+    </g>
+   </g>
+   <g id="bushes">
+    <path fill="#82C376" id="Combined-Shape" d="m119.656342,389.016907c-3.658226,-8.355774 -12.035164,-14.197754 -21.784157,-14.197754c-11.967659,0 -21.867683,8.803558 -23.509117,20.253906c-7.199753,0.28833 -12.94809,6.215149 -12.94809,13.484283c0,7.453247 6.043167,13.49527 13.497787,13.49527c0.002007,0 0.004013,0 0.006012,0c0.001198,0 0.002419,0 0.003624,0c2.75,0 40.437607,0 44.967819,0c0.965645,0 1.798485,-0.057312 2.51284,-0.168701c10.223618,-0.899872 17.97403,-5.435486 17.97403,-14.473663c0,-9.831787 -9.171249,-17.864594 -20.720749,-18.393341z"/>
+    <path fill="#74B863" id="Combined-Shape" d="m19.99365,395.751007c3.61693,-6.380524 11.564419,-10.810394 20.78702,-10.810394c11.360199,0 20.785709,6.721375 22.566021,15.530487c6.81181,0.256165 12.240971,4.986908 12.240971,10.785309c0,5.879181 -5.581535,10.660767 -12.526543,10.793396c-0.0592,0.001862 -0.119408,0.002808 -0.180649,0.002808c-2.648151,0 -38.93992,0 -43.302351,0c-0.935709,0 -1.741919,-0.045593 -2.43268,-0.134216c-9.752239,-0.716034 -17.145439,-4.326019 -17.145439,-11.519897c0,-7.879517 8.86956,-14.307251 19.99365,-14.647491z"/>
+   </g>
+   <g id="lamps">
+    <g id="lamp">
+     <g id="svg_12">
+      <rect height="49.604396" width="4.061538" y="374.044734" x="553.405502" fill="#545665" id="Rectangle"/>
+      <polygon points="549.3439683914185,363.98980712890625 561.5285997390747,363.98980712890625 558.820897102356,374.04473876953125 552.728611946106,374.04473876953125 " fill="#D8D8D8" id="Rectangle"/>
+      <ellipse ry="1.340659" rx="7.446154" cy="363.989789" cx="555.436271" fill="#545665" id="Oval"/>
+     </g>
+    </g>
+    <g id="lamp">
+     <g id="svg_13">
+      <rect height="49.604396" width="4.061538" y="374.36997" x="162.240737" fill="#545665" id="Rectangle"/>
+      <polygon points="158.17920398712158,364.3150329589844 170.36382007598877,364.3150329589844 167.65611743927002,374.3699645996094 161.56381702423096,374.3699645996094 " fill="#D8D8D8" id="Rectangle"/>
+      <ellipse ry="1.340659" rx="7.446154" cy="364.315025" cx="164.271507" fill="#545665" id="Oval"/>
+     </g>
+    </g>
+    <g id="lamp">
+     <g id="svg_14">
+      <rect height="49.604396" width="4.061538" y="373.719498" x="366.057479" fill="#545665" id="Rectangle"/>
+      <polygon points="361.99594593048096,363.66455078125 374.1805772781372,363.66455078125 371.47287464141846,373.719482421875 365.38055896759033,373.719482421875 " fill="#D8D8D8" id="Rectangle"/>
+      <ellipse ry="1.340659" rx="7.446154" cy="363.664553" cx="368.088248" fill="#545665" id="Oval"/>
+     </g>
+    </g>
+   </g>
+   <g stroke="#EAEAEA" fill="#FFFFFF" id="Cloud">
+    <path id="Combined-Shape" d="m147.819702,116.865128c3.612518,-6.412819 11.550339,-10.865128 20.761719,-10.865128c11.346375,0 20.760422,6.755402 22.538574,15.609131c6.670532,0.252426 12.01358,4.828018 12.21991,10.499451c2.455292,0.361145 4.219574,2.531799 9.785156,4.464813c1.017792,0.3535 7.408875,1.714233 8.299683,1.947876c8.044586,2.109985 13.561371,4.451355 12.005219,4.778671c-3.288574,0.691696 -19.640259,0 -26.713531,0c-3.84549,0 -10.325745,0.242477 -15.439346,-0.017715c-0.14679,0.00705 -0.294235,0.012024 -0.442307,0.014877c-0.059143,0.001877 -0.119263,0.002838 -0.18045,0.002838c-2.644913,0 -38.892532,0 -43.249664,0c-0.610931,0 -1.16658,-0.019577 -1.670883,-0.058029c-9.576004,0.037201 -43.478027,0.368744 -46.59211,-0.247467c-2.802193,-0.554504 22.186638,-3.703461 28.445229,-6.601456c0.492294,-0.227951 0.889526,-0.460297 1.20787,-0.693344c-0.613724,-1.21402 -0.944412,-2.582794 -0.944412,-4.112854c0,-7.919403 8.85878,-14.3797 19.969345,-14.721664z"/>
+   </g>
+  </g>
+  <g transform="translate(74.5753, 353.576) scale(-1, 1) translate(-74.5753, -353.576) translate(47.9172, 287.449)" id="svg_19">
+   <path fill="#BCD280" id="svg_15" d="m72.5,165c23.382355,43.049377 31.176468,70.753082 23.382355,83.111115c-11.691177,18.537018 -35.073536,18.537018 -46.764706,0c-7.794117,-12.358032 0,-40.061737 23.382351,-83.111115z"/>
+   <rect height="79.851852" width="4.156863" y="217.148148" x="70.941176" fill="#65402D" id="svg_16"/>
+   <polygon points="109.466552734375,286.2661361694336 113.34273529052734,285.8499984741211 111.57421875,300.89473724365234 107.69802856445312,301.3108596801758 " transform="rotate(34, 78.2602, 229.29) translate(-32.2602, -64.2902)" fill="#65402D" id="svg_17"/>
+   <polygon points="-57.261131286621094,319.16371154785156 -61.13731384277344,318.7475891113281 -59.368797302246094,333.7923278808594 -55.49261474609375,334.2084503173828 " transform="rotate(34, 113.868, 411.401)" fill="#65402D" id="svg_18"/>
+  </g>
+  <g id="svg_24">
+   <path fill="#BCD280" id="svg_20" d="m67.11013,481.464233c19.411766,32.287048 25.882347,53.064819 19.411766,62.333313c-9.705887,13.902771 -29.117645,13.902771 -38.823524,0c-6.470592,-9.268494 0,-30.046265 19.411758,-62.333313z"/>
+   <rect height="59.888889" width="3.45098" y="520.575344" x="65.816013" fill="#65402D" id="svg_21"/>
+   <polygon points="98.0976734161377,572.269603729248 101.23391151428223,571.8029899597168 99.25076484680176,583.5295524597168 96.11452674865723,583.9961051940918 " transform="rotate(34, 71.8922, 529.682) translate(-26.782, -48.2177)" fill="#65402D" id="svg_22"/>
+   <polygon points="-67.32535552978516,559.9605407714844 -70.46159362792969,559.4939270019531 -68.47844696044922,571.220458984375 -65.34220886230469,571.6870727539062 " transform="rotate(34, 17.2647, 707.515)" fill="#65402D" id="svg_23"/>
+  </g>
+ </g>
+</svg>
