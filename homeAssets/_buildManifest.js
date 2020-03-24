@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a,b){return {"/bases-locales":[a],"/bases-locales/publication":[b],"/bases-locales/validator":[b],"/explore/commune":[a]}}("static\u002Fchunks\u002F4a3ea9cd.49f0ff14db682acdd7f8.js","static\u002Fchunks\u002F29107295.413b46d64a0dd331eeba.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
