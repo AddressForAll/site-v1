@@ -31,7 +31,8 @@ body {
 }
 
 .main {
-	min-height: 100vh;
+	min-height: 700px;
+	height: 100vh;
 	background: url('../img/city-background.svg') bottom center no-repeat;
 	background-color: #f8f8f8;
 	background-size: cover;
@@ -63,4 +64,40 @@ body {
 		align-items: center;
 		text-align: center;
 	}
+}
+
+.section-cards {
+	height: 400px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-size: 20px;
+
+	article {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		div {
+			padding: 15px;
+			border: 2px solid black;
+			border-radius: 50%;
+		}
+
+		span {
+			padding: 10px 0;
+		}
+	}
+}
+
+.newsletter {
+	background-color: $defaultgrey;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	font-size: 1.3em;
+	font-style: italic;
 }
