@@ -17,7 +17,11 @@ button.default-blue:hover {
   color: #fff;
 }
 
-.main {
+#main {
+  padding-top: 100px;
+}
+
+.main-figure {
   padding-top: 100px;
   min-height: 700px;
   height: 100vh;
@@ -29,7 +33,7 @@ button.default-blue:hover {
 
 .title {
   display: block;
-  padding-top: 10vh;
+  padding: 10vh 1vw 0 1vw;
   font-family: Evolventa, Trebuchet MS, sans-serif;
   font-size: 2.5em;
   text-align: center;
@@ -48,7 +52,7 @@ button.default-blue:hover {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: #1c1c1c;
   color: #fff;
-  padding: 70px 10px;
+  padding: 70px 5px;
 }
 
 .section-dark p {
@@ -83,93 +87,34 @@ button.default-blue:hover {
   border: 0;
 }
 
-.section-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  font-size: 20px;
-}
-
-.section-cards article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-cards article div {
-  padding: 15px;
-  border: 2px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.section-cards article span {
-  padding: 10px 0;
-}
-
-.licenca {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #b4e1fa;
-  font-size: 18px;
-}
-
-.licenca span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100px;
-}
-
-.licenca span a {
-  margin-left: 5px;
-  display: contents;
-}
-
-.licenca .logo-licenca {
-  width: 100px;
-  margin-left: 15px;
-}
-
-#flip-cards {
-  margin-bottom: 50px;
+#menu-cards {
+  margin: 50px 0 50px 0;
 }
 
 .flip-cards {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .flip {
   position: relative;
   cursor: pointer;
+  display: inline-table;
+  margin-right: 2px;
+  margin-bottom: 2em;
+  width: 150px;
 }
 
 .flip > .front,
@@ -183,6 +128,21 @@ button.default-blue:hover {
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
+  color: white;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 220px;
+  padding: 1em 2em;
+  background: #313131;
+  border-radius: 10px;
+}
+
+.flip > .front p,
+.flip > .back p {
+  font-size: 0.9125rem;
+  line-height: 160%;
+  color: #fff;
 }
 
 .flip > .front {
@@ -190,13 +150,32 @@ button.default-blue:hover {
           transform: rotateY(0deg);
 }
 
+.flip > .front .icon {
+  cursor: pointer;
+  padding: 15px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flip > .front .text-card {
+  text-align: center;
+}
+
 .flip > .back {
   position: absolute;
   opacity: 0;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 100%;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
@@ -227,44 +206,6 @@ button.default-blue:hover {
           transform: rotateX(0deg);
 }
 
-.flip {
-  position: relative;
-  display: inline-block;
-  margin-right: 2px;
-  margin-bottom: 1em;
-  width: 220px;
-  margin: auto;
-}
-
-.flip > .front,
-.flip > .back {
-  display: block;
-  color: white;
-  width: inherit;
-  background-size: cover !important;
-  background-position: center !important;
-  height: 220px;
-  padding: 1em 2em;
-  background: #313131;
-  border-radius: 10px;
-}
-
-.flip > .front p,
-.flip > .back p {
-  font-size: 0.9125rem;
-  line-height: 160%;
-  color: #999;
-}
-
-.text-shadow {
-  position: absolute;
-  bottom: 0;
-  color: black;
-  right: 10px;
-  font-weight: 600;
-  font-size: 30px;
-}
-
 .newsletter {
   background-color: #ebeff3;
   height: 350px;
@@ -287,10 +228,25 @@ button.default-blue:hover {
 }
 
 .newsletter .newsletter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.newsletter .newsletter-container span {
+  text-align: center;
+}
+
+.newsletter .newsletter-container .newsletter-form-container {
   margin-top: 10px;
 }
 
-.newsletter-form {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form {
   background: #fff;
   border: #b7b7b7 solid 1px;
   border-radius: 3px;
@@ -302,7 +258,7 @@ button.default-blue:hover {
   margin: auto;
 }
 
-.newsletter-form input[type='email'] {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form input[type='email'] {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -315,11 +271,11 @@ button.default-blue:hover {
   height: 30px;
 }
 
-.newsletter-form input[type='email']:focus {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form input[type='email']:focus {
   outline: none;
 }
 
-.newsletter-form button[type='submit'] {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form button[type='submit'] {
   background: -webkit-gradient(linear, left top, left bottom, from(#237cd4), to(#1e6ab5));
   background: linear-gradient(#237cd4, #1e6ab5);
   color: rgba(255, 255, 255, 0);
@@ -338,12 +294,12 @@ button.default-blue:hover {
           user-select: none;
 }
 
-.newsletter-form button[type='submit'] svg {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form button[type='submit'] svg {
   color: white;
   font-size: 25px;
 }
 
-.newsletter-form button[type='submit']:hover, .newsletter-form button[type='submit']:focus {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form button[type='submit']:hover, .newsletter .newsletter-container .newsletter-form-container .newsletter-form button[type='submit']:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#3388dd), to(#2174c7));
   background: linear-gradient(#3388dd, #2174c7);
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -351,19 +307,55 @@ button.default-blue:hover {
   cursor: pointer;
 }
 
-.newsletter-form ::-webkit-input-placeholder {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form ::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-.newsletter-form :-ms-input-placeholder {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form :-ms-input-placeholder {
   font-weight: 400;
 }
 
-.newsletter-form ::-ms-input-placeholder {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form ::-ms-input-placeholder {
   font-weight: 400;
 }
 
-.newsletter-form ::placeholder {
+.newsletter .newsletter-container .newsletter-form-container .newsletter-form ::placeholder {
   font-weight: 400;
+}
+
+.licenca {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #b4e1fa;
+  font-size: 18px;
+  height: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+}
+
+.licenca span {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.licenca span a {
+  margin-left: 5px;
+  display: contents;
+}
+
+.licenca .logo-licenca {
+  width: 100px;
+  margin-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */
