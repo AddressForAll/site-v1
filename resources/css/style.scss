@@ -19,24 +19,8 @@ button.default-blue:hover {
 	color: #fff;
 }
 
-.navbar {
-	background-color: #f8f8f8;
-}
-
-.navbar-brand {
-	padding: 0;
-	margin: 0 0.5rem;
-	img {
-		max-height: 4rem;
-	}
-}
-
-.nav-item {
-	padding: 0 10px;
-	font-size: 18px;
-}
-
 .main {
+	padding-top: 100px;
 	min-height: 700px;
 	height: 100vh;
 	background: url('../img/city-background.svg') bottom center no-repeat;
@@ -46,6 +30,7 @@ button.default-blue:hover {
 }
 
 .title {
+	display: block;
 	padding-top: 10vh;
 	font-family: Evolventa, Trebuchet MS, sans-serif;
 	font-size: 2.5em;
@@ -63,6 +48,10 @@ button.default-blue:hover {
 	background-color: $defaultblack;
 	color: #fff;
 	padding: 70px 10px;
+
+	p {
+		margin: 0 50px 50px;
+	}
 
 	div {
 		display: flex;
@@ -111,18 +100,6 @@ button.default-blue:hover {
 	}
 }
 
-.newsletter {
-	background-color: $defaultgrey;
-	height: 350px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-weight: 800;
-	font-size: 1.3em;
-	font-style: italic;
-}
-
 .licenca {
 	display: flex;
 	align-items: center;
@@ -146,6 +123,10 @@ button.default-blue:hover {
 		width: 100px;
 		margin-left: 15px;
 	}
+}
+
+#flip-cards {
+	margin-bottom: 50px;
 }
 
 // base
@@ -207,7 +188,7 @@ button.default-blue:hover {
 	display: inline-block;
 	margin-right: 2px;
 	margin-bottom: 1em;
-	width: 300px;
+	width: 220px;
 	margin: auto;
 	> .front,
 	> .back {
@@ -235,4 +216,84 @@ button.default-blue:hover {
 	right: 10px;
 	font-weight: 600;
 	font-size: 30px;
+}
+
+.newsletter {
+	background-color: $defaultgrey;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+	font-size: 1.3em;
+	font-style: italic;
+
+	.newsletter-container {
+		margin-top: 10px;
+	}
+}
+
+.newsletter-form {
+	background: #fff;
+	border: #b7b7b7 solid 1px;
+	border-radius: 3px;
+	box-shadow: 0 0 3px #ccc;
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	max-width: 500px;
+	margin: auto;
+
+	input[type='email'] {
+		border: none;
+		box-shadow: none;
+		font-weight: 600;
+		font-size: 14px;
+		width: 80%;
+		padding: 0.5em;
+		margin: 0;
+		overflow: hidden;
+		height: 30px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	button[type='submit'] {
+		background: linear-gradient(
+			lighten($highlight_color, 10%),
+			lighten($highlight_color, 3%)
+		);
+		color: rgba(255, 255, 255, 0);
+		border: 1px solid $highlight-color;
+		width: 10%;
+		min-width: 56px;
+		position: absolute;
+		top: -1px;
+		right: -1px;
+		bottom: -1px;
+		border-radius: 0 3px 3px 0;
+		margin: 0;
+		user-select: none;
+
+		svg {
+			color: white;
+			font-size: 25px;
+		}
+
+		&:hover,
+		&:focus {
+			background: linear-gradient(
+				lighten($highlight_color, 15%),
+				lighten($highlight_color, 7%)
+			);
+			box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+		}
+	}
+
+	::placeholder {
+		font-weight: 400;
+	}
 }

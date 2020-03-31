@@ -17,25 +17,8 @@ button.default-blue:hover {
   color: #fff;
 }
 
-.navbar {
-  background-color: #f8f8f8;
-}
-
-.navbar-brand {
-  padding: 0;
-  margin: 0 0.5rem;
-}
-
-.navbar-brand img {
-  max-height: 4rem;
-}
-
-.nav-item {
-  padding: 0 10px;
-  font-size: 18px;
-}
-
 .main {
+  padding-top: 100px;
   min-height: 700px;
   height: 100vh;
   background: url("../img/city-background.svg") bottom center no-repeat;
@@ -45,6 +28,7 @@ button.default-blue:hover {
 }
 
 .title {
+  display: block;
   padding-top: 10vh;
   font-family: Evolventa, Trebuchet MS, sans-serif;
   font-size: 2.5em;
@@ -64,6 +48,10 @@ button.default-blue:hover {
   background-color: #1c1c1c;
   color: #fff;
   padding: 70px 10px;
+}
+
+.section-dark p {
+  margin: 0 50px 50px;
 }
 
 .section-dark div {
@@ -129,27 +117,6 @@ button.default-blue:hover {
   padding: 10px 0;
 }
 
-.newsletter {
-  background-color: #ebeff3;
-  height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 800;
-  font-size: 1.3em;
-  font-style: italic;
-}
-
 .licenca {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +152,10 @@ button.default-blue:hover {
 .licenca .logo-licenca {
   width: 100px;
   margin-left: 15px;
+}
+
+#flip-cards {
+  margin-bottom: 50px;
 }
 
 .flip-cards {
@@ -260,7 +231,7 @@ button.default-blue:hover {
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
-  width: 300px;
+  width: 220px;
   margin: auto;
 }
 
@@ -291,5 +262,107 @@ button.default-blue:hover {
   right: 10px;
   font-weight: 600;
   font-size: 30px;
+}
+
+.newsletter {
+  background-color: #ebeff3;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.newsletter .newsletter-container {
+  margin-top: 10px;
+}
+
+.newsletter-form {
+  background: #fff;
+  border: #b7b7b7 solid 1px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #ccc;
+          box-shadow: 0 0 3px #ccc;
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 500px;
+  margin: auto;
+}
+
+.newsletter-form input[type='email'] {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 600;
+  font-size: 14px;
+  width: 80%;
+  padding: 0.5em;
+  margin: 0;
+  overflow: hidden;
+  height: 30px;
+}
+
+.newsletter-form input[type='email']:focus {
+  outline: none;
+}
+
+.newsletter-form button[type='submit'] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#237cd4), to(#1e6ab5));
+  background: linear-gradient(#237cd4, #1e6ab5);
+  color: rgba(255, 255, 255, 0);
+  border: 1px solid #1c62a8;
+  width: 10%;
+  min-width: 56px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 0 3px 3px 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.newsletter-form button[type='submit'] svg {
+  color: white;
+  font-size: 25px;
+}
+
+.newsletter-form button[type='submit']:hover, .newsletter-form button[type='submit']:focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3388dd), to(#2174c7));
+  background: linear-gradient(#3388dd, #2174c7);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.newsletter-form ::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+.newsletter-form :-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.newsletter-form ::-ms-input-placeholder {
+  font-weight: 400;
+}
+
+.newsletter-form ::placeholder {
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
