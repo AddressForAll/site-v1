@@ -25,7 +25,8 @@ button.default-blue:hover {
   padding-top: 100px;
   min-height: 700px;
   height: 100vh;
-  background: url("../img/city-background.svg") bottom center no-repeat;
+  background: url("../img/BANNER_SITE-01.svg") bottom center no-repeat;
+   /* OLD url("../img/city-background.svg") bottom center no-repeat; */
   background-color: #f8f8f8;
   background-size: cover;
   margin-bottom: -0.1em;
@@ -357,5 +358,6 @@ button.default-blue:hover {
 .licenca .logo-licenca {
   width: 100px;
   margin-left: 15px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */
