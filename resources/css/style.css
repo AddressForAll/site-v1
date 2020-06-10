@@ -17,16 +17,11 @@ button.default-blue:hover {
   color: #fff;
 }
 
-#main {
-  padding-top: 100px;
-}
-
 .main-figure {
   padding-top: 100px;
   min-height: 700px;
   height: 100vh;
-  background: url("../img/BANNER_SITE-01.svg") bottom center no-repeat;
-   /* OLD url("../img/city-background.svg") bottom center no-repeat; */
+  background: url("../img/city-background.svg") bottom center no-repeat;
   background-color: #f8f8f8;
   background-size: cover;
   margin-bottom: -0.1em;
@@ -209,7 +204,7 @@ button.default-blue:hover {
 
 .newsletter {
   background-color: #ebeff3;
-  height: 350px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,6 +353,144 @@ button.default-blue:hover {
 .licenca .logo-licenca {
   width: 100px;
   margin-left: 15px;
-  vertical-align: middle;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#faq .container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+#faq .accordion .accordion-item {
+  border-bottom: 1px solid #10549f;
+}
+
+#faq .accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #10549f;
+}
+
+#faq .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #1c1c1c;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+#faq .accordion button:hover, #faq .accordion button:focus {
+  cursor: pointer;
+  color: #10549f;
+}
+
+#faq .accordion button:hover::after, #faq .accordion button:focus::after {
+  cursor: pointer;
+  color: #10549f;
+  border: 1px solid #10549f;
+}
+
+#faq .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+#faq .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+#faq .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+#faq .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+#faq .accordion button[aria-expanded='true'] {
+  color: #10549f;
+}
+
+#faq .accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+
+#faq .accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+#faq .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 200ms linear, max-height 200ms linear;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+#faq .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+#dados .buttons-dados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dados .buttons-dados button {
+  border: none;
+  background-color: #10549f;
+  border-radius: 35px;
+  padding: 10px 20px;
+  color: #ebeff3;
+  margin: 40px;
+}
+
+#dados .buttons-dados button:hover {
+  background-color: #177ae6;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

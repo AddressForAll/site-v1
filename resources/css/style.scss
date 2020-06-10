@@ -19,9 +19,6 @@ button.default-blue:hover {
 	color: #fff;
 }
 
-#main {
-	padding-top: 100px;
-}
 .main-figure {
 	padding-top: 100px;
 	min-height: 700px;
@@ -172,7 +169,7 @@ button.default-blue:hover {
 
 .newsletter {
 	background-color: $defaultgrey;
-	height: 350px;
+	height: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -284,5 +281,130 @@ button.default-blue:hover {
 	.logo-licenca {
 		width: 100px;
 		margin-left: 15px;
+	}
+}
+
+.main {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#faq {
+	.container {
+		margin: 0 auto;
+		padding: 4rem;
+		width: 48rem;
+	}
+
+	.accordion {
+		.accordion-item {
+			border-bottom: 1px solid $defaultblue;
+			button[aria-expanded='true'] {
+				border-bottom: 1px solid $defaultblue;
+			}
+		}
+		button {
+			position: relative;
+			display: block;
+			text-align: left;
+			width: 100%;
+			padding: 1em 0;
+			color: $defaultblack;
+			font-size: 1.15rem;
+			font-weight: 400;
+			border: none;
+			background: none;
+			outline: none;
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				color: $defaultblue;
+				&::after {
+					cursor: pointer;
+					color: $defaultblue;
+					border: 1px solid $defaultblue;
+				}
+			}
+			.accordion-title {
+				padding: 1em 1.5em 1em 0;
+			}
+			.icon {
+				display: inline-block;
+				position: absolute;
+				top: 18px;
+				right: 0;
+				width: 22px;
+				height: 22px;
+				border: 1px solid;
+				border-radius: 22px;
+				&::before {
+					display: block;
+					position: absolute;
+					content: '';
+					top: 9px;
+					left: 5px;
+					width: 10px;
+					height: 2px;
+					background: currentColor;
+				}
+				&::after {
+					display: block;
+					position: absolute;
+					content: '';
+					top: 5px;
+					left: 9px;
+					width: 2px;
+					height: 10px;
+					background: currentColor;
+				}
+			}
+		}
+		button[aria-expanded='true'] {
+			color: $defaultblue;
+			.icon {
+				&::after {
+					width: 0;
+				}
+			}
+			+ .accordion-content {
+				opacity: 1;
+				max-height: max-content;
+				transition: all 200ms linear;
+				will-change: opacity, max-height;
+			}
+		}
+		.accordion-content {
+			opacity: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: opacity 200ms linear, max-height 200ms linear;
+			will-change: opacity, max-height;
+			p {
+				font-size: 1rem;
+				font-weight: 300;
+				margin: 2em 0;
+			}
+		}
+	}
+}
+
+#dados {
+	.buttons-dados {
+		display: flex;
+		justify-content: center;
+		button {
+			border: none;
+			background-color: $defaultblue;
+			border-radius: 35px;
+			padding: 10px 20px;
+			color: $defaultgrey;
+			margin: 40px;
+			&:hover {
+				background-color: $bluehover;
+				cursor: pointer;
+			}
+		}
 	}
 }
