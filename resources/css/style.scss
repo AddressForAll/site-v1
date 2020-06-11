@@ -19,14 +19,11 @@ button.default-blue:hover {
 	color: #fff;
 }
 
-#main {
-	padding-top: 100px;
-}
 .main-figure {
 	padding-top: 100px;
 	min-height: 700px;
 	height: 100vh;
-	background: url('../img/city-background.svg') bottom center no-repeat;
+	background: url('../img/BANNER_SITE-01.svg') bottom center no-repeat;
 	background-color: #f8f8f8;
 	background-size: cover;
 	margin-bottom: -0.1em;
@@ -34,12 +31,11 @@ button.default-blue:hover {
 
 .title {
 	display: block;
-	padding: 10vh 1vw 0 1vw;
+	padding: 2rem 0 0;
 	font-family: Evolventa, Trebuchet MS, sans-serif;
 	font-size: 2.5em;
 	text-align: center;
 	line-height: normal;
-	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
 	span {
 		padding: 10px;
@@ -112,7 +108,7 @@ button.default-blue:hover {
 		background-position: center !important;
 		height: 220px;
 		padding: 1em 2em;
-		background: #313131;
+		background-color: #313131;
 		border-radius: 10px;
 
 		p {
@@ -172,7 +168,7 @@ button.default-blue:hover {
 
 .newsletter {
 	background-color: $defaultgrey;
-	height: 350px;
+	height: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -284,5 +280,416 @@ button.default-blue:hover {
 	.logo-licenca {
 		width: 100px;
 		margin-left: 15px;
+	}
+}
+
+.main {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	a {
+		color: $defaultblue;
+		text-decoration: none;
+		font-weight: normal;
+
+		&:hover {
+			color: $bluehover;
+			text-decoration: underline;
+		}
+	}
+}
+
+#faq {
+	.container {
+		margin: 0 auto;
+		padding: 4rem;
+		width: 48rem;
+	}
+
+	.accordion {
+		.accordion-item {
+			border-bottom: 1px solid $defaultblue;
+			button[aria-expanded='true'] {
+				border-bottom: 1px solid $defaultblue;
+			}
+		}
+		button {
+			position: relative;
+			display: block;
+			text-align: left;
+			width: 100%;
+			padding: 1em 0;
+			color: $defaultblack;
+			font-size: 1.15rem;
+			font-weight: 400;
+			border: none;
+			background: none;
+			outline: none;
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				color: $defaultblue;
+				&::after {
+					cursor: pointer;
+					color: $defaultblue;
+					border: 1px solid $defaultblue;
+				}
+			}
+			.accordion-title {
+				padding: 1em 1.5em 1em 0;
+			}
+			.icon {
+				display: inline-block;
+				position: absolute;
+				top: 18px;
+				right: 0;
+				width: 22px;
+				height: 22px;
+				border: 1px solid;
+				border-radius: 22px;
+				&::before {
+					display: block;
+					position: absolute;
+					content: '';
+					top: 9px;
+					left: 6px;
+					width: 10px;
+					height: 2px;
+					background-color: currentColor;
+				}
+				&::after {
+					display: block;
+					position: absolute;
+					content: '';
+					top: 5px;
+					left: 10px;
+					width: 2px;
+					height: 10px;
+					background-color: currentColor;
+				}
+			}
+		}
+		button[aria-expanded='true'] {
+			color: $defaultblue;
+			.icon {
+				&::after {
+					width: 0;
+				}
+			}
+			+ .accordion-content {
+				opacity: 1;
+				max-height: max-content;
+				transition: all 200ms linear;
+				will-change: opacity, max-height;
+			}
+		}
+		.accordion-content {
+			opacity: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: opacity 200ms linear, max-height 200ms linear;
+			will-change: opacity, max-height;
+			p {
+				font-size: 1rem;
+				font-weight: 300;
+				margin: 2em 0;
+			}
+		}
+	}
+}
+
+#dados {
+	.buttons-dados {
+		display: flex;
+		justify-content: center;
+		button {
+			border: none;
+			background-color: $defaultblue;
+			border-radius: 35px;
+			padding: 10px 20px;
+			color: $defaultgrey;
+			margin: 40px;
+			&:hover {
+				background-color: $bluehover;
+				cursor: pointer;
+			}
+		}
+	}
+
+
+	$border-color: rgba(black, 0.3);
+
+	.timeline-item {
+		padding: 3em 2em 2em;
+		position: relative;
+		color: rgba(black, 0.7);
+		border-left: 2px solid $border-color;
+
+		p {
+			font-size: 1rem;
+		}
+
+		&::before {
+			content: attr(step);
+			position: absolute;
+			left: 2em;
+			font-weight: bold;
+			top: 1em;
+			display: block;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 0.785rem;
+		}
+
+		&::after {
+			width: 10px;
+			height: 10px;
+			display: block;
+			top: 1em;
+			position: absolute;
+			left: -7px;
+			border-radius: 10px;
+			content: '';
+			border: 2px solid $border-color;
+			background: white;
+		}
+
+		&:last-child {
+			border-image: linear-gradient(
+					to bottom,
+					$border-color 60%,
+					rgba($border-color, 0)
+				)
+				1 100%;
+		}
+	}
+}
+
+#contribua {
+	.github {
+		display: flex;
+		justify-content: center;
+	}
+}
+#projetos {
+	/*PEN STYLES*/
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: #f1f1f1;
+		margin: 2rem;
+	}
+
+	.blog-card {
+		display: flex;
+		flex-direction: column;
+		margin: 5rem auto;
+		box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
+		margin-bottom: 1.6%;
+		background-color: $greyscale_50;
+		line-height: 1.4;
+		font-family: sans-serif;
+		border-radius: 5px;
+		overflow: hidden;
+		z-index: 0;
+		a {
+			color: inherit;
+			&:hover {
+				color: $bluehover;
+			}
+		}
+		&:hover {
+			.photo {
+				transform: scale(1.3) rotate(3deg);
+			}
+		}
+		.meta {
+			position: relative;
+			z-index: 0;
+			height: 200px;
+		}
+		.photo {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-size: cover;
+			background-position: center;
+			transition: transform 0.2s;
+		}
+
+		.description {
+			padding: 1rem 2rem;
+			background-color: $greyscale_10;
+			position: relative;
+			z-index: 1;
+			h1,
+			h2 {
+				font-family: Poppins, sans-serif;
+			}
+			h1 {
+				line-height: 1;
+				margin: 0;
+				font-size: 1.7rem;
+			}
+			h2 {
+				font-size: 1rem;
+				font-weight: 300;
+				text-transform: uppercase;
+				color: $greyscale_75;
+				margin-top: 5px;
+			}
+			.read-more {
+				text-align: right;
+				a {
+					color: $bluehover;
+					display: inline-block;
+					position: relative;
+					&:after {
+						content: '➡';
+						margin-left: -10px;
+						opacity: 0;
+						vertical-align: middle;
+						transition: margin 0.3s, opacity 0.3s;
+					}
+					&:hover:after {
+						margin-left: 5px;
+						opacity: 1;
+					}
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		p {
+			position: relative;
+			margin: 1rem 0 0;
+			&:first-of-type {
+				margin-top: 1.25rem;
+				&:before {
+					content: '';
+					position: absolute;
+					height: 5px;
+					background-color: $bluehover;
+					width: 30%;
+					top: -0.75rem;
+					border-radius: 3px;
+				}
+			}
+		}
+		&:hover {
+			.details {
+				left: 0%;
+			}
+		}
+
+		@media (min-width: 640px) {
+			flex-direction: row;
+			max-width: 700px;
+			.meta {
+				flex-basis: 40%;
+				height: auto;
+			}
+			.description {
+				flex-basis: 60%;
+				&:before {
+					transform: skewX(-3deg);
+					content: '';
+					background-color: #fff;
+					width: 30px;
+					position: absolute;
+					left: -10px;
+					top: 0;
+					bottom: 0;
+					z-index: -1;
+				}
+			}
+			&.alt {
+				flex-direction: row-reverse;
+				.description {
+					&:before {
+						left: inherit;
+						right: -10px;
+						transform: skew(3deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+#quem-somos {
+	#conselho-consultivo {
+		margin-top: 3rem;
+	}
+	.team-container {
+		display: flex;
+		justify-content: center;
+		.team {
+			width: 30%;
+		}
+	}
+}
+
+#servicos {
+	.cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.card {
+			width: 250px;
+			min-width: 250px;
+			background-color: $greyscale_10;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
+			margin: 3rem;
+			&:hover {
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+			}
+		}
+		.card-image {
+			background-color: $greyscale_25;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			padding: 20px;
+			border-radius: 10px 10px 0 0;
+			img {
+				height: 100px;
+				max-height: 100px;
+			}
+		}
+		.card-content {
+			padding: 20px;
+			.card-title {
+				font-size: 16px;
+				font-weight: 700;
+				border-bottom: 1px solid $greyscale_50;
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+
+#parceiros {
+	.parceiros {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		img {
+			max-width: 200px;
+			margin: 20px;
+		}
+		.white-image {
+			filter: grayscale(1) invert(1);
+		}
 	}
 }
