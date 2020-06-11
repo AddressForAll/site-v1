@@ -34,7 +34,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#!">Informações</a>
+							<a href="#!">Dados & API</a>
 							<ul class="nav-dropdown">
 								<li>
 									<a href="dados.php">Dados</a>
@@ -57,7 +57,7 @@
 							<a href="parceiros.php">Parceiros</a>
 						</li>
 						<li>
-							<a href="#!">Blog</a>
+							<a href="https://medium.com/@thierryjean/my-diary-supporting-openstreetmap-and-mapillary-in-brazil-a6eb913eb695" target='_blank'>Blog</a>
 						</li>
 					</ul>
 				</nav>
