@@ -2,7 +2,7 @@
 
 <!-- START CONTENT -->
 <section id="faq" class="main">
-  <h2>FAQ</h2>
+  <h1>FAQ</h1>
   <div class="accordion">
     <div class="accordion-item">
       <button id="accordion-button-1" aria-expanded="false">

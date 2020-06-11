@@ -29,7 +29,7 @@
 									<a href="quemsomos.php">Quem Somos</a>
 								</li>
 								<li>
-									<a href="#!">Projetos</a>
+									<a href="projetos.php">Projetos</a>
 								</li>
 							</ul>
 						</li>
@@ -54,7 +54,7 @@
 							<a href="contribua.php">Contribua</a>
 						</li>
 						<li>
-							<a href="#!">Parceiros</a>
+							<a href="parceiros.php">Parceiros</a>
 						</li>
 						<li>
 							<a href="#!">Blog</a>

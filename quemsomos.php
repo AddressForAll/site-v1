@@ -28,6 +28,7 @@
       </dl>
     </p>
   </div>
+  <div class='team-container'><img src='resources/img/quem_somos.png' class='team'></div>
   <div id='conselho-consultivo'>
     <h2>Conselho Consultivo</h2>
     <p>O Conselho consultivo é constituído por membros efetivos e honorários de notória competência e reputação em suas áreas, e norteia a atuação do Instituto.</p>

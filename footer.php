@@ -16,17 +16,11 @@
 
 	<!-- START LICENSE -->
 	<section class="licenca">
-		<span>
-
-			<a href="https://dadosabertos.social/c/dados-espaciais/12" title="Participe das nossas discussões!"><i class="fa fa-comments" aria-hidden="true"></i></a>
-			&nbsp;&nbsp;•&nbsp;&nbsp;
-
-			Base de endereços do Brasil com
+		<span>Base de endereços do Brasil com
 			<a href="http://opendefinition.org/od/2.1/pt-br/" target="_blank">
 				<b>Licença Aberta</b>
 				&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Open_Definition_logo.png" title="Licença Aberta" alt="Logo Licença Aberta" class="logo-licenca" /></a>
 		</span>
-
 	</section>
 	<!-- END LICENSE -->
 

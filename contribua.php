@@ -10,6 +10,7 @@
     <p>
       Se você tiver como ajudar, pode participar entrando em contato ou através do <a href='https://github.com/AddressForAll' target='_blank'>Github</a>
     </p>
+    <div class='github'><a href='https://github.com/AddressForAll' target='_blank'><img src='resources/img/GitHub.png'></a></div>
 </section>
 <!-- END CONTENT -->
 
