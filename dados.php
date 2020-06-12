@@ -17,12 +17,14 @@
           AddressForAll ao receber dados, começa por verificar a licença destes dados (procura-se dados com licença aberta (CC0) ou CCBYSA ou Odbl.
         </p>
         <p>AddressForAll pode ainda receber dados privados que poderão ser utilizados para alguns serviços providos pelo Instituto de maneira anonima.</p>
+        <div class='dados-passo passo1'><img src='resources/img/passo1.1.png'><img src='resources/img/passo1.2.png'></div>
       </div>
 
       <div class="timeline-item" step='Passo 2'>
         <h1>Integridade</h1>
         <p>AddressForAll garante a integridade destes dados, armazenando eles de maneira segura por um prazo de 30 anos
         </p>
+        <div class='dados-passo passo2'><img src='resources/img/passo2.png'></div>
       </div>
 
       <div class="timeline-item" step='Passo 3'>
@@ -30,6 +32,7 @@
         <p>
           AddressForAll trata os dados limpando e organizando-os
         </p>
+        <div class='dados-passo passo3'><img src='resources/img/passo3.1.png'><img src='resources/img/passo3.2.png'></div>
       </div>
 
       <div class="timeline-item" step='Passo 4'>
@@ -37,6 +40,7 @@
         <p>
           AddressForAll extrai da combinação dos dados um dado "otimizado" utilizado pelo AddressForAll para prover serviços otimizados através de API. Por exemplo a API de Geolocalização que retorna uma latitude / Longitude quando lhe é submetido um endereço postal.
         </p>
+        <div class='dados-passo passo4'><img src='resources/img/passo4.png'></div>
       </div>
 
     </div>

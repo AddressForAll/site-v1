@@ -482,6 +482,27 @@ button.default-blue:hover {
   margin: 2em 0;
 }
 
+#dados .timeline-item .dados-passo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dados .timeline-item .dados-passo img {
+  width: 100px;
+}
+
+#dados .timeline-item .passo1 img {
+  margin: 1rem;
+}
+
+#dados .timeline-item .passo4 img {
+  width: 300px;
+}
+
 #dados .buttons-dados {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,11 +529,12 @@ button.default-blue:hover {
 #dados .timeline-item {
   padding: 3em 2em 2em;
   position: relative;
-  color: rgba(0, 0, 0, 0.7);
-  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  color: #10549f;
+  border-left: 2px solid rgba(16, 84, 159, 0.6);
 }
 
 #dados .timeline-item p {
+  color: #1c1c1c;
   font-size: 1rem;
 }
 
@@ -521,11 +543,12 @@ button.default-blue:hover {
   position: absolute;
   left: 2em;
   font-weight: bold;
-  top: 1em;
+  top: 0.7em;
   display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 0.785rem;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 #dados .timeline-item::after {
@@ -537,14 +560,14 @@ button.default-blue:hover {
   left: -7px;
   border-radius: 10px;
   content: '';
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(16, 84, 159, 0.6);
   background: white;
 }
 
 #dados .timeline-item:last-child {
-  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
-     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: linear-gradient(to bottom, rgba(16, 84, 159, 0.6) 60%, rgba(16, 84, 159, 0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 84, 159, 0.6)), to(rgba(16, 84, 159, 0))) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(16, 84, 159, 0.6) 60%, rgba(16, 84, 159, 0)) 1 100%;
 }
 
 #contribua .github {
@@ -774,22 +797,22 @@ button.default-blue:hover {
 #servicos .cards .card {
   width: 250px;
   min-width: 250px;
-  background-color: #f0f3f4;
+  background-color: #e7e7e7;
   border-radius: 10px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 3rem;
 }
 
 #servicos .cards .card:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
 }
 
 #servicos .cards .card-image {
-  background-color: #d7e2ea;
+  background-color: #0abbd4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,6 +840,7 @@ button.default-blue:hover {
   border-bottom: 1px solid #aeb6bf;
   margin-bottom: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 #parceiros .parceiros {
