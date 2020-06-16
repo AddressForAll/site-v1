@@ -656,6 +656,27 @@ button.default-blue:hover {
 			width: 30%;
 		}
 	}
+	.team-list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.team-profile {
+			display: flex;
+			flex-direction: column;
+			margin: 3rem;
+		}
+		.team-picture {
+			position: relative;
+			width: 150px;
+			height: 150px;
+			overflow: hidden;
+			border-radius: 50%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
 }
 
 #servicos {

@@ -32,14 +32,46 @@
   <div id='conselho-consultivo'>
     <h2>Conselho Consultivo</h2>
     <p>O Conselho consultivo é constituído por membros efetivos e honorários de notória competência e reputação em suas áreas, e norteia a atuação do Instituto.</p>
-    <dl>
-      <dt>Lista de membros:</dt>
-      <dd>Thierry Jean - França/Brasil</dd>
-      <dd>Filipe Rocha - Brasil</dd>
-      <dd>Peter Krauss - Brasil</dd>
-      <dd>Leopoldo Arnaiz - Espanha</dd>
-      <dd>Ignácio Arnaiz - Espanha</dd>
-    </dl>
+    <div>
+      <h3>Lista de membros:</h3>
+      <div class='team-list'>
+        <div class='team-profile'>
+          <div class='team-picture'>
+            <img src='resources/img/equipe-thierry.jpg'>
+          </div>
+          <span>Thierry Jean - França/Brasil</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
+            <img src='resources/img/equipe-thierry2.jpg'>
+          </div>
+          <span>Thierry Jean - França/Brasil</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
+            <img src='resources/img/equipe-filipe.jpg'>
+          </div>
+          <span>Filipe Rocha - Brasil</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
+            <img src='resources/img/equipe-peter.jpg'>
+          </div>
+          <span>Peter Krauss - Brasil</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
+            <img src='resources/img/equipe-leopoldo.jpg'>
+          </div>
+          <span>Leopoldo Arnaiz - Espanha</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
+          </div>
+          <span>Ignácio Arnaiz - Espanha</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!-- END CONTENT -->

@@ -783,6 +783,41 @@ button.default-blue:hover {
   width: 30%;
 }
 
+#quem-somos .team-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#quem-somos .team-list .team-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem;
+}
+
+#quem-somos .team-list .team-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#quem-somos .team-list .team-picture img {
+  width: 100%;
+  height: auto;
+}
+
 #servicos .cards {
   display: -webkit-box;
   display: -ms-flexbox;
