@@ -43,12 +43,6 @@
         </div>
         <div class='team-profile'>
           <div class='team-picture'>
-            <img src='resources/img/equipe-thierry2.jpg'>
-          </div>
-          <span>Thierry Jean - França/Brasil</span>
-        </div>
-        <div class='team-profile'>
-          <div class='team-picture'>
             <img src='resources/img/equipe-filipe.jpg'>
           </div>
           <span>Filipe Rocha - Brasil</span>
