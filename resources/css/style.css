@@ -802,7 +802,7 @@ button.default-blue:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 4rem;
+  margin: 3rem;
 }
 
 #quem-somos .team-list .team-picture {

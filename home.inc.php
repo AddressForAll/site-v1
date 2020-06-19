@@ -1,5 +1,3 @@
-<?php include_once("header.php"); ?>
-
 <!-- START MAIN CONTAINER -->
 <section class="main-figure">
 	<div class="main-text">
@@ -87,5 +85,3 @@
 	</div>
 </section>
 <!-- END CARDS -->
-
-<?php include_once("footer.php"); ?>

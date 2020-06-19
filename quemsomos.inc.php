@@ -55,12 +55,25 @@
         </div>
         <div class='team-profile'>
           <div class='team-picture'>
+            <img src='resources/img/equipe-enio.jpg'>
+          </div>
+          <span>Ênio Alencar - Brasil</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
+            <img src='resources/img/equipe-igor.gif'>
+          </div>
+          <span>Igor Eliezer Borges - Brasil</span>
+        </div>
+        <div class='team-profile'>
+          <div class='team-picture'>
             <img src='resources/img/equipe-leopoldo.jpg'>
           </div>
           <span>Leopoldo Arnaiz - Espanha</span>
         </div>
         <div class='team-profile'>
           <div class='team-picture'>
+            <img src='resources/img/equipe-ignacio.jpg'>
           </div>
           <span>Ignácio Arnaiz - Espanha</span>
         </div>
