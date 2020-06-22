@@ -73,7 +73,7 @@ if (!$nomeDaPagina)  $nomeDaPagina = 'home';
   </header>
   <!-- END NAVBAR -->
 
-  <?php include_once("$nomeDaPagina.inc.php"); ?>
+  <?php include_once("default/$nomeDaPagina.inc.php"); ?>
 
   <!-- START NEWSLETTER -->
   <section class="newsletter">
