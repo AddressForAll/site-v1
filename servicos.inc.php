@@ -1,6 +1,3 @@
-<?php include_once("header.php"); ?>
-
-<!-- START CONTENT -->
 <section class="main" id="servicos">
   <div>
     <h1>Serviços</h1>
@@ -38,6 +35,3 @@
     </div>
 
 </section>
-<!-- END CONTENT -->
-
-<?php include_once("footer.php"); ?>

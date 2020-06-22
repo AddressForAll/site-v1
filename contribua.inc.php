@@ -1,6 +1,3 @@
-<?php include_once("header.php"); ?>
-
-<!-- START CONTENT -->
 <section class="main" id="contribua">
   <div>
     <h1>Contribua</h1>
@@ -26,6 +23,3 @@
       <input type='submit' value='Enviar' />
     </form>
 </section>
-<!-- END CONTENT -->
-
-<?php include_once("footer.php"); ?>

@@ -4,7 +4,6 @@ $nomeDaPagina = isset($_GET['uri']) ? trim($_GET['uri'], '/') : '';
 if (!$nomeDaPagina)  $nomeDaPagina = 'home';
 // if ($nomeDaPagina ~ redir) {header('Location: $base/$nomeDaPagina '); exit;}
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,6 +15,7 @@ if (!$nomeDaPagina)  $nomeDaPagina = 'home';
   <link rel="stylesheet" href="resources/css/navbar.css" />
   <link rel="stylesheet" href="resources/css/style.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha256-IFHWFEbU2/+wNycDECKgjIRSirRNIDp2acEB5fvdVRU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -102,7 +102,6 @@ if (!$nomeDaPagina)  $nomeDaPagina = 'home';
   <!-- END LICENSE -->
 
   <!-- START JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha256-IFHWFEbU2/+wNycDECKgjIRSirRNIDp2acEB5fvdVRU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="resources/js/navbar.js"></script>
 </body>
 

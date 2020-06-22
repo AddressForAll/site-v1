@@ -1,6 +1,3 @@
-<?php include_once("header.php"); ?>
-
-<!-- START CONTENT -->
 <section id="faq" class="main">
   <h1>FAQ</h1>
   <div class="accordion">
@@ -88,4 +85,3 @@
 <!-- END CONTENT -->
 
 <script type="text/javascript" src="resources/js/functions.js"></script>
-<?php include_once("footer.php"); ?>
