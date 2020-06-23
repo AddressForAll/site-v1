@@ -43,7 +43,7 @@
         <span class="accordion-title">Posso enviar dados?</span><span class="icon" aria-hidden="true"></span>
       </button>
       <div class="accordion-content">
-        <p>Sim: <a href="contribua.html">Contribua!</a></p>
+        <p>Sim: <a href="contribua">Contribua!</a></p>
       </div>
     </div>
     <div class="accordion-item">
@@ -52,7 +52,7 @@
       </button>
       <div class="accordion-content">
         <p>
-          <a href="quem-somos.html#conselho-consultivo">Conselho consultivo</a>
+          <a href="quem-somos">Conselho consultivo</a>
         </p>
       </div>
     </div>

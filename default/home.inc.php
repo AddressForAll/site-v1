@@ -31,7 +31,7 @@
 <!-- START CARDS -->
 <section id="menu-cards">
 	<div class="flip-cards section-cards">
-		<a href="dados.php">
+		<a href="dados">
 			<div class="flip flip-vertical">
 				<div class="front">
 					<div class="icon">
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="contribua.php">
+		<a href="contribua">
 			<div class="flip flip-vertical">
 				<div class="front">
 					<div class="icon">
@@ -66,7 +66,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="projetos.php">
+		<a href="projetos">
 			<div class="flip flip-vertical">
 				<div class="front">
 					<div class="icon">
