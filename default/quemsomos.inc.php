@@ -1,5 +1,7 @@
 <section id='quem-somos' class="main">
   <div>
+    <center><img src="http://addressforall.org/resources/img/address_for_all-01.png" width="420"/></center>
+
     <h1>Quem Somos</h1>
     <p>
       O Instituto AddressForAll tem suas ações guiadas pela defesa dos dados

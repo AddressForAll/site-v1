@@ -1,7 +1,31 @@
 <?php
 // CONTROLLER:
 $nomeDaPagina = isset($_GET['uri']) ? trim($_GET['uri'], '/') : '';
+$urnRegexes = [
+   'br;sp;sao.paulo:associacao;dns-addressforall.org:estatuto:2020-04-03'   => '_private/A4A-Estatuto2020-04-03.htm'
+  ,':estatuto:2020-04-03' => '_private/A4A-Estatuto2020-04-03.htm'
+  ,':estatuto:2020'       => '_private/A4A-Estatuto2020-04-03.htm'
+  ,':estatuto'            => '_private/A4A-Estatuto2020-04-03.htm'
+  ,':estatuto~html'       => '_private/A4A-Estatuto2020-04-03.htm'
+  ,'br;sp;sao.paulo:associacao;dns-addressforall.org:colecao:2020-04-03;v7' => '_private/A4A-colecao2020-04-v7.htm'
+  ,':colecao:2020-04-03;v7' => '_private/A4A-colecao2020-04-v7.htm'
+  ,':colecao:2020-04-03;v7.reg~pdf.assign' => '_private/A4A-colecao2020-04-v7_reg~assign.pdf'
+  ,'br;sp;sao.paulo:associacao;dns-addressforall.org:estatuto:2020-04-03~pdf.assign' => '_private/A4A-Estatuto2020-04-03.assign.pdf'
+  ,':estatuto:2020-04-03~pdf.assign' => '_private/A4A-Estatuto2020-04-03.assign.pdf'
+];
+
 if (!$nomeDaPagina)  $nomeDaPagina = 'home';
+elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$m[1]]) ) {
+   // $urnLex = $m[1];   print "ok URN LEX = $urnLex";
+   $f = $urnRegexes[$m[1]];
+   if (substr($f,-3)=='pdf') {
+     header('Content-Type: application/pdf');
+     //header('Content-Disposition: attachment; filename="downloaded.pdf"');
+     readfile($f); // binary
+   } else
+     include ( $f );
+   exit(0);
+}
 // if ($nomeDaPagina ~ redir) {header('Location: $base/$nomeDaPagina '); exit;}
 ?>
 <!DOCTYPE html>
