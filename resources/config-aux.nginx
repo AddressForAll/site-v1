@@ -1,0 +1,32 @@
+
+server {
+        server_name addressforall.org addressforall.com www.addressforall.org;
+        access_log /var/log/nginx/addressforall.org.access_log;
+        root /var/www/addressforall.org/;
+        index  index.php index.html index.htm;
+        location / {
+          try_files $uri $uri/  /index.php?uri=$uri;
+        }
+        location ~ \.php$ {
+          include snippets/fastcgi-php.conf;
+          fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        }
+} #end server
+
+server { # arrumar bug! https://stackoverflow.com/q/62735645/287948
+        server_name git.addressforall.org;
+        location ~ ^/?.+ {
+                rewrite
+                  ^/?licenses(/.*$|$)
+                  /ppKrauss/licenses/$1
+                  break;
+                rewrite
+                  ^/?(.*)$
+                  /AddressForAll/$1
+                  break;
+                proxy_pass http://github.com;
+        }
+        # include snippets/ssl-oficial.news.conf;
+} #end server
+
+
