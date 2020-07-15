@@ -35,10 +35,9 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Address For All | O site dos endereços brasileiros</title>
-  <link rel="shortcut icon" type="image/png" href="resources/img/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="resources/img/address_for_all-01-colorful.ico.png" />
   <link rel="stylesheet" href="resources/css/navbar.css" />
   <link rel="stylesheet" href="resources/css/style.css" />
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha256-IFHWFEbU2/+wNycDECKgjIRSirRNIDp2acEB5fvdVRU=" crossorigin="anonymous"></script>
 </head>
 
@@ -48,7 +47,7 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <a href="home" class="logo"><img src="resources/img/address_for_all-01.png" /></a>
+          <a href="home" class="logo"><img src="resources/img/address_for_all-01-colorful.png" /></a>
         </div>
         <nav>
           <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -106,8 +105,9 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
       <div class="newsletter-form-container">
         <form class="newsletter-form">
           <input type="email" placeholder="email@email.com.br" />
-          <button type="submit" value="enviar">
-            <i class="fas fa-angle-right"></i>
+          <button id="newsletter-button" type="submit" value="enviar">
+            <!-- <i class="fas fa-angle-right"></i> -->
+            <span class="newsletter-span"></span>
           </button>
         </form>
       </div>
