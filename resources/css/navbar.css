@@ -8,7 +8,7 @@
   position: absolute;
   padding-left: 20px;
   float: left;
-  line-height: 70px;
+  line-height: 100px;
   text-transform: uppercase;
   font-size: 1.4em;
 }
@@ -155,10 +155,10 @@ nav ul li ul li a {
 #nav-toggle span:after {
   bottom: -10px;
 }
-
+/*
 #nav-toggle.active span {
   background-color: transparent;
-}
+}*/
 
 #nav-toggle.active span:before, #nav-toggle.active span:after {
   top: 0;
@@ -174,3 +174,14 @@ nav ul li ul li a {
           transform: rotate(-45deg);
 }
 /*# sourceMappingURL=navbar.css.map */
+
+span.newsletter-span {
+  background: url(/resources/img/angle-right.svg) no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  align-self: center;
+  height: 15px;
+  width: 15px;
+  color: whitesmoke;
+}

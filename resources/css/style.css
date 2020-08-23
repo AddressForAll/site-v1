@@ -6,13 +6,13 @@ body {
   line-height: 1.5em;
   margin: 0;
 }
-
+/*
 .default-blue {
   background-color: #10549f;
   border-color: transparent;
   color: #fff;
 }
-
+*/
 button.default-blue:hover {
   background-color: #177ae6;
   color: #fff;
@@ -36,11 +36,11 @@ button.default-blue:hover {
   text-align: center;
   line-height: normal;
 }
-
+/*
 .title span {
   padding: 10px;
 }
-
+*/
 .section-dark {
   display: -ms-grid;
   display: grid;
@@ -314,10 +314,11 @@ button.default-blue:hover {
 .newsletter .newsletter-container .newsletter-form-container .newsletter-form ::-ms-input-placeholder {
   font-weight: 400;
 }
-
+/*
 .newsletter .newsletter-container .newsletter-form-container .newsletter-form ::placeholder {
   font-weight: 400;
 }
+*/
 
 .licenca {
   display: -webkit-box;
@@ -372,12 +373,13 @@ button.default-blue:hover {
   color: #177ae6;
   text-decoration: underline;
 }
-
+/*
 #faq .container {
   margin: 0 auto;
   padding: 4rem;
   width: 48rem;
 }
+*/
 
 #faq .accordion .accordion-item {
   border-bottom: 1px solid #10549f;
@@ -578,20 +580,21 @@ button.default-blue:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
+/*
 #projetos {
-  /*PEN STYLES*/
+  
 }
+*/
 
 #projetos * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+/*
 #projetos body {
   background-color: #f1f1f1;
   margin: 2rem;
-}
+}*/
 
 #projetos .blog-card {
   display: -webkit-box;
