@@ -52,7 +52,7 @@
       </button>
       <div class="accordion-content">
         <p>
-          <a href="quem-somos">Conselho consultivo</a>
+          <a href="quemsomos">Conselho consultivo</a>
         </p>
       </div>
     </div>
