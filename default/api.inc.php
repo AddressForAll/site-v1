@@ -1,5 +1,5 @@
-<script src="resources/frameworks/tabulator/js/tabulator.js"></script>
-<link rel="stylesheet" href="resources/frameworks/tabulator/css/tabulator.css"/>
+<script src="/resources/frameworks/tabulator/js/tabulator.js"></script>
+<link rel="stylesheet" href="/resources/frameworks/tabulator/css/tabulator.css"/>
 <style>
 </style>
 <section class="main" id="api">
@@ -7,7 +7,7 @@
         <h1>API - Resgatar dados</h1>
         <form method="POST">
             <span><strong>Dados: </strong>Cidades</span>
-            <br>    
+            <br>
             <label for="scales"><strong>Estado: </strong></label><select id="estados"></select>
             <br>
             <label for="scales"><strong>Cidade: </strong></label>
@@ -38,8 +38,8 @@
         var pagination = $('#paginar').prop('checked');
         var uf = $("#estados").children("option:selected").val();
         var city = $("#cidades").children("option:selected").val();
-        
-        var url = "http://localhost:3101/city";
+
+        var url = "http://addressforall.org/_sql/city";
         url += uf != "all" ? "?state=eq." + uf : "";
         url += city != "all" ? "&name=eq." + city : "";
 
@@ -70,7 +70,7 @@
     }
 
     $(document).ready(function(){
-        $.getJSON('http://localhost:3101/dim_state', function(data){
+        $.getJSON('http://addressforall.org/_sql/dim_state', function(data){
             var options = "<option selected value='all'>Trazer Tudo</option>";
             for (var x = 0; x < data.length; x++) {
                 options += '<option value="' + data[x]['state'] + '">' + data[x]['state'] + " -     (" + data[x]['qt_city'] + ')</option>';
@@ -80,7 +80,7 @@
 
         $('#estados').on('change', function (){
             var estado_selecionado = $("#estados").children("option:selected").val();
-            $.getJSON('http://localhost:3101/city?state=eq.'+estado_selecionado, function(data){
+            $.getJSON('http://addressforall.org/_sql/city?state=eq.'+estado_selecionado, function(data){
                 var options = "<option selected value='all'>Trazer Tudo</option>";
                 for (var x = 0; x < data.length; x++) {
                     options += '<option value="' + data[x]['name'] + '">' + data[x]['name'] + '</option>';
