@@ -69,7 +69,7 @@
     }
 
     $(document).ready(function(){
-        $.getJSON('http://localhost:3101/dim_state', function(data){
+        $.getJSON('http://addressforall.org/_sql/dim_state', function(data){
             var options = "<option selected value='all'>Trazer Tudo</option>";
             for (var x = 0; x < data.length; x++) {
                 options += '<option value="' + data[x]['state'] + '">' + data[x]['state'] + " -     (" + data[x]['qt_city'] + ')</option>';
@@ -79,7 +79,7 @@
 
         $('#estados').on('change', function (){
             var estado_selecionado = $("#estados").children("option:selected").val();
-            $.getJSON('http://localhost:3101/city?state=eq.'+estado_selecionado, function(data){
+            $.getJSON('http://addressforall.org/_sql/city?state=eq.'+estado_selecionado, function(data){
                 var options = "<option selected value='all'>Trazer Tudo</option>";
                 for (var x = 0; x < data.length; x++) {
                     options += '<option value="' + data[x]['name'] + '">' + data[x]['name'] + '</option>';
