@@ -72,7 +72,7 @@
             layout:"fitColumns",
             pagination: pagination ? "local" : "",
             paginationSize:10,
-            paginationSizeSelector:[3, 6, 8, 10],
+            paginationSizeSelector:[10, 30, 50, 100, true],
             columns:[
                 {title:"Id IBGE", field:"ibge_id"},
                 {title:"Name", field:"name"},
