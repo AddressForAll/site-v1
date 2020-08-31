@@ -21,7 +21,6 @@
                 <th>Legal Name</th>
                 <th>Id Wikidata</th>
                 <th>URL</th>
-                <th>Info</th>
             </tr>
         </thead>
     </table>
@@ -70,10 +69,19 @@
                     {"data" : "scope"},
                     {"data" : "vat_id"},
                     {"data" : "shortname"},
-                    {"data" : "legalname"},
-                    {"data" : "wikidata_id"},
-                    {"data" : "url"},
-                    {"data" : "info"}
+                    {
+                     "data" : null,
+                     "render": function(data, type, row) {
+                                        return '<a href="http://addressforall.org/api-origin?donor_id='+data["id"]+'" target_blank>' + data["legalname"] + '</a>' 
+                                    }
+                    },
+                    {
+                     "data" : null,
+                     "render": function(data, type, row) {
+                                        return '<a href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' 
+                                    }
+                    },
+                    {"data" : "url"}
                 ],
                 "columnDefs" : [
                     {   

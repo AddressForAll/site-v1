@@ -41,7 +41,6 @@
                 <th>City Name</th>
                 <th>File Name</th>
                 <th>File Size</th>
-                <th>File Version</th>
                 <th>Donor</th>
                 <th>Donor Legal Name</th>
                 <th>Pack Accepted Date</th>
@@ -75,9 +74,13 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css"/>
 
 <script>
-    function getdata(){
+    function getdata(param = null){
         var valor, atributo, url;
-        if ($('input[type=radio][name=tipo_do_filtro]:checked').val() == "estado") {
+        if (param != null){
+            valor = param;
+            atributo = "donor_id";
+        }
+        else if ($('input[type=radio][name=tipo_do_filtro]:checked').val() == "estado") {
             valor = $("#estados").children("option:selected").val();
             atributo = "city_state";
         }
@@ -104,7 +107,7 @@
                     {
                         "data" : null, 
                         "render" : function(data, type, row) {
-                                        return '<a href="http://preserv.addressforall.org/download/' + data["fhash"] + "." + data["fmeta"].ext + '" target_blank>' + data["fname"] + '</a>' 
+                                        return data["ctype"] + '&nbsp;' + '<a href="http://preserv.addressforall.org/download/' + data["fhash"] + "." + data["fmeta"].ext + '" target_blank>' + data["fhash"].substring(0, 7) + '</a>' + '&nbsp;v' + data["fversion"] 
                                     }
                         
                     },
@@ -114,7 +117,6 @@
                                         return parseFloat((data["fmeta"].size / (1024 ** 2))).toFixed(2) + "MB"
                                     }
                     },
-                    {"data" : "fversion"},
                     {
                         "data" : null,
                         "render" : function(data, type, row) {
@@ -141,6 +143,12 @@
     }
 
     $(document).ready(function(){
+
+        /* Pega parametro da url ?donor_id=43242 quando o usuário está navegando de api-donor */
+        let searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('donor_id')){
+            getdata(searchParams.get('donor_id'));
+        } 
 
         /* Controla o radio que escolhe o tipo da filtragem */
         $('input[type=radio][name=tipo_do_filtro]').change(function() {
