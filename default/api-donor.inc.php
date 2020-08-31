@@ -1,10 +1,16 @@
 <section class="main" id="api">
-    <div><h1>API - Resgatar dados</h1></div>
-    <span><strong>Dados: </strong>Donors</span>
-    <br><label><strong>Paginar Resultado: </strong></label><input type="checkbox" id="paginar" checked>
-    <br><strong><button onclick="getdata();">Consultar</button></strong>
+    <h1>API - Resgatar dados</h1>
+    <span>
+        <strong>Dados: </strong>Donors
+    </span>
+
+    <br>
+    <label><strong>Paginar Resultado: </strong></label><input type="checkbox" id="paginar" checked>
+    <br>
+    <button onclick="getdata();"><strong>Consultar</strong></button>
     <br>
     <br>
+
     <table id="tabela" class="display" style="display: none;">
         <thead>
             <tr>
@@ -22,8 +28,8 @@
     <div id="definepaginacao" style="display: none;">
         <strong>Configurar resultados por página</strong>
         <select id="paginacao">
-            <option value="10">10</option>
-            <option value="30" selected>30</option>
+            <option value="10" selected>10</option>
+            <option value="30">30</option>
             <option value="50">50</option>
             <option value="100">100</option>
             <option value="-1">Mostrar tudo</option>
@@ -45,7 +51,13 @@
 
 <script>
     function getdata(param = null){
-        $.getJSON("http://addressforall.org/_sql/donor" + ((param != null) ? "?id=eq." + param : ""), function( data ) {
+
+        url = 'http://addressforall.org/_sql/donor';
+        if (param != null) {
+            url += "?id=eq." + param;
+        }
+
+        $.getJSON(url, function( data ) {
             $('#tabela').show();
             $('#definepaginacao').show();
             $('#tabela').DataTable({
@@ -71,19 +83,24 @@
                 ],
                 "paging": $('#paginar').prop('checked'),
                 "responsive": true,
-                "pageLength" : 30
+                "pageLength" : 10
             });
 
         });
 
     }
 
+
     $(document).ready(function(){
+
+        /* Pega parametro da url ?id=43242 quando o usuário está navegando de api-origin */
         let searchParams = new URLSearchParams(window.location.search);
         if (searchParams.has('id')){
             getdata(searchParams.get('id'));
         } 
 
+
+        /* Páginação controlda */
         $('#definepaginacao').on('change', function (){
             var qtd = $("#paginacao").children("option:selected").val();
             $('#tabela').DataTable().page.len(qtd).draw();
