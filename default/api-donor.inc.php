@@ -3,7 +3,40 @@
     <span>
         <strong>Dados: </strong>Donors
     </span>
+    <style>
+    .btn {
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #1874CD;
+        padding: 7px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        transition: all 0.1s ease 0s;
+    }
 
+    .btn:hover {
+        background: #434343;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.1s ease 0s;
+    }
+
+    .btn-disabled {
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #dddddd;
+        padding: 7px;
+        border-radius: 5px;
+        display: inline-block;
+        border: none;
+        transition: all 0.1s ease 0s;
+    }
+    </style>
     <br>
     <label><strong>Paginar Resultado: </strong></label><input type="checkbox" id="paginar" checked>
     <br>
@@ -20,7 +53,7 @@
                 <th>Short Name</th>
                 <th>Legal Name</th>
                 <th>Id Wikidata</th>
-                <th>URL</th>
+                <th>Donations</th>
             </tr>
         </thead>
     </table>
@@ -33,6 +66,27 @@
             <option value="100">100</option>
             <option value="-1">Mostrar tudo</option>
         </select>
+    </div>
+
+    <br><br>
+    <div class="desenvolvedor">
+        <table>
+            <tr>
+                <th colspan="2">Annotations for Developers</th>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>: donor</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>: http://api.addressforall.org/_sql/donor2</td>
+            </tr>
+            <tr>
+                <td>doc</td>
+                <td>: <a href="https://github.com/AddressForAll/WS" style="text-decoration: none">https://github.com/AddressForAll/WS</a></td>
+            </tr>
+        </table>
     </div>
 </section>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -51,7 +105,7 @@
 <script>
     function getdata(param = null){
 
-        url = 'http://addressforall.org/_sql/donor';
+        url = 'http://addressforall.org/_sql/donor2';
         if (param != null) {
             url += "?id=eq." + param;
         }
@@ -70,25 +124,26 @@
                     {"data" : "vat_id"},
                     {"data" : "shortname"},
                     {
-                     "data" : null,
-                     "render": function(data, type, row) {
-                                        return '<a href="http://addressforall.org/api-origin?donor_id='+data["id"]+'" target_blank>' + data["legalname"] + '</a>' 
-                                    }
+                        "data" : null,
+                        "render" : function(data, type, row){
+                            return '<a href="'+data["url"]+'" target_blank>' + data["legalname"] + '</a>' 
+                        }
                     },
                     {
-                     "data" : null,
-                     "render": function(data, type, row) {
-                                        return '<a href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' 
-                                    }
+                        "data" : null,
+                        "render": function(data, type, row) {
+                            return (data["wikidata_id"]) ? '<a href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : 'null'
+                        }
                     },
-                    {"data" : "url"}
-                ],
-                "columnDefs" : [
-                    {   
-                        "targets" : [6],
-                        "render" : function(data) {return '<a href="'+data+'" target_blank>'+data+'</a>'    } 
+                    {
+                        "data" : null,
+                        "render" : function(data, type, row) {
+                            let href = (data["n_files"] > 0) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : '';
+                            let sclass = (href == '') ? "btn-disabled" : "btn";
+                            return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a></div>' 
+                        }
                     }
-                ],
+                ], /* endcolumns */
                 "paging": $('#paginar').prop('checked'),
                 "responsive": true,
                 "pageLength" : 10
@@ -97,7 +152,6 @@
         });
 
     }
-
 
     $(document).ready(function(){
 
