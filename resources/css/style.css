@@ -363,6 +363,22 @@ button.default-blue:hover {
   padding-bottom: 100px;
 }
 
+.main-api {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.main-api a {
+  color: #10549f;
+  text-decoration: none;
+  font-weight: normal;
+}
+.main-api a:hover {
+  color: #177ae6;
+  text-decoration: underline;
+}
+
 .main a {
   color: #10549f;
   text-decoration: none;

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/resources/css/api.css">
-<section class="main" id="api">
+<section class="main-api" id="api">
     <h1>API - Resgatar dados</h1>
     <span>
         <strong>Dados: </strong>Origin

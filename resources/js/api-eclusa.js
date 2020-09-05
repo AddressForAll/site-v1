@@ -2,10 +2,11 @@
 
 function getdata(param = null){
     step = $('input[type=radio][name=tipo_do_filtro]:checked').val();
+    user_type = $('input[type=radio][name=tipo_de_usuario]:checked').val();
     user = $('#usuario').val();
 
     if (user != ""){
-        url = 'http://api.addressforall.org/v1.json/eclusa/checkUserFiles-'+ step +'/'+ user +'/0';
+        url = 'http://api.addressforall.org/v1.json/eclusa/checkUserFiles-'+ step +'/'+ user +'/' + user_type;
         $.getJSON(url, function( data ) {
             $('#tabela').show();
             $('#definepaginacao').show();

@@ -1,4 +1,4 @@
-<section class="main" id="api">
+<section class="main-api" id="api">
     <h1>API - Resgatar dados</h1>
     <span>
         <strong>Dados: </strong>Eclusa
@@ -14,6 +14,13 @@
     <br>
     <label for="usuario"><strong>Usuário: </strong></label>
     <input type="text" id="usuario" name="usuario" placeholder="Insira um usuário..." autofocus>
+    <strong>Tipo: </strong>
+    <input type="radio" id="r_todos" name="tipo_de_usuario" value="" checked>
+    <label for="r_todos">Todos</label>
+    <input type="radio" id="r_invalidos" name="tipo_de_usuario" value="0">
+    <label for="r_invalidos">Inválidos</label>
+    <input type="radio" id="r_validos" name="tipo_de_usuario" value="1">
+    <label for="r_validos">Válidos</label>
     <br>
     <label><strong>Paginar Resultado: </strong></label><input type="checkbox" id="paginar" checked>
     <br>
