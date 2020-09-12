@@ -48,7 +48,7 @@
             </tr>
             <tr>
                 <td>doc</td>
-                <td>: <a href="https://github.com/AddressForAll/WS" style="text-decoration: none">https://github.com/AddressForAll/WS</a></td>
+                <td>: <a target="_blank" rel="external" href="https://github.com/AddressForAll/WS" style="text-decoration: none">https://github.com/AddressForAll/WS</a></td>
             </tr>
         </table>
     </div>

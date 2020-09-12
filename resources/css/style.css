@@ -18,6 +18,10 @@ button.default-blue:hover {
   color: #fff;
 }
 
+a[rel~="external"]{
+  color:#014420 !important;
+}
+
 .main-figure {
   padding-top: 100px;
   min-height: 700px;
