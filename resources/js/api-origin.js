@@ -45,14 +45,14 @@
                     {
                         "data" : null,
                         "render" : function(data, type, row) {
-                                        return '<div align="center" ><a class="btn" style="text-decoration: none" href="http://addressforall.org/api-donor?id='+data["donor_id"]+'" target_blank>' + data["donor_id"] + " - " + data["donor_shortname"] + '</a></div>' 
+                                        return '<div align="center" ><a href="http://addressforall.org/api-donor?id='+data["donor_id"]+'" target_blank>' + data["donor_id"] + " - " + data["donor_shortname"] + '</a></div>' 
                                     }
                     
                     },
                     {
                         "data" : null,
                         "render" : function(data, type, row) {
-                                        return '<a href="'+data["donor_url"]+'" target_blank>'+data["donor_legalname"]+'</a>' 
+                                        return '<a rel="external noopener" target="_blank" href="'+data["donor_url"]+'" target_blank>'+data["donor_legalname"]+'</a>' 
                                     }
                     
                     },

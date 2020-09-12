@@ -23,21 +23,22 @@ function getdata(param = null){
                 {
                     "data" : null,
                     "render" : function(data, type, row){
-                        return '<a href="'+data["url"]+'" target_blank>' + data["legalname"] + '</a>' 
+                        return '<a target="_blank" rel="external noopener" href="'+data["url"]+'" target_blank>' + data["legalname"] + '</a>' 
                     }
                 },
                 {
                     "data" : null,
                     "render": function(data, type, row) {
-                        return (data["wikidata_id"]) ? '<a href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : 'null'
+                        return (data["wikidata_id"]) ? '<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : 'null'
                     }
                 },
                 {
                     "data" : null,
                     "render" : function(data, type, row) {
-                        let href = (data["n_files"] > 0) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : '';
-                        let sclass = (href == '') ? "btn-disabled" : "btn";
-                        return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a></div>' 
+                        let href = (data["n_files"] > 0) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : 'style="text-decoration: none"';
+                        //let sclass = (href == '') ? "btn-disabled" : "btn";
+                        return  '<a '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a>'
+                        //return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+data/["n_files"]+'&nbsp;'+'</a></div>' 
                     }
                 }
             ], /* endcolumns */
