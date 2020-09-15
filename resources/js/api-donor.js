@@ -35,10 +35,10 @@ function getdata(param = null){
                 {
                     "data" : null,
                     "render" : function(data, type, row) {
-                        let href = (data["n_files"] > 0) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : 'style="text-decoration: none"';
-                        //let sclass = (href == '') ? "btn-disabled" : "btn";
-                        return  '<a '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a>'
-                        //return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+data/["n_files"]+'&nbsp;'+'</a></div>' 
+                        let href = (data["n_files"] > 0) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : '';
+                        let sclass = (href == '') ? "btn-disabled" : "btn";
+                        //return  '<a '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a>'
+                        return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a></div>' 
                     }
                 }
             ], /* endcolumns */

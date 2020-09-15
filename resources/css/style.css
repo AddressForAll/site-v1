@@ -19,7 +19,11 @@ button.default-blue:hover {
 }
 
 a[rel~="external"]{
-  color:#014420 !important;
+  color:#17a70aea !important;
+}
+
+a[rel~="external"]:hover{
+  color:#2ce71b !important;
 }
 
 .main-figure {
@@ -375,7 +379,7 @@ a[rel~="external"]{
 }
 .main-api a {
   color: #10549f;
-  text-decoration: none;
+  /*text-decoration: none;*/
   font-weight: normal;
 }
 .main-api a:hover {
