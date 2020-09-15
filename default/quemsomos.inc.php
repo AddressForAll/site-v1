@@ -31,8 +31,13 @@
   <div id='conselho-consultivo'>
     <h2>Conselho Consultivo</h2>
     <p>O Conselho consultivo é constituído por membros efetivos e honorários de notória competência e reputação em suas áreas, e norteia a atuação do Instituto.</p>
-    <div>
+    (em construção)
+    <!--div>
       <h3>Lista de membros:</h3>
+    </div-->
+    <h2>Associados Efetivos</h2>
+    Membros com direito a voto nas assembleias gerais.
+    <div>
       <div class='team-list'>
         <div class='team-profile'>
           <div class='team-picture'>
@@ -52,18 +57,7 @@
           </div>
           <span>Peter Krauss - Brasil</span>
         </div>
-        <div class='team-profile'>
-          <div class='team-picture'>
-            <img src='resources/img/equipe-enio.jpg'>
-          </div>
-          <span>Ênio Alencar - Brasil</span>
-        </div>
-        <div class='team-profile'>
-          <div class='team-picture'>
-            <img src='resources/img/equipe-igor.gif'>
-          </div>
-          <span>Igor Eliezer Borges - Brasil</span>
-        </div>
+
         <div class='team-profile'>
           <div class='team-picture'>
             <img src='resources/img/equipe-leopoldo.jpg'>
@@ -78,5 +72,44 @@
         </div>
       </div>
     </div>
+
+
+<h2>Equipe Técnica</h2>
+Associados e terceiros atuando como corpo técnico do Instituto.
+<div>
+  <div class='team-list'>
+
+    <div class='team-profile'>
+      <div class='team-picture'>
+        <img src='resources/img/equipe-enio.jpg'>
+      </div>
+      <span>Ênio Alencar - GIS</span>
+    </div>
+
+
+    <div class='team-profile'>
+      <div class='team-picture'>
+        <img src='resources/img/equipe-ignacio.jpg'>
+      </div>
+      <span>Ignácio Arnaiz - UrbiGIS</span>
+    </div>
+
+    <div class='team-profile'>
+      <div class='team-picture'>
+        <img src='resources/img/equipe-igor.gif'>
+      </div>
+      <span>Igor Eliezer Borges - GIS</span>
+    </div>
+
+    <div class='team-profile'>
+      <div class='team-picture'>
+        <img src='resources/img/equipe-peter.jpg'>
+      </div>
+      <span>Peter Krauss (coord. back-end)</span>
+    </div>
+
+  </div <!-- team-list -->
+</div>
+
   </div>
 </section>
