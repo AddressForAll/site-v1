@@ -1,11 +1,11 @@
-## fontes do site institucional AddressForAll.org
+## Fontes do site institucional AddressForAll.org
 Design inspirado no similar francês https://adresse.data.gouv.fr/
 
 HTML5+CSS puro, com gerenciamento de includes PHP ou linguagem instalada no server.
 
 O portal ainda faz uso de outras pastas, relativas a material para download, APIs, etc. mantidas em backups e outros repositorios git.
 
-## Instalacao
+## Instalação
 
 Foram convencionadas as seguintes pastas no servidor NGINX: root em `/var/www/addressforall.org/` e fontes para link simbolico em  `/opt/gits`. Para instalar, depois do `git clone` em `/opt/gits`:
 ```sh
@@ -30,7 +30,7 @@ server {
 }
 ```
 
-## Atualizacoes
+## Atualizações
 
 Depois de atualizar este repositorio, atualizar o servidor com:
 ```sh
