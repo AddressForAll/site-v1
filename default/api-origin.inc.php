@@ -38,7 +38,7 @@
             <tr>
                 <th>Id</th>
                 <th>Jurisd Osm Id</th>
-                <th>ISO Label<br>Extended</th>
+                <th>ISO Label<br/>Extended</th>
                 <th>File Name</th>
                 <th>File Size</th>
                 <th>Donor</th>
