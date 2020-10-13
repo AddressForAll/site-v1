@@ -2,9 +2,9 @@
 
 function getdata(param = null){
 
-    url = 'http://addressforall.org/_sql/donor2';
+    url = 'http://api-test.addressforall.org/v1/vw_core/donor/';
     if (param != null) {
-        url += "?id=eq." + param;
+        url += param;
     }
 
     $.getJSON(url, function( data ) {
@@ -29,16 +29,21 @@ function getdata(param = null){
                 {
                     "data" : null,
                     "render": function(data, type, row) {
-                        return (data["wikidata_id"]) ? '<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : 'null'
+                        return (data["wikidata_id"]) ? '<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : ''
                     }
                 },
                 {
                     "data" : null,
                     "render" : function(data, type, row) {
-                        let href = (data["n_files"] > 0) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : '';
-                        let sclass = (href == '') ? "btn-disabled" : "btn";
-                        //return  '<a '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a>'
-                        return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+data["n_files"]+'&nbsp;'+'</a></div>' 
+                        let qtd = 0;
+                        try {
+                            qtd = data["kx"].n_files;
+                          }
+                        finally {
+                            let href = (qtd) ? 'href ="http://addressforall.org/api-origin?donor_id=' + data["id"] + '"' : '';
+                            let sclass = (href == '') ? "btn-disabled" : "btn";
+                            return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+qtd+'&nbsp;'+'</a></div>' 
+                        }
                     }
                 }
             ], /* endcolumns */
@@ -49,6 +54,9 @@ function getdata(param = null){
 
     });
 
+    /* Changes automatically the GET LINK at Annotation for Developers Section */
+    $('#get_url').text(url);
+    $('#get_url').attr("href", url);
 }
 
 $(document).ready(function(){

@@ -7,15 +7,15 @@
         }
         else if ($('input[type=radio][name=tipo_do_filtro]:checked').val() == "estado") {
             valor = $("#estados").children("option:selected").val();
-            atributo = "city_state";
+            atributo = "jurisd_state";
         }
         else {
             valor = $("#donors").children("option:selected").val();
-            atributo = "donor_vat_id";
+            atributo = "donor_id";
         }
 
-        url = "http://addressforall.org/_sql/origin";
-        url += valor != "all" ? "?" + atributo + "=eq." + valor : "";
+        url = "http://api-test.addressforall.org/v1/vw_core/origin/";
+        url += valor != "all" ? atributo + ".eq." + valor : "";
 
         $.getJSON(url, function(data) {
             $('#tabela').show();
@@ -27,8 +27,13 @@
                 "data" : data,
                 "columns" : [
                     {"data" : "id"},
-                    {"data" : "city_id"},
-                    {"data" : "cityname"},
+                    {"data" : "jurisd_osm_id"},
+                    {
+                        "data" : null,
+                        "render" : function(data, type, row){
+                            return data["fmeta"].jurisdiction_label
+                        } 
+                    },
                     {
                         "data" : null, 
                         "render" : function(data, type, row) {
@@ -45,23 +50,32 @@
                     {
                         "data" : null,
                         "render" : function(data, type, row) {
-                                        return '<div align="center" ><a href="http://addressforall.org/api-donor?id='+data["donor_id"]+'" target_blank>' + data["donor_id"] + " - " + data["donor_shortname"] + '</a></div>' 
+                                        return '<div align="center" ><a href="http://addressforall.org/api-donor?id='+data["kx"]["donor"].id+'" target_blank>' + data["kx"]["donor"].id + " - " + data["kx"]["donor"].shortname + '</a></div>' 
                                     }
                     
                     },
                     {
                         "data" : null,
                         "render" : function(data, type, row) {
-                                        return '<a rel="external noopener" target="_blank" href="'+data["donor_url"]+'" target_blank>'+data["donor_legalname"]+'</a>' 
+                                        return '<a rel="external noopener" target="_blank" href="'+data["kx"]["donor"].url+'" target_blank>'+data["kx"]["donor"].legalname +'</a>' 
                                     }
                     
                     },
-                    {"data" : "pack_accepted_date"}
+                    {
+                        "data" : null,
+                        "render" : function(data, type, row){
+                            return data["kx"]["pack"].accepted_date
+                        }
+                    }
                 ],
                 "paging": $('#paginar').prop('checked'),
                 "responsive": true,
                 "pageLength" : 10
             });
+
+            /* Changes automatically the GET LINK at Annotation for Developers Section */
+            $('#get_url').text(url);
+            $('#get_url').attr("href", url);
 
         });
 
@@ -89,20 +103,20 @@
 
 
         /* Carregar option dos doadores */ 
-        $.getJSON('http://api.addressforall.org/_sql/vw02donors_origin', function(data){
+        $.getJSON('http://api-test.addressforall.org/_sql/vw_donors_origin', function(data){
             var options = "<option selected value='all'>Trazer Tudo</option>";
             for (var x = 0; x < data.length; x++) {
-                options += '<option value="' + data[x]['donor_vat_id'] + '">' + data[x]['donor_legalname'] + " -     (" + data[x]['n_files'] + ')</option>';
-            }
+                options += '<option value="' + data[x]['donor_id'] + '">' + data[x]['donor_legalname'] + " -     (" + data[x]['n_files'] + ')</option>';
+            }   
             $('#donors').html(options);
         });
 
 
         /* Carregar option dos estados */ 
-        $.getJSON('http://api.addressforall.org/_sql/vw01states_origin', function(data){
+        $.getJSON('http://api-test.addressforall.org/_sql/vw_jurisd_origin', function(data){
             var options = "<option selected value='all'>Trazer Tudo</option>";
             for (var x = 0; x < data.length; x++) {
-                options += '<option value="' + data[x]['city_state'] + '">' + data[x]['city_state'] + " -     (" + data[x]['count'] + ')</option>';
+                options += '<option value="' + data[x]['jurisd_state'] + '">' + data[x]['jurisd_state'] + " -     (" + data[x]['n_files'] + ')</option>';
             }
             $('#estados').html(options);
         });

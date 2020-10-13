@@ -37,8 +37,8 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Id City</th>
-                <th>City Name</th>
+                <th>Jurisd Osm Id</th>
+                <th>ISO Label<br>Extended</th>
                 <th>File Name</th>
                 <th>File Size</th>
                 <th>Donor</th>
@@ -69,7 +69,7 @@
                 <td>data</td><td>: origin</td>
             </tr>
             <tr>
-                <td>GET</td><td>: <a style="text-decoration: none" href="http://api.addressforall.org/_sql/origin">http://api.addressforall.org/_sql/origin</a></td>
+                <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api.addressforall.org/_sql/origin">http://api.addressforall.org/_sql/origin</a></td>
             </tr>
             <tr>
                 <td>doc</td>

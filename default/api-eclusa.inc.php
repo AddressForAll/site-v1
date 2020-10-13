@@ -30,10 +30,9 @@
     <table id="tabela" class="display" style="display: none;">
         <thead>
             <tr>
-                <th>City Name</th>
+                <th>ISO Label Extended</th>
                 <th>File Id</th>
                 <th>File Name</th>
-                <th>Error Message</th>
                 <th>Is Valid</th>
             </tr>
         </thead>
@@ -59,7 +58,7 @@
                 <td>data</td><td>: eclusa</td>
             </tr>
             <tr>
-                <td>GET</td><td>: http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}</td>
+                <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}">http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}</a></td>
             </tr>
             <tr>
                 <td>doc</td>

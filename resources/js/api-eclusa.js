@@ -1,12 +1,12 @@
 
 
 function getdata(param = null){
-    step = $('input[type=radio][name=tipo_do_filtro]:checked').val();
-    user_type = $('input[type=radio][name=tipo_de_usuario]:checked').val();
-    user = $('#usuario').val();
-
+    let step = $('input[type=radio][name=tipo_do_filtro]:checked').val();
+    let user_type = $('input[type=radio][name=tipo_de_usuario]:checked').val();
+    let user = $('#usuario').val();
+    
     if (user != ""){
-        url = 'http://api.addressforall.org/v1.json/eclusa/checkUserFiles-'+ step +'/'+ user +'/' + user_type;
+        url = 'http://api-test.addressforall.org/v1/eclusa/checkuserfiles_'+ step +'/'+ user +'/' + user_type;
         $.getJSON(url, function( data ) {
             $('#tabela').show();
             $('#definepaginacao').show();
@@ -16,10 +16,14 @@ function getdata(param = null){
                 "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
                 "data" : data,
                 "columns" : [
-                    {"data" : "cityname"},
+                    {
+                        "data" : null,
+                        "render" : function(data, type, row){
+                            return  data["fmeta"].jurisdiction_label
+                        }
+                    },
                     {"data" : "fid"},
                     {"data" : "fname"},
-                    {"data" : "err_msg"},
                     {"data" : "is_valid"}
                 ], /* endcolumns */
                 "paging": $('#paginar').prop('checked'),
@@ -28,11 +32,14 @@ function getdata(param = null){
             });
 
         });
-    } 
+
+        /* Changes automatically the GET LINK at Annotation for Developers Section */
+        $('#get_url').text(url);
+        $('#get_url').attr("href", url);
+    }
     else {
         alert('Inserir usuário para completar.')
     }
-
 }
 
 $(document).ready(function(){

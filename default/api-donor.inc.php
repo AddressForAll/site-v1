@@ -44,7 +44,8 @@
                 <td>data</td><td>: donor</td>
             </tr>
             <tr>
-                <td>GET</td><td>: <a style="text-decoration: none" href="http://api.addressforall.org/_sql/donor2">http://api.addressforall.org/_sql/donor2</a></td>
+                <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api.addressforall.org/_sql/donor2">
+                http://api-test.addressforall.org/_sql/donor</a></td>
             </tr>
             <tr>
                 <td>doc</td>
