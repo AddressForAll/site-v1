@@ -104,7 +104,7 @@
 
         /* Carregar option dos doadores */ 
         $.getJSON('http://api-test.addressforall.org/_sql/vw_donors_origin', function(data){
-            var options = "<option selected value='all'>Trazer Tudo</option>";
+            var options = ''; //"<option selected value='all'>Trazer Tudo</option>";
             for (var x = 0; x < data.length; x++) {
                 options += '<option value="' + data[x]['donor_id'] + '">' + data[x]['donor_legalname'] + " -     (" + data[x]['n_files'] + ')</option>';
             }   
@@ -114,7 +114,7 @@
 
         /* Carregar option dos estados */ 
         $.getJSON('http://api-test.addressforall.org/_sql/vw_jurisd_origin', function(data){
-            var options = "<option selected value='all'>Trazer Tudo</option>";
+            var options = ''; //"<option selected value='all'>Trazer Tudo</option>";
             for (var x = 0; x < data.length; x++) {
                 options += '<option value="' + data[x]['jurisd_state'] + '">' + data[x]['jurisd_state'] + " -     (" + data[x]['n_files'] + ')</option>';
             }
