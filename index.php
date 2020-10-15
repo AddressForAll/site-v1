@@ -1,6 +1,7 @@
 <?php
 // CONTROLLER:
-$nomeDaPagina = isset($_GET['uri']) ? trim($_GET['uri'], '/') : '';
+$apiPrefix1   = isset($_GET['api_p1']) ? trim($_GET['api_p1'], '/') : '';
+$nomeDaPagina = isset($_GET['uri']) ?    trim($_GET['uri'],    '/') : '';
 $urnRegexes = [
    'br;sp;sao.paulo:associacao;dns-addressforall.org:estatuto:2020-04-03'   => '_private/A4A-Estatuto2020-04-03.htm'
   ,':estatuto:2020-04-03' => '_private/A4A-Estatuto2020-04-03.htm'
@@ -35,9 +36,9 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Address For All | O site dos endereços brasileiros</title>
-  <link rel="shortcut icon" type="image/png" href="resources/img/address_for_all-01-colorful.ico.png" />
-  <link rel="stylesheet" href="resources/css/navbar.css" />
-  <link rel="stylesheet" href="resources/css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="/resources/img/address_for_all-01-colorful.ico.png" />
+  <link rel="stylesheet" href="/resources/css/navbar.css" />
+  <link rel="stylesheet" href="/resources/css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha256-IFHWFEbU2/+wNycDECKgjIRSirRNIDp2acEB5fvdVRU=" crossorigin="anonymous"></script>
 </head>
 
@@ -47,7 +48,7 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-          <a href="home" class="logo"><img src="resources/img/address_for_all-01-colorful.png" /></a>
+          <a href="http://addressforall.org/home" class="logo"><img src="/resources/img/address_for_all-01-colorful.png" /></a>
         </div>
         <nav>
           <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -56,10 +57,10 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
               <a href="#!">Address For All</a>
               <ul class="nav-dropdown">
                 <li>
-                  <a href="quemsomos">Quem Somos</a>
+                  <a href="http://addressforall.org/quemsomos">Quem Somos</a>
                 </li>
                 <li>
-                  <a href="projetos">Projetos</a>
+                  <a href="http://addressforall.org/projetos">Projetos</a>
                 </li>
               </ul>
             </li>
@@ -67,24 +68,24 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
               <a href="#!">Dados & API</a>
               <ul class="nav-dropdown">
                 <li>
-                  <a href="dados">Dados</a>
+                  <a href="http://addressforall.org/dados">Dados</a>
                 </li>
                 <li>
-                  <a href="servicos">Serviços</a>
+                  <a href="http://addressforall.org/servicos">Serviços</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="ferramentas">Ferramentas</a>
+              <a href="http://addressforall.org/ferramentas">Ferramentas</a>
             </li>
             <li>
-              <a href="faq">FAQ</a>
+              <a href="http://addressforall.org/faq">FAQ</a>
             </li>
             <li>
-              <a href="contribua">Contribua</a>
+              <a href="http://addressforall.org/contribua">Contribua</a>
             </li>
             <li>
-              <a href="parceiros">Parceiros</a>
+              <a href="http://addressforall.org/parceiros">Parceiros</a>
             </li>
             <li>
               <a href="https://medium.com/@thierryjean/my-diary-supporting-openstreetmap-and-mapillary-in-brazil-a6eb913eb695" target='_blank'>Blog</a>
@@ -95,8 +96,25 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
     </section>
   </header>
   <!-- END NAVBAR -->
-
-  <?php include_once("default/$nomeDaPagina.inc.php"); ?>
+  <?php
+    if ($apiPrefix1) {
+      // ou explode("/",$_SERVER['QUERY_STRING']) sem consultar api_p2, etc,
+      $j_host =  $_SERVER['HTTP_HOST']; // parse_url($_SERVER['QUERY_STRING'], PHP_URL_HOST);
+      //$j_url = preg_replace('/\/v(\d+)\.html?\//', '/v$1.json/', $_SERVER['QUERY_STRING']); // parse_url($url, PHP_URL_HOST)
+      // revisar se vem de "http://api-test.addressforall.org" ou "api"
+      $apiPrefix2 = isset($_GET['api_p2']) ? trim($_GET['api_p2'], '/') : '';
+      $apiUri = isset($_GET['api_uri']) ? trim($_GET['api_uri'], '/') : '';
+      print "<h1>TEST</h1>p1=$apiPrefix1 p2=$apiPrefix2 p_uri=$apiUri";
+      // ou pega URL via PHP e troca .htm por .json.
+      $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2/$apiUri";
+      $j = file_get_contents($j_url);
+      print "\n<script id='api_glob_data' type='application/json'>$j</script>\n";
+      print "<script>const api_uri_global='$apiUri'; const api_global_req = JSON.parse(document.getElementById('api_glob_data').textContent);</script>\n";
+      print "\n<!-- from $j_url -->\n";
+      $nomeDaPagina = $apiPrefix1.($apiPrefix2? "-$apiPrefix2":''); //adapt old "api-donor", etc.
+    } // api-donor=vw_core/donor ; api-origin=vw_core/origin; api-eclusa = http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}
+    include_once("default/$nomeDaPagina.inc.php");
+  ?>
 
   <!-- START NEWSLETTER -->
   <section class="newsletter">
@@ -126,7 +144,7 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
   <!-- END LICENSE -->
 
   <!-- START JS -->
-  <script type="text/javascript" src="resources/js/navbar.js"></script>
+  <script type="text/javascript" src="/resources/js/navbar.js"></script>
 </body>
 
 </html>
