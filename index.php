@@ -48,11 +48,7 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
     <section class="navigation">
       <div class="nav-container">
         <div class="brand">
-<<<<<<< HEAD
           <a href="http://addressforall.org/home" class="logo"><img src="/resources/img/address_for_all-01-colorful.png" /></a>
-=======
-          <a href="home" class="logo"><img src="/resources/img/address_for_all-01-colorful.png" /></a>
->>>>>>> 9740e679b50b06287f8367faa5a9d67885ca575d
         </div>
         <nav>
           <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
