@@ -4,9 +4,9 @@
 if (api_uri_global && api_global_req_keys) {
   const preview_domNode = document.getElementById("api_default_preview");
   preview_domNode.appendChild( document.createTextNode(api_global_req_keys.join('\t')) );
-  for (var item in api_uri_global) if (api_uri_global.hasOwnProperty(item)) {
-    var text = Object.values(item).join('\t');
-    preview_domNode.appendChild( document.createTextNode(text) );
+  for (var i = 0; i < api_global_req.length; i++) {
+    var text = Object.values( api_global_req[i] ).join('\t');
+    preview_domNode.appendChild( document.createTextNode("\n"+text) );
   }
 } else alert("ERRO NA CARGA DA API, confira a URL utilizada");
 </script>
