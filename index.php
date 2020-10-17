@@ -109,11 +109,15 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
       $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2/$apiUri";
       $j = file_get_contents($j_url);
       print "\n<script id='api_glob_data' type='application/json'>$j</script>\n";
-      print "<script>const api_uri_global='$apiUri'; const api_global_req = JSON.parse(document.getElementById('api_glob_data').textContent);</script>\n";
+      print "<script>const api_uri_global='$apiUri'; const api_global_req = JSON.parse(document.getElementById('api_glob_data').textContent); api_global_req_keys = (api_global_req && api_global_req.length>0)? Object.keys(api_global_req[0]): null;</script>\n";
       print "\n<!-- from $j_url -->\n";
       $nomeDaPagina = $apiPrefix1.($apiPrefix2? "-$apiPrefix2":''); //adapt old "api-donor", etc.
+      $include_content = "default/$nomeDaPagina.inc.php";
+      if (!file_exists($include_content)) $include_content="default/api_default.inc.php";
     } // api-donor=vw_core/donor ; api-origin=vw_core/origin; api-eclusa = http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}
-    include_once("default/$nomeDaPagina.inc.php");
+    else
+      $include_content = "default/$nomeDaPagina.inc.php";
+    include_once($include_content);
   ?>
 
   <!-- START NEWSLETTER -->
