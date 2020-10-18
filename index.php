@@ -98,14 +98,9 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
   <!-- END NAVBAR -->
   <?php
     if ($apiPrefix1) {
-      // ou explode("/",$_SERVER['QUERY_STRING']) sem consultar api_p2, etc,
-      $j_host =  $_SERVER['HTTP_HOST']; // parse_url($_SERVER['QUERY_STRING'], PHP_URL_HOST);
-      //$j_url = preg_replace('/\/v(\d+)\.html?\//', '/v$1.json/', $_SERVER['QUERY_STRING']); // parse_url($url, PHP_URL_HOST)
-      // revisar se vem de "http://api-test.addressforall.org" ou "api"
+      $j_host =  $_SERVER['HTTP_HOST'];
       $apiPrefix2 = isset($_GET['api_p2']) ? trim($_GET['api_p2'], '/') : '';
       $apiUri = isset($_GET['api_uri']) ? trim($_GET['api_uri'], '/') : '';
-      print "<h1>TEST</h1>p1=$apiPrefix1 p2=$apiPrefix2 p_uri=$apiUri";
-      // ou pega URL via PHP e troca .htm por .json.
       $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2/$apiUri";
       $j = file_get_contents($j_url);
       print "\n<script id='api_glob_data' type='application/json'>$j</script>\n";
@@ -113,11 +108,12 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
       print "\n<!-- from $j_url -->\n";
       $nomeDaPagina = $apiPrefix1.($apiPrefix2? "-$apiPrefix2":''); //adapt old "api-donor", etc.
       $include_content = "default/$nomeDaPagina.inc.php";
-      if (!file_exists($include_content)) $include_content="default/api_default.inc.php";
-    } // api-donor=vw_core/donor ; api-origin=vw_core/origin; api-eclusa = http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}
-    else
+      if ( !file_exists($include_content) )
+        $include_content="default/api_default.inc.php";
+    } else
       $include_content = "default/$nomeDaPagina.inc.php";
     include_once($include_content);
+    include_once("default/api_default_devFoot.inc.php");
   ?>
 
   <!-- START NEWSLETTER -->
