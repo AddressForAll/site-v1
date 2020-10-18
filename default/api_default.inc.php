@@ -25,6 +25,10 @@ function tableCreate_fromArrayObjects(tableNode,arrInput,headItems){
       tr = document.createElement('tr');
       for ( var  item  of  Object.values(line) ){
         var td = tr.insertCell();
+        if (item && typeof item == 'object') {
+          td.setAttribute('title',JSON.stringify(item));
+          item = '(...)';
+        }
         td.appendChild(document.createTextNode(item));
       }
       tbody.appendChild(tr);
