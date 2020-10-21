@@ -12,9 +12,9 @@
 
 <section class="main-api" id="api">
     <h1>Resultado da solicitação de API</h1>
-    <table id="api_default_preview"></table>
+    <table id="api_default_preview" class="display compact" style="width:100%"></table>
 <script>
-    function createTableHeader(tableNode, headItems){
+    function createTableHeader(tableNode, headItems, arrInput){
         var tbody = document.createElement('tbody');
         var thead = document.createElement('thead');
         var tr, td;
@@ -25,32 +25,39 @@
             td.style.fontWeight = 'bold';
         }
         thead.appendChild(tr);
+        for (var line of arrInput) {
+            tr = document.createElement('tr');
+            for ( var  item  of  Object.values(line) ){
+                var td = tr.insertCell();
+                if (item && typeof item == 'object') {
+                    td.setAttribute('title',JSON.stringify(item));
+                    item = '(...)';
+                }
+                td.appendChild(document.createTextNode(item));
+            }
+            tbody.appendChild(tr);
+        }
         tableNode.appendChild(thead);
+        tableNode.appendChild(tbody);
     }
 
-    var url = data_url; // this variable `data_url` is defined during index.php call
-    $.getJSON(url, function( data ) {
-        var columns_list = Object.entries(data[0]);
+    $.getJSON(data_url, function(data) { // this variable `data_url` is defined during index.php call
+        var columns_list = Object.keys(data[0]);
         var columns = [];
-        for (var i in columns_list){
-            if (typeof columns_list[i][1] == 'object' && columns_list[i][1] != null){
-                key_above = columns_list[i][0];
-                for(var nested in columns_list[i][1]) columns.push({data: key_above + '.' + nested});
-            }
-            else columns.push({data: columns_list[i][0]}); 
-        }
-        createTableHeader(document.getElementById('api_default_preview'), columns);
+        for (var i in columns_list) columns.push({data: columns_list[i]}); 
+
+        createTableHeader(document.getElementById('api_default_preview'), columns, data);
         $('#api_default_preview').DataTable({
                     "bDestroy": true,
                     "dom": 'Bfrtip',
                     "buttons": ['copy', 'csv', 'excel', 'pdf'],
-                    "data" : data,//JSON.stringify(api_global_req),
                     "columns" : columns,
                     "paging": $('#paginar').prop('checked'),
                     "responsive": true,
                     "pageLength" : 10
                 });
-    });
+        
+    }); // END getJSON
 </script>
 
 <!-- ADDING ANNOTATION FOR DEVS --> 
