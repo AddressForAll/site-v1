@@ -102,10 +102,7 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
       $apiPrefix2 = isset($_GET['api_p2']) ? trim($_GET['api_p2'], '/') : '';
       $apiUri = isset($_GET['api_uri']) ? trim($_GET['api_uri'], '/') : '';
       $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2/$apiUri";
-      $j = file_get_contents($j_url);
-      print "\n<script id='api_glob_data' type='application/json'>$j</script>\n";
-      print "<script>const api_uri_global='$apiUri'; const api_global_req = JSON.parse(document.getElementById('api_glob_data').textContent); api_global_req_keys = (api_global_req && api_global_req.length>0)? Object.keys(api_global_req[0]): null;</script>\n";
-      print "\n<!-- from $j_url -->\n";
+      print "<script>var data_url='$j_url'</script>";
       $nomeDaPagina = $apiPrefix1.($apiPrefix2? "-$apiPrefix2":''); //adapt old "api-donor", etc.
       $include_content = "default/$nomeDaPagina.inc.php";
       if ( !file_exists($include_content) )
@@ -113,7 +110,6 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
     } else
       $include_content = "default/$nomeDaPagina.inc.php";
     include_once($include_content);
-    include_once("default/api_default_devFoot.inc.php");
   ?>
 
   <!-- START NEWSLETTER -->

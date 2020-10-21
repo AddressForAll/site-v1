@@ -16,12 +16,7 @@ function getdata(param = null){
                 "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
                 "data" : data,
                 "columns" : [
-                    {
-                        "data" : null,
-                        "render" : function(data, type, row){
-                            return  data["fmeta"].jurisdiction_label
-                        }
-                    },
+                    {"data" : "fmeta.jurisdiction_label"},
                     {"data" : "fid"},
                     {"data" : "fname"},
                     {"data" : "is_valid"}
