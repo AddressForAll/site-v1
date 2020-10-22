@@ -101,7 +101,10 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
       $j_host =  $_SERVER['HTTP_HOST'];
       $apiPrefix2 = isset($_GET['api_p2']) ? trim($_GET['api_p2'], '/') : '';
       $apiUri = isset($_GET['api_uri']) ? trim($_GET['api_uri'], '/') : '';
-      $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2/$apiUri";
+      unset($_GET['api_p1']); unset($_GET['api_p2']); unset($_GET['api_uri']);
+      $url_q = []; foreach($_GET as $k=>$v) $url_q[]="$k=$v";
+      if (count($url_q)) $url_q="?".implode("&",$url_q); else $url_q='';
+      $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2/$apiUri$url_q";
       print "<script>var data_url='$j_url'</script>";
       $nomeDaPagina = $apiPrefix1.($apiPrefix2? "-$apiPrefix2":''); //adapt old "api-donor", etc.
       $include_content = "default/$nomeDaPagina.inc.php";
