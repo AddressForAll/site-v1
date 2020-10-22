@@ -1,12 +1,12 @@
 
 
 function getdata(param = null){
-    let step = $('input[type=radio][name=tipo_do_filtro]:checked').val();
-    let user_type = $('input[type=radio][name=tipo_de_usuario]:checked').val();
-    let user = $('#usuario').val();
-    
-    if (user != ""){
-        url = 'http://api-test.addressforall.org/v1/eclusa/checkuserfiles_'+ step +'/'+ user +'/' + user_type;
+    let step = $('input[type=radio][name=tipo_do_filtro]:checked').val()
+    let user_type = $('input[type=radio][name=tipo_de_usuario]:checked').val()
+    let user = $('#usuario').val()
+    if (user != "") {
+        let fn = (step=='step0')? 'checkuserdir': ('checkuserfiles_'+ step)
+        url = 'http://api-test.addressforall.org/v1/eclusa/'+ fn +'/'+ user +'/' + user_type
         $.getJSON(url, function( data ) {
             $('#tabela').show();
             $('#definepaginacao').show();
@@ -43,7 +43,7 @@ $(document).ready(function(){
     $('#definepaginacao').on('change', function (){
         var qtd = $("#paginacao").children("option:selected").val();
         $('#tabela').DataTable().page.len(qtd).draw();
-    });    
+    });
 
 
     /* Considera ordenação correta em PT, A, À, Á, B, C ... Z */
@@ -59,5 +59,5 @@ $(document).ready(function(){
             };
         }
     };
-    $.fn.dataTable.ext.order.intl( 'pt' ); 
+    $.fn.dataTable.ext.order.intl( 'pt' );
 });
