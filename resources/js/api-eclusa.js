@@ -1,32 +1,62 @@
-
+who_show = '';
 
 function getdata(param = null){
     let step = $('input[type=radio][name=tipo_do_filtro]:checked').val();
     let user_type = $('input[type=radio][name=tipo_de_usuario]:checked').val();
     let user = $('#usuario').val();
-    
-    if (user != ""){
-        url = 'http://api-test.addressforall.org/v1/eclusa/checkuserfiles_'+ step +'/'+ user +'/' + user_type;
-        $.getJSON(url, function( data ) {
+
+    if (user != "") {
+        let fn = (step=='step0') ? 'checkuserdir' : ('checkuserfiles_'+ step)
+        url = 'http://api-test.addressforall.org/v1/eclusa/'+ fn +'/'+ user +'/' + user_type
+
+        if (step =='step0'){
+            columns = [
+                {"data" : "username"},
+                {"data" : "jurisdiction_label"},
+                {"data" : "jurisdiction_osmid"},
+                {"data" : "pack_path"},
+                {"data" : "packinfo.user_resp"},
+                {"data" : "packinfo.accepted_date"}
+            ]
+
+            $('#tabela').hide();
+            $('#tabela_step_0').show();
+        }
+        else {
+            columns = [
+                {"data" : "fmeta.jurisdiction_label"},
+                {"data" : "fid"},
+                {"data" : "fname"},
+                {"data" : "is_valid"}
+            ];
+
             $('#tabela').show();
+            $('#tabela_step_0').hide();
+        }  
+
+
+        /* Calling DataTable constructor */
+        who_show = $('#tabela').is(":visible") ? '#tabela' : '#tabela_step_0';
+        who_destroy = !$('#tabela').is(":visible") ? '#tabela' : '#tabela_step_0';
+
+        $.getJSON(url, function( data ) {
+            $(who_show).show();
             $('#definepaginacao').show();
-            $('#tabela').DataTable({
+            $(who_show).DataTable({
                 "bDestroy": true,
                 "dom": 'Bfrtip',
-                "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+                "buttons": ['copy', 'csv', 'excel', 'print'],
                 "data" : data,
-                "columns" : [
-                    {"data" : "fmeta.jurisdiction_label"},
-                    {"data" : "fid"},
-                    {"data" : "fname"},
-                    {"data" : "is_valid"}
-                ], /* endcolumns */
+                "columns" : columns, 
                 "paging": $('#paginar').prop('checked'),
                 "responsive": true,
                 "pageLength" : 10
             });
 
         });
+        
+        /* Destroy unchecked table to remove duplicated export buttons */
+        $(who_destroy).DataTable().destroy();
 
         /* Changes automatically the GET LINK at Annotation for Developers Section */
         $('#get_url').text(url);
@@ -37,13 +67,14 @@ function getdata(param = null){
     }
 }
 
-$(document).ready(function(){
 
+$(document).ready(function(){
+    
     /* Páginação controlda */
     $('#definepaginacao').on('change', function (){
         var qtd = $("#paginacao").children("option:selected").val();
-        $('#tabela').DataTable().page.len(qtd).draw();
-    });    
+        $(who_show).DataTable().page.len(qtd).draw();
+    });
 
 
     /* Considera ordenação correta em PT, A, À, Á, B, C ... Z */
@@ -59,5 +90,5 @@ $(document).ready(function(){
             };
         }
     };
-    $.fn.dataTable.ext.order.intl( 'pt' ); 
+    $.fn.dataTable.ext.order.intl( 'pt' );
 });

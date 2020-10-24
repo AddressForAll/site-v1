@@ -6,7 +6,9 @@
     <br>
     <span>
         <strong>Filtrar por: </strong>
-    </span> 
+    </span>
+    <input type="radio" id="step_0" name="tipo_do_filtro" value="step0">
+    <label for="step_0">Step 0</label>
     <input type="radio" id="step_1" name="tipo_do_filtro" value="step1" checked>
     <label for="step_1">Step 1</label>
     <input type="radio" id="step_2" name="tipo_do_filtro" value="step2">
@@ -34,6 +36,18 @@
                 <th>File Id</th>
                 <th>File Name</th>
                 <th>Is Valid</th>
+            </tr>
+        </thead>
+    </table>
+    <table id="tabela_step_0" class="display" style="display: none;">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Jurisdiction_label</th>
+                <th>Jurisdiction_osmid</th>
+                <th>Pack_path</th>
+                <th>User_resp</th>
+                <th>Accepted_date</th>
             </tr>
         </thead>
     </table>
@@ -78,4 +92,3 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/sp-1.1.1/datatables.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css"/>
 <script src="/resources/js/api-eclusa.js"></script>
-

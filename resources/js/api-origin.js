@@ -23,7 +23,7 @@
             $('#tabela').DataTable({
                 "bDestroy": true,
                 "dom": 'Bfrtip',
-                "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+                "buttons": ['copy', 'csv', 'excel', 'print'],
                 "data" : data,
                 "columns" : [
                     {"data" : "id"},
