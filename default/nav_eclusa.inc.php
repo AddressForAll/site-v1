@@ -34,14 +34,16 @@
         <br>
         <label for="usuario"><strong>Usuário: </strong></label>
         <input type="text" id="usuario" name="usuario" placeholder="Insira um usuário..." autofocus>
-        <strong>Tipo: </strong>
-        <input type="radio" id="r_todos" name="tipo_de_usuario" value="" checked>
-        <label for="r_todos">Todos</label>
-        <input type="radio" id="r_invalidos" name="tipo_de_usuario" value="0">
-        <label for="r_invalidos">Inválidos</label>
-        <input type="radio" id="r_validos" name="tipo_de_usuario" value="1">
-        <label for="r_validos">Válidos</label>
-        <br>
+        <div id="tipo_de_usuario_div">
+            <strong>Tipo: </strong>
+            <input type="radio" id="r_todos" name="tipo_de_usuario" value="" checked>
+            <label for="r_todos">Todos</label>
+            <input type="radio" id="r_invalidos" name="tipo_de_usuario" value="0">
+            <label for="r_invalidos">Inválidos</label>
+            <input type="radio" id="r_validos" name="tipo_de_usuario" value="1">
+            <label for="r_validos">Válidos</label>
+        </div>
+        <hr style="opacity: 0.1;">
         <button onclick="getdata();"><strong>Consultar</strong></button>
         <br>
     </div>
@@ -83,20 +85,18 @@
             </tr>
         </thead>
     </table>
-    <br><br>
+    <br>
     <div class="desenvolvedor">
         <table>
-            <tr>
-                <th colspan="2">Annotations for Developers</th>
-            </tr>
-            <tr>
-                <td>data</td><td>: eclusa</td>
-            </tr>
+            <tr><th colspan="2">Annotations for Developers</th></tr>
+            <tr><td>Module</td><td>: <i><?=($apiPrefix1 == '') ? 'Navegação' : $apiPrefix1?></i></td></tr>
+            <tr><td>Function</td><td>: <i><?=($apiPrefix2 == '') ? 'Navegação' : $apiPrefix2?></i></td></tr>
+            <tr><td>URI parameters</td><td>: <i><?=($apiUri == '') ? 'Navegação' : $apiUri?></i></td></tr>
             <tr>
                 <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}">http://api.addressforall.org/v1/eclusa/checkUserFiles-step{step}/{user}</a></td>
             </tr>
             <tr>
-                <td>doc</td>
+                <td>docs</td>
                 <td>: <a target="_blank" rel="external" href="https://github.com/AddressForAll/WS" style="text-decoration: none">https://github.com/AddressForAll/WS</a></td>
             </tr>
         </table>

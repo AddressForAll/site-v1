@@ -6,7 +6,12 @@ function getdata(param = null){
     let user = $('#usuario').val();
 
     if (user != "") {
-        let fn = (step=='step0') ? 'checkuserdir' : ('checkuserfiles_'+ step)
+        let fn = 'checkuserfiles_'+ step;
+        if (step == 'step0') {
+            fn = 'checkuserdir';
+            user_type = '';
+        }
+
         url = 'http://api-test.addressforall.org/v1/eclusa/'+ fn +'/'+ user +'/' + user_type
 
         if (step =='step0'){
@@ -42,6 +47,11 @@ function getdata(param = null){
         $.getJSON(url, function( data ) {
             $(who_show).show();
             $('#definepaginacao').show();
+            
+            /* Changes automatically html pagination options from select based on data length */
+            $('#paginacao option').show();
+            $('#paginacao option').filter(function(){ return parseInt(this.value) > data.length}).hide();
+
             $(who_show).DataTable({
                 "bDestroy": true,
                 "dom": 'Bfrtip',
@@ -69,7 +79,13 @@ function getdata(param = null){
 
 
 $(document).ready(function(){
-    
+    /* Se radio = step 0 então radio de tipo de usuário não filtra  */
+    $('input[type=radio][name=tipo_do_filtro]').change(function() {
+        if (this.value == 'step0') 
+            $('#tipo_de_usuario_div').hide();
+        else
+            $('#tipo_de_usuario_div').show();
+    });
     var qtd = 10; //$("#paginacao").children("option:selected").val();
 
     /* Páginação controlda */
