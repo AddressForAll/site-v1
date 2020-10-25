@@ -5,23 +5,47 @@
       No contexto Brasil os dados disponibilizados pelo Instituto podem ser baixados por
       município (dados locais) ou ao nível nacional.
     </p>
+    <h2>Fluxo geral repositorios de dados</h2>
+    <p>
+      AddressForAll recebe dados doados por diversas fontes, tais como prefeituras, IBGE, e OpenStreetMap,
+      que publicam ou transferem por licença aberta (CC0, ODbL ou outra) os dados que produzem.
+    </p>
+    <div style='text-align:center'><img src='resources/img/datafigs-flow1.svg'></div>
+    <p>Os dados de preservacao sao de uso geral (diversos projetos), e, uma vez homologados, recebem tratamento e garantia de preservacao por pelo menos 20 anos.</p>
 
+    <h2>Dados a cada projeto</h2>
+    <p>
+      A Plataforma de Projetos do Instituto AddressForAll consome os dados preservados pelo [Projeto Digital Preservation](http://git.AddressForAll.org/digital-preservation).
+      Cada projeto faz seu proprio recorte e filtragem de dados preservados.
+    </p>
+    <style>
+      table.qtstatus td {text-align: center;}
+      /* table.qtstatus tr td:nth-child(3) {text-align: center;}
+      table.qtstatus tr td:nth-child(4) {text-align: right;} */
+    </style>
+    <table class="qtstatus" border="0">
+      <caption style="caption-side:top;">Projeto AddressForAll Brasil, status atual</caption>
+      <tr><td></td> <td><a href="http://git.AddressForAll.org/digital-preservation-BR">(preserved)</a></td>
+         <td><a href="http://git.AddressForAll.org/in-BR">in-BR</a></td>
+         <td><a href="http://git.AddressForAll.org/out-BR">out-BR</a></td>
+      </tr>
+      <tr><td></td><td colspan="3"><img src='resources/img/datafigs-flow2-tab.svg'></td></tr>
+      <tr><td>Qt. arquivos: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
+      <tr><td>Mega bytes: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
+    </table>
+
+    <p>...</p>
+
+    <table border="0">
+      <caption style="caption-side:top;">Projeto OSM.codes, status atual</caption>
+      <tr><td></td><td colspan="3"><img src='resources/img/datafigs-flow2-tab.svg'></td></tr>
+      <tr><td>Qt. arquivos: </td><td>1</td> <td>1</td> <td>1</td></tr>
+      <tr><td>Mega bytes: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
+    </table>
+
+    <!-- #### -->
     <div class="container">
 
-      <div class="timeline-item" step='Passo 0'>
-        <h1>Fluxo da aquisicao de dados</h1>
-        <p>
-          AddressForAll recebe dados doados por diversas fontes, tais como prefeituras, IBGE, e OpenStreetMap,
-          que publicam ou transferem por licença aberta (CC0, ODbL ou outra) os dados que produzem.
-        </p>
-        <div class='dados-passo'><img src='resources/img/datafigs-flow1.svg'></div>
-      </div>
-
-      <table border="1">
-        <caption style="caption-side:top;">Projeto AddressForAll</caption>
-        <tr><td colspan="3"><img src='resources/img/datafigs-flow2-tab.svg'></td></tr>
-        <tr><td>val1</td> <td>val3</td> <td>val3</td></tr>
-      </table>
 
       <div class="timeline-item" step='Passo 1'>
         <h1>Verificação</h1>
