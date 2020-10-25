@@ -2,11 +2,26 @@
   <div>
     <h1>Dados</h1>
     <p>
-      Os dados disponibilizados pelo Instituto podem ser baixados por
-      Município (Dados locais) ou ao nível nacional (Dados Nacionais).
+      No contexto Brasil os dados disponibilizados pelo Instituto podem ser baixados por
+      município (dados locais) ou ao nível nacional.
     </p>
 
     <div class="container">
+
+      <div class="timeline-item" step='Passo 0'>
+        <h1>Fluxo da aquisicao de dados</h1>
+        <p>
+          AddressForAll recebe dados doados por diversas fontes, tais como prefeituras, IBGE, e OpenStreetMap,
+          que publicam ou transferem por licença aberta (CC0, ODbL ou outra) os dados que produzem.
+        </p>
+        <div class='dados-passo'><img src='resources/img/datafigs-flow1.svg'></div>
+      </div>
+
+      <table border="1">
+        <caption style="caption-side:top;">Projeto AddressForAll</caption>
+        <tr><td colspan="3"><img src='resources/img/datafigs-flow2-tab.svg'></td></tr>
+        <tr><td>val1</td> <td>val3</td> <td>val3</td></tr>
+      </table>
 
       <div class="timeline-item" step='Passo 1'>
         <h1>Verificação</h1>
