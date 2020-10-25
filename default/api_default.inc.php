@@ -30,7 +30,9 @@
             for ( var  item  of  Object.values(line) ){
                 var td = tr.insertCell();
                 if (item && typeof item == 'object') {
-                    td.setAttribute('title',JSON.stringify(item));
+                    var item_exp = JSON.stringify(item).replace(/,/g, ',\n');
+                    console.log(item_exp);
+                    td.setAttribute('title', item_exp);
                     item = '(...)';
                 }
                 td.appendChild(document.createTextNode(item));
@@ -41,12 +43,16 @@
         tableNode.appendChild(tbody);
     }
 
+    
+
     $.getJSON(data_url, function(data) { // this variable `data_url` is defined during index.php call
         var columns_list = Object.keys(data[0]);
         var columns = [];
         for (var i in columns_list) columns.push({data: columns_list[i]}); 
 
         createTableHeader(document.getElementById('api_default_preview'), columns, data);
+
+
         $('#api_default_preview').DataTable({
                     "bDestroy": true,
                     "dom": 'Bfrtip',

@@ -48,7 +48,7 @@ function getdata(param = null){
                 "buttons": ['copy', 'csv', 'excel', 'print'],
                 "data" : data,
                 "columns" : columns, 
-                "paging": $('#paginar').prop('checked'),
+                "paging": true,
                 "responsive": true,
                 "pageLength" : 10
             });
@@ -70,10 +70,21 @@ function getdata(param = null){
 
 $(document).ready(function(){
     
+    var qtd = 10; //$("#paginacao").children("option:selected").val();
+
     /* Páginação controlda */
-    $('#definepaginacao').on('change', function (){
-        var qtd = $("#paginacao").children("option:selected").val();
+    $('#paginacao').on('change', function (){
+        qtd = $("#paginacao").children("option:selected").val();
         $(who_show).DataTable().page.len(qtd).draw();
+    });
+
+    $('#paginar').on('change', function (){
+        if (!$('#paginar').prop('checked')) 
+            $(who_show).DataTable().page.len(-1).draw();
+        else if (qtd)
+            $(who_show).DataTable().page.len(qtd).draw();
+        else
+            $(who_show).DataTable().page.len(10).draw();
     });
 
 
