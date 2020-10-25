@@ -73,6 +73,9 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
                 <li>
                   <a href="http://addressforall.org/servicos">Serviços</a>
                 </li>
+                <li>
+                  <a href="http://addressforall.org/api">API</a>
+                </li>
               </ul>
             </li>
             <li>
@@ -105,13 +108,13 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
       $limit   = (isset($_GET['limit']) && $_GET['limit']>0) ? $_GET['limit']: '';
       $offset  = (isset($_GET['offset']) && $_GET['offset']>0) ? $_GET['offset']: '';
       unset($_GET['api_p1']);  unset($_GET['api_p2']); unset($_GET['api_uri']);
-      unset($_GET['limit']); unset($_GET['offset']);
+      //unset($_GET['limit']); unset($_GET['offset']);
       if (!$limit) {$_GET['limit']=$limit=1000; $_GET['offset']=$offset=0; }
       $url_q = []; foreach($_GET as $k=>$v) $url_q[]="$k=$v";
       // (agora sempre tem ) if (count($url_q))
       $url_q="?".implode("&",$url_q); //else $url_q='';
       $j_url = "http://$j_host/v1.json/$apiPrefix1/$apiPrefix2{$apiUri}$url_q";
-      print "<script>var data_url='$j_url'; var data_url_limit=$limit; var data_url_offset=$offset;</script>";
+      print "<script>var data_url='$j_url'; var data_url_limit=$limit; var data_url_offset=$offset; //apiPrefix1=$apiPrefix1\n</script>";
       $nomeDaPagina = $apiPrefix1.($apiPrefix2? "-$apiPrefix2":'');
       $nomeDaPagina = str_replace('/','-',$nomeDaPagina);
       $include_content = "default/$nomeDaPagina.inc.php";

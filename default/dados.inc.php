@@ -21,23 +21,37 @@
     <style>
       table.qtstatus td {text-align: center;}
       table.qtstatus td.smallLabel {text-align: left; font-size: 75%;}
-      /* table.qtstatus tr td:nth-child(3) {text-align: center;}
+      /*
+      table.qtstatus tr.totFile td:not(.smallLabel) {font-weight:bold;}
+      table.qtstatus tr td:nth-child(3) {text-align: center;}
       table.qtstatus tr td:nth-child(4) {text-align: right;} */
     </style>
-    <?php
-    
-    ?>
+<?php
+    // get by JSON API the values!
+    $aVals['a4a-count'] = ['preserv'=>11, 'in'=>4, 'out'=>1];
+    $aVals['a4a-size'] = ['preserv'=>1123, 'in'=>456, 'out'=>123];
 
+    $aVals['osmCodes-count'] = ['preserv'=>22, 'in'=>3, 'out'=>2];
+    $aVals['osmCodes-size'] = ['preserv'=>223, 'in'=>77, 'out'=>88];
+?>
     <div style="text-align:center; align:center">
     <table id="qtstatus_a4a" class="qtstatus" border="0" align="center">
       <caption style="caption-side:top;">Projeto AddressForAll Brasil, status atual</caption>
-      <tr><td width="65"></td> <td width="30%"><a href="http://git.AddressForAll.org/digital-preservation-BR">(preserved BR)</a></td>
+      <tr><td width="65"></td> <td width="30%"><a href="http://git.AddressForAll.org/digital-preservation-BR">dig. preserv. BR</a></td>
          <td width="30%"><a href="http://git.AddressForAll.org/in-BR">in-BR</a></td>
          <td width="30%"><a href="http://git.AddressForAll.org/out-BR">out-BR</a></td>
       </tr>
       <tr><td></td><td colspan="3"><img src='/resources/img/datafigs-flow2-tabPad.svg'></td></tr>
-      <tr class="totFileCount"><td class="smallLabel">Qt. arquivos: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
-      <tr class="totFileBytes"><td class="smallLabel">Mega bytes: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
+      <tr class="totFile"><td class="smallLabel">Qt. arquivos: </td>
+          <td><b><?= $aVals['a4a-count']['preserv'] ?></b></td>
+          <td><b><?= $aVals['a4a-count']['in'] ?></b></td>
+          <td><b><?= $aVals['a4a-count']['out'] ?></b></td>
+      </tr>
+      <tr class="totFile"><td class="smallLabel">Mega bytes: </td>
+        <td><b><?= $aVals['a4a-size']['preserv'] ?></b> zip</td>
+        <td><b><?= $aVals['a4a-size']['in'] ?></b></td>
+        <td><b><?= $aVals['a4a-size']['out'] ?></b></td>
+      </tr>
     </table>
 
     <p>...</p>
@@ -45,8 +59,16 @@
     <table id="qtstatus_osmCodes" class="qtstatus" border="0" align="center">
       <caption style="caption-side:top;">Projeto OSM.codes, status atual</caption>
       <tr><td></td><td colspan="3"><img src='/resources/img/datafigs-flow2-tabPad.svg'></td></tr>
-      <tr><td class="smallLabel">Qt. arquivos: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
-      <tr><td class="smallLabel">Mega bytes: </td><td>val1</td> <td>val3</td> <td>val3</td></tr>
+      <tr class="totFile"><td class="smallLabel">Qt. arquivos: </td>
+          <td><b><?= $aVals['osmCodes-count']['preserv'] ?></b></td>
+          <td><b><?= $aVals['osmCodes-count']['in'] ?></b></td>
+          <td><b><?= $aVals['osmCodes-count']['out'] ?></b></td>
+      </tr>
+      <tr class="totFile"><td class="smallLabel">Mega bytes: </td>
+        <td><b><?= $aVals['osmCodes-size']['preserv'] ?></b> zip</td>
+        <td><b><?= $aVals['osmCodes-size']['in'] ?></b></td>
+        <td><b><?= $aVals['osmCodes-size']['out'] ?></b></td>
+      </tr>
     </table>
   </div><!-- center tables -->
 
