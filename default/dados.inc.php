@@ -12,7 +12,10 @@
     </p>
     <div style='text-align:center'><img src='resources/img/datafigs-flow1.svg'></div>
     <p>Os dados de preservacao sao de uso geral (diversos projetos), e, uma vez homologados, recebem tratamento e garantia de preservacao por pelo menos 20 anos.</p>
-
+    <p>A seguranca e integridade dos dados preservados é garantida pelo <a href="http://api-test.addressforall.org/v1.htm/nav_eclusa/">sistema de Eclusa</a>,
+      com integridade SHA256 a cada arquivo, confirmação publica e confirmação juridica (registro final na Fundacao Biblioteca Nacional).
+      Em caso de arquivo obtido por download de site oficial, datacao e registro da URL de acesso é feita atraves da <a href="https://archive.org/" rel="external" target="_blank"><i>Wayback Machine</i></a>.
+    </p>
     <h2>Dados a cada projeto</h2>
     <p>
       A Plataforma de Projetos do Instituto AddressForAll consome os dados preservados pelo <a href="http://git.AddressForAll.org/digital-preservation">Projeto Digital Preservation</a>.
@@ -26,56 +29,74 @@
       table.qtstatus tr td:nth-child(3) {text-align: center;}
       table.qtstatus tr td:nth-child(4) {text-align: right;} */
     </style>
-<?php
-    // get by JSON API the values!
-    $aVals['a4a-count'] = ['preserv'=>11, 'in'=>4, 'out'=>1];
-    $aVals['a4a-size'] = ['preserv'=>1123, 'in'=>456, 'out'=>123];
 
-    $aVals['osmCodes-count'] = ['preserv'=>22, 'in'=>3, 'out'=>2];
-    $aVals['osmCodes-size'] = ['preserv'=>223, 'in'=>77, 'out'=>88];
-?>
-    <div style="text-align:center; align:center">
-    <table id="qtstatus_a4a" class="qtstatus" border="0" align="center">
-      <caption style="caption-side:top;">Projeto AddressForAll Brasil, status atual</caption>
-      <tr><td width="65"></td> <td width="30%"><a href="http://git.AddressForAll.org/digital-preservation-BR">dig. preserv. BR</a></td>
-         <td width="30%"><a href="http://git.AddressForAll.org/in-BR">in-BR</a></td>
-         <td width="30%"><a href="http://git.AddressForAll.org/out-BR">out-BR</a></td>
-      </tr>
-      <tr><td></td><td colspan="3"><img src='/resources/img/datafigs-flow2-tabPad.svg'></td></tr>
-      <tr class="totFile"><td class="smallLabel">Qt. arquivos: </td>
-          <td><b><?= $aVals['a4a-count']['preserv'] ?></b></td>
-          <td><b><?= $aVals['a4a-count']['in'] ?></b></td>
-          <td><b><?= $aVals['a4a-count']['out'] ?></b></td>
-      </tr>
-      <tr class="totFile"><td class="smallLabel">Mega bytes: </td>
-        <td><b><?= $aVals['a4a-size']['preserv'] ?></b> zip</td>
-        <td><b><?= $aVals['a4a-size']['in'] ?></b></td>
-        <td><b><?= $aVals['a4a-size']['out'] ?></b></td>
-      </tr>
-    </table>
+    <div id="qtstatus_container" style="text-align:center; align:center"></div>
 
-    <p>...</p>
+    <script type="text/javascript">
+    // // // small LIBRARY:
+    function jsTpl(strings, ...keys) {
+        return (function(...values) {
+          let dict = values[values.length - 1] || {};
+          let result = [strings[0]];
+          keys.forEach(function(key, i) {
+            let value = Number.isInteger(key) ? values[key] : dict[key];
+            result.push(value, strings[i + 1]);
+          });
+          return result.join('');
+        });
+      }
+      // // // \small LIBRARY
 
-    <table id="qtstatus_osmCodes" class="qtstatus" border="0" align="center">
-      <caption style="caption-side:top;">Projeto OSM.codes, status atual</caption>
-      <tr><td></td><td colspan="3"><img src='/resources/img/datafigs-flow2-tabPad.svg'></td></tr>
-      <tr class="totFile"><td class="smallLabel">Qt. arquivos: </td>
-          <td><b><?= $aVals['osmCodes-count']['preserv'] ?></b></td>
-          <td><b><?= $aVals['osmCodes-count']['in'] ?></b></td>
-          <td><b><?= $aVals['osmCodes-count']['out'] ?></b></td>
-      </tr>
-      <tr class="totFile"><td class="smallLabel">Mega bytes: </td>
-        <td><b><?= $aVals['osmCodes-size']['preserv'] ?></b> zip</td>
-        <td><b><?= $aVals['osmCodes-size']['in'] ?></b></td>
-        <td><b><?= $aVals['osmCodes-size']['out'] ?></b></td>
-      </tr>
-    </table>
-  </div><!-- center tables -->
+      const qtstatus_container = document.getElementById('qtstatus_container')
+      const preTpl_tr0 = jsTpl`
+      <tr><td width="65"></td>
+         <td width="30%"><a href="${'url1'}">${'desc1'}</a></td>
+         <td width="30%"><a href="${'url2'}">${'desc2'}</a></td>
+         <td width="30%"><a href="${'url3'}">${'desc3'}</a></td>
+      </tr>`;
+      const preTpl_tab = jsTpl`
+      <table class="qtstatus" border="0" align="center">
+        <caption style="caption-side:top;">Projeto ${'prjName'}, status atual</caption>
+        ${'tr0'}
+        <tr><td width="65"></td><td colspan="3"><img src='/resources/img/datafigs-flow2-tabPad.svg'></td></tr>
+        <tr class="totFile"><td class="smallLabel">Qt. arquivos: </td>
+          <td width="30%"><b>${'preserv_n'}</b></td>
+          <td width="30%"><b>{{in_n}}</b></td>
+          <td width="30%"><b>{{out_n}}</b></td>
+        </tr>
+        <tr class="totFile"><td class="smallLabel">Mega bytes: </td>
+          <td><b>${'preserv_mb'}</b> zip</td>
+          <td><b>{{in_mb}}</b></td>
+          <td><b>{{out_mb}}</b></td>
+        </tr>
+      </table>
+      <p></p>`;
 
-<!-- script type="text/javascript">
-  // abortado, usar server-side direto!
-  let qtDom = $("#qtstatus_a4a tr.totFileCount td:nth-child(2)").text('hello!');
-</script -->
+      const api_url1 = 'http://api-test.addressforall.org/_sql/origin_agg1'
+      // falta query origin_agg1 filtrar recorte do AddressForAll, que tem origem no BR-in!
+      fetch( api_url1 )
+        .then( body => body.json() )
+        .then( data => {
+            if (Array.isArray(data)) { for(const res of data) if (typeof res == 'object') {
+                url_ref = 'http://git.AddressForAll.org'
+                let tr0 = preTpl_tr0({
+                  url1:`${url_ref}/digital-preservation-${res.country}`, desc1:`dig. preserv. ${res.country}`,
+                  url2:`${url_ref}/in-${res.country}`,  desc2:`in-${res.country}`,
+                  url3:`${url_ref}/out-${res.country}`, desc3:`out-${res.country}`
+                });
+                let html_table = preTpl_tab({
+                  prjName:    'AddressForAll '+res.country,
+                  tr0:        tr0,
+                  preserv_n:  res.orig_n_files,
+                  preserv_mb: res.orig_mb
+                });
+                qtstatus_container.insertAdjacentHTML('beforeend', html_table);
+              } else alert("error 2 on fetch "+api_url1)
+            } else alert("error 1 on fetch "+api_url1)
+        });
+        // OSM.CODES? const api_url1 = 'http://api-test.addressforall.org/_sql/origin_agg1' ?
+        // geral é https://github.com/datasets/country-codes BR é  datasets.ok.br.
+    </script>
 
     <!-- #### -->
     <h1>Dados do Projeto AddressForAll</h1>

@@ -8,18 +8,25 @@
 </style>
 
 <section class="main-api" id="api">
-    <h1>API - ECLUSA DE DADOS</h1>
-    <p>
+    <h1>ECLUSA DE DADOS</h1>
     <img style="float: right;" src="/resources/img/nav-eclusa.png"" alt="Eclusa de Dados" width="180" height="200">
-    A entrega de dados brutos pode ser realizada arquivo por arquivo na API ou "em lote", ambas pelo técnico responsável devidamente autenticado. A "entrega em lote" é realizada por protocolo SFTP, no ambiente apelidado de Eclusa, garantindo-se o seguinte workflow:
+    <p>A entrega de <a href="http://addressforall.org/dados">dados brutos</a> pode ser realizada arquivo por arquivo na API ou "em lote", ambas pelo técnico responsável devidamente autenticado. A "entrega em lote" é realizada por protocolo SFTP, no ambiente apelidado de Eclusa, garantindo-se o seguinte workflow:
+      <ol>
+          <li>O técnico responsável recebe os dados originais, os revisa e os organiza.</li>
+          <li>O técnico responsável efetua na sua home SFTP <code>/home/{user}</code> dos arquivos desejados nas pastas padronizadas.</li>
+          <li>O software da Eclusa cria hashes e leva os metadados para a base de dados, depois de oferecer recursos de confirmação na API. Os dados ficam preservados em área de quarentena (períorodo de embargo e testes) e depois em repositório definitivo.</li>
+      </ol>
     </p>
-    <p>
-    <ol>
-        <li>O técnico responsável recebe os dados originais, os revisa e os organiza.</li>
-        <li>O técnico responsável efetua na sua home SFTP <code>/home/{user}</code> dos arquivos desejados nas pastas padronizadas.</li>
-        <li>O software da Eclusa cria hashes e leva os metadados para a base de dados, depois de oferecer recursos de confirmação na API. Os dados ficam preservados em área de quarentena (períorodo de embargo e testes) e depois em repositório definitivo.</li>
-    </ol> 
-    <br>
+    <p>Seguindo alguns dos princípios gerais das "eclusas de <b>segurança de dados</b>"
+      (<a href="https://cidacs.bahia.fiocruz.br/plataforma-de-dados/" rel="external" target="_blank">exemplo</a>),
+      a integridade dos dados originais e seguranca juridica da origem sao garantidas através da restricao de acesso,
+      com monitoramento publico (via API), controle de acesso ao SFTP, Firewall,
+      e <i>eclusa</i> com intertravamento (somente permite passagem para o passo-2 com o fechamento dos demais),
+      e sistema de preservacao &mdash; uma vez registrada a integridade SHA256 do arquivo nao tem como remover ou adulterar.
+      O número de <a href="http://api-test.addressforall.org/_sql/auth_user">usuários com acesso aa Eclusa</a> é restrito, sendo que todos eles recebem orientações
+      e sensibilização em Segurança da Informação, além de assinar termos de responsabilidade.
+    </p>
+    <h1>APIs da Eclusa</h1>
     <h3>&#x2198; Especificações de Entrada</h3>
     <div class="parametros">
         <span>
