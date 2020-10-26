@@ -11,10 +11,12 @@
       que publicam ou transferem por licença aberta (CC0, ODbL ou outra) os dados que produzem.
     </p>
     <div style='text-align:center'><img src='resources/img/datafigs-flow1.svg'></div>
-    <p>Os dados de preservacao sao de uso geral (diversos projetos), e, uma vez homologados, recebem tratamento e garantia de preservacao por pelo menos 20 anos.</p>
-    <p>A seguranca e integridade dos dados preservados é garantida pelo <a href="http://api-test.addressforall.org/v1.htm/nav_eclusa/">sistema de Eclusa</a>,
-      com integridade SHA256 a cada arquivo, confirmação publica e confirmação juridica (registro final na Fundacao Biblioteca Nacional).
-      Em caso de arquivo obtido por download de site oficial, datacao e registro da URL de acesso é feita atraves da <a href="https://archive.org/" rel="external" target="_blank"><i>Wayback Machine</i></a>.
+
+    <p>Os dados do sistema de preservação digital são de uso geral (diversos projetos), e, uma vez homologados, recebem tratamento e garantia de conservação por pelo menos 20 anos.</p>
+    
+    <p>A segurança e integridade dos dados preservados são garantidas pelo <a href="http://api-test.addressforall.org/v1.htm/nav_eclusa/">sistema de Eclusa</a>,
+      com integridade SHA256 a cada arquivo, confirmação pública e confirmação (registro final na Fundação Biblioteca Nacional).
+      Em caso de arquivo obtido por download de site oficial, datação e registro da URL de acesso é feita através da <a href="https://archive.org/" rel="external" target="_blank"><i>Wayback Machine</i></a>.
     </p>
     <h2>Dados a cada projeto</h2>
     <p>
@@ -141,7 +143,7 @@
 
   </div>
   <div class='buttons-dados'>
-    <button>Dados locais</button>
-    <button>Dados nacionais</button>
+    <button onclick="alert('aguarde final de Novembro')">Dados locais</button>
+    <button onclick="alert('aguarde final de Novembro')">Dados nacionais</button>
   </div>
 </section>

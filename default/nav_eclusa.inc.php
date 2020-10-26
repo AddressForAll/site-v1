@@ -14,7 +14,7 @@
       <ol>
           <li>O técnico responsável recebe os dados originais, os revisa e os organiza.</li>
           <li>O técnico responsável efetua na sua home SFTP <code>/home/{user}</code> dos arquivos desejados nas pastas padronizadas.</li>
-          <li>O software da Eclusa cria hashes e leva os metadados para a base de dados, depois de oferecer recursos de confirmação na API. Os dados ficam preservados em área de quarentena (períorodo de embargo e testes) e depois em repositório definitivo.</li>
+          <li>O software da Eclusa cria hashes e leva os metadados para a base de dados, depois de oferecer recursos de confirmação na API. Os dados ficam preservados em área de quarentena (períorodo de embargo e testes) e depois em repositório definitivo para a preservacao digital.</li>
       </ol>
     </p>
     <p>Seguindo alguns dos princípios gerais das "eclusas de <b>segurança de dados</b>"
