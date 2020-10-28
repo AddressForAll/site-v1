@@ -2,21 +2,34 @@
   <div>
     <h1>Dados</h1>
     <p>
-      No contexto Brasil os dados disponibilizados pelo Instituto podem ser baixados por
-      município (dados locais) ou ao nível nacional.
+      No contexto Brasil os dados disponibilizados pelo Instituto AddressForAll podem ser baixados por
+      município (dados locais) ou ao nível nacional. Entanda a seguir o processo de tratamento e como
+      estes dados sao armazenados e disponibilizados.
     </p>
+
+    <div class='buttons-dados'>
+      <button
+      title="Dados ja tratados  pelo Instituto para download, navegando pelo mapa hierarquico de unidades adninistrativas"
+      onclick="alert('aguarde final de Novembro')">Dados consolidados para <br/><i>download</i> por município (mapa)</button>
+      <button
+      title="Dados ja tratados  pelo Instituto para download, navegando por doador/fornecedor dos dados"
+      onclick="alert('aguarde final de Novembro')">Dados consolidados para <br/>&nbsp;&nbsp;<i>download</i>  por fornecedor&nbsp;&nbsp;</button>
+    </div>
+
+<hr/>
+
     <h2>Fluxo geral e repositorios de dados</h2>
     <p>
-      AddressForAll recebe dados doados por diversas fontes, tais como prefeituras, IBGE, e OpenStreetMap,
+      O Instituto recebe dados doados por diversas fontes, tais como prefeituras, IBGE, e OpenStreetMap,
       que publicam ou transferem por licença aberta (CC0, ODbL ou outra) os dados que produzem.
     </p>
     <div style='text-align:center'><img src='resources/img/datafigs-flow1.svg'></div>
 
     <p>Os dados do sistema de preservação digital são de uso geral (diversos projetos), e, uma vez homologados, recebem tratamento e garantia de conservação por pelo menos 20 anos.</p>
-    
+
     <p>A segurança e integridade dos dados preservados são garantidas pelo <a href="http://api-test.addressforall.org/v1.htm/nav_eclusa/">sistema de Eclusa</a>,
-      com integridade SHA256 a cada arquivo, confirmação pública e confirmação (registro final na Fundação Biblioteca Nacional).
-      Em caso de arquivo obtido por download de site oficial, datação e registro da URL de acesso é feita através da <a href="https://archive.org/" rel="external" target="_blank"><i>Wayback Machine</i></a>.
+      pela <a href="https://medium.com/d/aabea5389f4b" rel="external" target="_blank">integridade SHA256</a> a cada arquivo, e pela confirmação pública (seguida de depósito legal na <a href="https://www.bn.gov.br/sobre-bn/deposito-legal" rel="external" target="_blank">Fundação Biblioteca Nacional</a>).
+      Em caso de arquivo obtido por <i>download</i> de site oficial, datação e registro da URL de acesso é feita através da <a href="https://archive.org/" rel="external" target="_blank"><i>Wayback Machine</i></a>.
     </p>
     <h2>Dados a cada projeto</h2>
     <p>
@@ -24,6 +37,7 @@
       Cada projeto faz seu proprio recorte e filtragem de dados preservados.
     </p>
     <style>
+      table.qtstatus {  border: 2px solid #888; }
       table.qtstatus td {text-align: center;}
       table.qtstatus td.smallLabel {text-align: left; font-size: 75%;}
       /*
@@ -62,17 +76,18 @@
         ${'tr0'}
         <tr><td width="65"></td><td colspan="3"><img src='/resources/img/datafigs-flow2-tabPad.svg'></td></tr>
         <tr class="totFile"><td class="smallLabel">Qt. arquivos: </td>
-          <td width="30%"><b>${'preserv_n'}</b></td>
+          <td width="31%"><b>${'preserv_n'}</b> (<b>${'preserv_packs'}</b> <i>packs</i>)</td>
           <td width="30%"><b>{{in_n}}</b></td>
           <td width="30%"><b>{{out_n}}</b></td>
         </tr>
         <tr class="totFile"><td class="smallLabel">Mega bytes: </td>
-          <td><b>${'preserv_mb'}</b> zip</td>
+          <td><b>${'preserv_mb'}</b> (zipped)</td>
           <td><b>{{in_mb}}</b></td>
           <td><b>{{out_mb}}</b></td>
         </tr>
       </table>
-      <p></p>`;
+      <p>Mais detalhes, ver <a href="http://api-test.addressforall.org/v1.htm/nav_core/origin">API <code style="font-size:75%">/v1.htm/nav_core/origin</code></a>.</p>
+      `;
 
       const api_url1 = 'http://api-test.addressforall.org/_sql/origin_agg1'
       // falta query origin_agg1 filtrar recorte do AddressForAll, que tem origem no BR-in!
@@ -89,6 +104,7 @@
                 let html_table = preTpl_tab({
                   prjName:    'AddressForAll '+res.country,
                   tr0:        tr0,
+                  preserv_packs: res.orig_n_packs,
                   preserv_n:  res.orig_n_files,
                   preserv_mb: res.orig_mb
                 });
@@ -141,9 +157,5 @@
 
     </div>
 
-  </div>
-  <div class='buttons-dados'>
-    <button onclick="alert('aguarde final de Novembro')">Dados locais</button>
-    <button onclick="alert('aguarde final de Novembro')">Dados nacionais</button>
   </div>
 </section>

@@ -14,7 +14,7 @@
    stroke-linecap="square"
    stroke-miterlimit="10"
    id="svg87"
-   sodipodi:docname="site-figs-flow1-v2.svg"
+   sodipodi:docname="datafigs-flow1-v2.svg"
    width="670"
    height="231"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
@@ -26,12 +26,19 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs91" />
+     id="defs91">
+    <rect
+       x="485.81865"
+       y="155.15023"
+       width="100.56112"
+       height="28.943393"
+       id="rect51" />
+  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -314,4 +321,12 @@
        fill-rule="evenodd"
        id="path83" />
   </g>
+  <text
+     xml:space="preserve"
+     id="text49"
+     style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect51);fill:#000000;fill-opacity:1;stroke:none;"
+     transform="translate(4,10)"><tspan
+       x="485.81836"
+       y="169.30664"><tspan
+         style="fill:#550000">(outros)</tspan></tspan></text>
 </svg>
