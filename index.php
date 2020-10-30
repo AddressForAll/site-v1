@@ -130,7 +130,7 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
     <div class="newsletter-container">
       <span>Para ser informado das novidades, assine nossa newsletter:</span>
       <div class="newsletter-form-container">
-        <form class="newsletter-form">
+        <form id="newsletter-form" class="newsletter-form">
           <input type="email" placeholder="email@email.com.br" />
           <button id="newsletter-button" type="submit" value="enviar">
             <!-- <i class="fas fa-angle-right"></i> -->
@@ -157,3 +157,34 @@ elseif ( preg_match('/urn:lex:(.+)$/', $nomeDaPagina, $m) && isset($urnRegexes[$
 </body>
 
 </html>
+<script>
+
+function validaEmail(email) {
+  var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return regex.test(email);
+}
+
+function enviarEmail(input)
+{
+  $.ajax(
+  {
+      type:'POST',
+      url: "http://api-test.addressforall.org/_sql/rpc/newsletter_email_ins",
+      data: {'p_email': input},
+      success: function(data){
+        if (data != null) alert('E-mail: ' + input + ' cadastrado com sucesso!');
+        else alert('Esse e-mail já está cadastrado!');
+      }
+  });    
+}
+
+$("#newsletter-form").submit(function(e){
+  e.preventDefault();
+  let email = $.trim($("input[type='email']").val());
+  if (validaEmail(email))
+    enviarEmail(email);
+  else
+    alert('Entrada inválida: ' + email + '\nTente novamente!');
+});
+// $.post('http://api-test.addressforall.org/_sql/rpc/newsletter_email_ins', { p_email: "teste@teste.com.br" });
+</script>
