@@ -46,7 +46,7 @@
                     },
                     {
                         "data" : null,
-                        "render" : data=> `<div align="center" ><a href="http://api-test.addressforall.org/v1.json/vw_core/donor?id=eq.${data.kx.donor.id}" target_blank>${data.kx.donor.id} - ${data.kx.donor.shortname}</a></div>`
+                        "render" : data=> `<div align="center" ><a href="http://api-test.addressforall.org/v1.htm/nav_core/donor/?id=${data.kx.donor.id}" target_blank>${data.kx.donor.id} - ${data.kx.donor.shortname}</a></div>`
                     },
                     {
                         "data" : null,
@@ -67,7 +67,7 @@
             $('#get_url').attr("href", url);
 
         }); // \getJSON
-        
+
     } // \getdata
 
     $(document).ready(function(){
