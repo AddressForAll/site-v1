@@ -8,7 +8,7 @@
     <!-- FILTROS -->
     <span>
         <strong>Filtrar por: </strong>
-    </span> 
+    </span>
     <input type="radio" id="radio_estados" name="tipo_do_filtro" value="estado">
     <label for="radio_estados">Estado</label>
     <input type="radio" id="radio_donors" name="tipo_do_filtro" value="donor">
@@ -70,6 +70,12 @@
             </tr>
             <tr>
                 <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api.addressforall.org/_sql/origin">http://api.addressforall.org/_sql/origin</a></td>
+            </tr>
+            <tr>
+                <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api-test.addressforall.org/_sql/vw_jurisd_origin">http://api-test.addressforall.org/_sql/vw_jurisd_origin</a></td>
+            </tr>
+            <tr>
+                <td>GET</td><td>: <a id="get_url" style="text-decoration: none" href="http://api-test.addressforall.org/_sql/vw_donors_origin">http://api-test.addressforall.org/_sql/vw_donors_origin</a></td>
             </tr>
             <tr>
                 <td>doc</td>

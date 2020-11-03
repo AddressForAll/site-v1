@@ -117,8 +117,33 @@
     </script>
 
     <!-- #### -->
+    <h1>Dados do Projeto Digital Preservation</h1>
+    <p>O foco da preservacao digital sao "pacotes de dados" cedidos ao dominio publico por um fornecedor de dados primarios,
+      que detem o direito de licenciar grandes quantidades de dados espaciais.
+      Os dados de interesse do Instituto AddressForAll sao eleitos atraves de uma <b>curadoria</b>
+      e submetidos a um <b>processo de convide e selecao</b>.
+    </p>
+    <p>O Projeto Digital Preservation e mantido publicamente em <a href="http://git.AddressForAll.org/digital-preservation"><code>git.AddressForAll.org/digital-preservation</code></a>,
+      e as curadoriais locais de cada pais sao soberanas nas suas decisoes, em geral
+      seguindo de perto ou tendo participacao efetiva de membros da comunidade OpenStreetMap do pais.
+      Cada curadoria local tem autonomia de governanca, cumprindo, como entendidade federada, as diretivas gerais do Projeto.
+    </p>
+    <p>Por exemplo a Curadoria Brasil gerencia seu proprio repositorio em
+      <a href="http://git.AddressForAll.org/digital-preservation-BR"><code>git.AddressForAll.org/digital-preservation-BR</code></a>. Os dados do repositorios sao tambem obtidos via API:
+      <ul>
+        <li><b>Pacotes de dados</b> obtidos pela curadoria Brasil: <a href="http://api-test.AddressForAll.org/v1.htm/vw_core/origin/BR"><code>http://api-test.AddressForAll.org/v1.htm/vw_core/origin/BR</code></a></li>
+        <li><b>Doadores de pacotes</b> selecionados pela curadoria Brasil: <a href="http://api-test.AddressForAll.org/v1.htm/vw_core/donor/BR"><code>http://api-test.AddressForAll.org/v1.htm/vw_core/donor/BR</code></a></li>
+      </ul>
+
+    </p>
+
+    <!-- #### -->
     <h1>Dados do Projeto AddressForAll</h1>
-    Ciclo de processamento nos dados relativos a pontos de endereco, reunidos e consolidados pelo projeto.
+    <p>Em estreita colaboracao em a equipe do Projeto de Preservacao, a equipe de processamento de dados do Projeto AddressForAll
+      segue o <i>workflow</i> ilustrado abaixo, para a selecao e ingestao dos dados, que depois de homologados ficam disponiveis em <a href="https://github.com/AddressForAll/in-BR">no git in-BR</a>.
+    </p>
+    <div style='text-align:center'><img src='resources/img/workflow1-preservIngest.png'></div>
+    <p>Abaixo o ciclo principal de processamento nos dados relativos a pontos de endereco, reunidos e consolidados pelo projeto.</p>
 
     <div class="container">
 
