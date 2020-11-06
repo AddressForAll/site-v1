@@ -32,7 +32,9 @@ function getdata(param = null){
                 {"data" : "fmeta.jurisdiction_label"},
                 {"data" : "fid"},
                 {"data" : "fname"},
-                {"data" : "is_valid"}
+                {"data" : "is_valid"},
+                {"data" : "ctype"},
+                {"data" : "fmeta.pack_id"}
             ];
 
             $('#tabela').show();

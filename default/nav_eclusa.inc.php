@@ -77,6 +77,8 @@
                 <th>File Id</th>
                 <th>File Name</th>
                 <th>Is Valid</th>
+                <th>C Type</th>
+                <th>Pack Id</th>
             </tr>
         </thead>
     </table>
