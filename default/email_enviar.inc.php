@@ -5,7 +5,7 @@ $email = $_GET['email'];
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-echo "<script>alert('Enviando email para " . $email . ");</script>";
+echo '<script>alert($email);</script>';
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
@@ -22,7 +22,7 @@ try {
     $mail->Port       = 25;                                     // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    //$mail->setFrom('from@example.com', 'Mailer');
+    $mail->setFrom('ppkrauss@gmail.com', 'Mailer');
 
 
     $mail->addAddress('luis.venezian@gmail.com', 'Luis');     // Add a recipient
