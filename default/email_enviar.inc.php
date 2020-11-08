@@ -5,7 +5,8 @@ $email = $_GET['email'];
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
+echo "<script>alert('teste');</script>";
+exit;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
