@@ -47,7 +47,7 @@ try {
     <br/><br/>
     Para confirmar sua inscrição por gentileza clique no link abaixo:
     <br/>
-    <a href='http://www.addressforall.org.br/default/email_confirmar.inc.php?email=$email&hash=$hash'><h3>Confirmar Assinatura!</h3></a>
+    <a href='http://addressforall.org/default/email_confirmar.inc.php?email=$email&hash=$hash'><h3>Confirmar Assinatura!</h3></a>
     <br/><br/>
     Atenciosamente, equipe Address for All.";
     $mail->send();
