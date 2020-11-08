@@ -175,7 +175,7 @@ function enviarEmail(input)
         if (data != null) {
           let url = "http://addressforall.org/default/email_enviar.inc.php" + "?email=" + input;
           console.log(url);
-          $.get(input);
+          $.get(url);
           alert('E-mail: ' + input + ' cadastrado com sucesso!\n Lhe enviamos um e-mail de confirmação, até logo.'); 
         }
         else alert('Esse e-mail já está cadastrado!');

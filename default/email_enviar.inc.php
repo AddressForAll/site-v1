@@ -51,7 +51,7 @@ try {
     <br/><br/>
     Atenciosamente, equipe Address for All.";
     $mail->send();
-    echo '\n.... Great! Message has been sent';
+    echo "\n.... Great! Message has been sent";
 
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
