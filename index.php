@@ -173,10 +173,10 @@ function enviarEmail(input)
       data: {'p_email': input},
       success: function(data){
         if (data != null) {
-          let url = "http://addressforall.org/default/email_enviar.php" + "?email=" + input;
+          let url = "http://addressforall.org/default/email_enviar.inc.php" + "?email=" + input;
           console.log(url);
           $.get(input);
-          alert('E-mail: ' + input + ' cadastrado com sucesso!'); 
+          alert('E-mail: ' + input + ' cadastrado com sucesso!\n Lhe enviamos um e-mail de confirmação, até logo.'); 
         }
         else alert('Esse e-mail já está cadastrado!');
       }
