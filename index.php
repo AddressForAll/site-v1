@@ -172,7 +172,12 @@ function enviarEmail(input)
       url: "http://api-test.addressforall.org/_sql/rpc/newsletter_email_ins",
       data: {'p_email': input},
       success: function(data){
-        if (data != null) alert('E-mail: ' + input + ' cadastrado com sucesso!');
+        if (data != null) {
+          let url = "http://addressforall.org/default/email_enviar.php" + "?email=" + input;
+          console.log(url);
+          $.get(input);
+          alert('E-mail: ' + input + ' cadastrado com sucesso!'); 
+        }
         else alert('Esse e-mail já está cadastrado!');
       }
   });    
