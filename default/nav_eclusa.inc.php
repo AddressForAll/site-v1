@@ -19,12 +19,12 @@
     </p>
     <p>Seguindo alguns dos princípios gerais das "eclusas de <b>segurança de dados</b>"
       (<a href="https://cidacs.bahia.fiocruz.br/plataforma-de-dados/" rel="external" target="_blank">exemplo</a>),
-      a integridade dos dados originais e seguranca juridica da origem sao garantidas através da restricao de acesso,
-      com monitoramento publico (via API), controle de acesso ao SFTP, Firewall,
-      e <i>eclusa</i> com intertravamento (somente permite passagem para o passo-2 com o fechamento dos demais),
-      e sistema de preservacao &mdash; uma vez registrada a integridade SHA256 do arquivo nao tem como remover ou adulterar.
-      O número de <a href="http://api-test.addressforall.org/_sql/auth_user">usuários com acesso aa Eclusa</a> é restrito, sendo que todos eles recebem orientações
-      e sensibilização em Segurança da Informação, além de assinar termos de responsabilidade.
+      a <b>integridade</b> dos dados originais e a segurança juridica (fé publica e custodia) da origem são garantidas pela metodologia e sua implementacao no sistema. Garante-se Firewall, restrição geral de acesso, e monitoramento publico (via API).
+    </p><p>O controle de acesso ao SFTP é realizado pela <i>eclusa</i>, com intertravamento (somente permite passagem para o passo-2 com o fechamento dos demais),
+      e sistema de preservação &mdash; uma vez registrada a integridade SHA256 do arquivo não há  como remover ou adulterar.
+      <br/>O número de <a href="http://api-test.addressforall.org/_sql/auth_user">usuários com acesso à Eclusa</a> é restrito, sendo que todos eles recebem orientações
+      e sensibilização em Integridade e Segurança da Informação, além de assinar termos de responsabilidade.
+      O usuário designado para um pacote é responsavel pela confirmacao da lincenca de uso e  integridade, assumindo a responsabilidade por toda a <i>cadeia de custodia</i> do pacote.
     </p>
     <h1>APIs da Eclusa</h1>
     <h3>&#x2198; Especificações de Entrada</h3>
