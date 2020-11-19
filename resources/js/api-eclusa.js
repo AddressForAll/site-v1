@@ -21,7 +21,7 @@ function getdata(param = null){
                 {"data" : "username"},
                 {"data" : "jurisdiction_label"},
                 {"data" : "jurisdiction_osmid"},
-                // old {"data" : "pack_path"},
+                {"data" : "pack_id"},
                 {
                   "data" : null,
                   "render": data=> data.pack_path.replace(/^\/home\/[a-z][^\/]+\/(?:_eclusa\/)?/,'')

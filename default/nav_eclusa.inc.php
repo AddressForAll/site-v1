@@ -88,6 +88,7 @@
                 <th>Username</th>
                 <th>Jurisdiction_label</th>
                 <th>Jurisdiction_osmid</th>
+                <th>Pack Id</th>
                 <th>Pack_path</th>
                 <th>User_resp</th>
                 <th>Accepted_date</th>
