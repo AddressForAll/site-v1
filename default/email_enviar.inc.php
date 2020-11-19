@@ -42,14 +42,14 @@ try {
     $mail->isHTML(true);                                    // Set email format to HTML
     $mail->Subject = 'Confirmação de Assinatura - Instituto Address For All';
     $mail->Body    = 
-    "Prezado, $email<br/> 
+    "Prezado $email<br/> 
     Recebemos seu registro de interesse em assinar nossa newsletter e estamos muito felizes com essa escolha! 
     <br/><br/>
-    Para confirmar sua inscrição por gentileza clique no link abaixo:
+    Para confirmar sua inscrição, por gentileza, clique no link abaixo:
     <br/>
     <a href='http://addressforall.org/default/email_confirmar.inc.php?email=$email&hash=$hash'><h3>Confirmar Assinatura!</h3></a>
     <br/><br/>
-    Atenciosamente, equipe Address for All.";
+    Cordialmente, <br/><br/>Equipe AddressForAll.";
     $mail->send();
     echo "\n.... Great! Message has been sent";
 
