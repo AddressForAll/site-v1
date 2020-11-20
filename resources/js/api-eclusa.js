@@ -21,10 +21,13 @@ function getdata(param = null){
                 {"data" : "username"},
                 {"data" : "jurisdiction_label"},
                 {"data" : "jurisdiction_osmid"},
-                {"data" : "pack_id"},
+                {
+                    "data" : null,
+                    "render" : data=> `<a target="_blank" rel="external noopener" href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                },
                 {
                   "data" : null,
-                  "render": data=> data.pack_path.replace(/^\/home\/[a-z][^\/]+\/(?:_eclusa\/)?/,'')
+                  "render" : data=> data.pack_path.replace(/^\/home\/[a-z][^\/]+\/(?:_eclusa\/)?/,'')
                 },
                 {"data" : "packinfo.user_resp"},
                 {"data" : "packinfo.accepted_date"}
