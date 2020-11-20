@@ -21,7 +21,7 @@ function getdata(param = null){
                 {"data" : "username"},
                 {
                     "data" : null,
-                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.json/vw_core/jurisdiction/${data.jurisdiction_label}" target_blank>${data.jurisdiction_label}</a>`
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/jurisdiction/${data.jurisdiction_label}" target_blank>${data.jurisdiction_label}</a>`
                 },
                 {"data" : "jurisdiction_osmid"},
                 {
@@ -41,7 +41,7 @@ function getdata(param = null){
             columns = [
                 {
                     "data" : null,
-                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.json/vw_core/jurisdiction/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/jurisdiction/${data.pack_id}" target_blank>${data.pack_id}</a>`
                 },
                 {"data" : "fid"},
                 {"data" : "fname"},
