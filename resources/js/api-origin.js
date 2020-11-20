@@ -28,7 +28,7 @@
                 "columns" : [
                     {"data" : "id"},  // control widths!???
                     {"data" : null,
-                     "render" : data=> `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.jurisd_osm_id}" target_blank>${data.jurisd_osm_id}</a>`
+                     "render" : data=> `<a title="Mapa" target="_blank" href="http://osm.org/relation/${data.jurisd_osm_id}" target_blank>${data.jurisd_osm_id}</a>`
                     },
                     {
                         "data" : null,
