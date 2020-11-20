@@ -19,7 +19,10 @@ function getdata(param = null){
         if (step =='step0'){
             columns = [
                 {"data" : "username"},
-                {"data" : "jurisdiction_label"},
+                {
+                    "data" : null,
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.jurisdiction_label}" target_blank>${data.jurisdiction_label}</a>`
+                },
                 {"data" : "jurisdiction_osmid"},
                 {
                     "data" : null,
@@ -36,7 +39,10 @@ function getdata(param = null){
             $('#tabela_step_0').show();
         } else {
             columns = [
-                {"data" : "fmeta.jurisdiction_label"},
+                {
+                    "data" : null,
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                },
                 {"data" : "fid"},
                 {"data" : "fname"},
                 {"data" : "is_valid"},
