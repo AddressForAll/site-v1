@@ -41,7 +41,7 @@ function getdata(param = null){
             columns = [
                 {
                     "data" : null,
-                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/jurisdiction/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/jurisdiction/${data.fmeta.jurisdiction_label}" target_blank>${data.fmeta.jurisdiction_label}</a>`
                 },
                 {"data" : "fid"},
                 {"data" : "fname"},
