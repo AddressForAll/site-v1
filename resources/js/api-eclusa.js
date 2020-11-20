@@ -23,7 +23,7 @@ function getdata(param = null){
                 {"data" : "jurisdiction_osmid"},
                 {
                     "data" : null,
-                    "render" : data=> `<a rel="external noopener" href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
                 },
                 {
                   "data" : null,
@@ -43,7 +43,7 @@ function getdata(param = null){
                 {"data" : "ctype"},
                 {
                     "data" : null,
-                    "render" : data=> `<a rel="external noopener" href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                    "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
                 }
             ];
             $('#tabela').show();
