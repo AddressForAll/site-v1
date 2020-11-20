@@ -41,7 +41,10 @@ function getdata(param = null){
                 {"data" : "fname"},
                 {"data" : "is_valid"},
                 {"data" : "ctype"},
-                {"data" : "fmeta.pack_id"}
+                {
+                    "data" : null,
+                    "render" : data=> `<a target="_blank" rel="external noopener" href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
+                }
             ];
             $('#tabela').show();
             $('#tabela_step_0').hide();
