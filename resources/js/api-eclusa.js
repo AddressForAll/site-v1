@@ -2,6 +2,26 @@
  * NAV_ECLUSA, reactive form interface, multiple APIs.
  */
 
+/* Formatting function for row details - modify as you need */
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+        '<tr>'+
+            '<td>donor_id:</td>'+
+            '<td>'+d.packinfo.donor_id+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>user_respr:</td>'+
+            '<td>'+d.packinfo.user_resp+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>accepted_date:</td>'+
+            '<td>'+d.packinfo.accepted_date+'</td>'+
+        '</tr>'+
+    '</table>';
+}
+
+
 var who_show = '';
 
 function getdata(param = null){
@@ -18,6 +38,12 @@ function getdata(param = null){
         url = 'http://api-test.addressforall.org/v1/eclusa/'+ fn +'/'+ user +'/' + user_type
         if (step =='step0'){
             columns = [
+                {
+                    "className":      'details-control',
+                    "orderable":      false,
+                    "data":           null,
+                    "defaultContent": ''
+                },
                 {"data" : "username"},
                 {
                     "data" : null,
@@ -69,7 +95,7 @@ function getdata(param = null){
             $('#paginacao option').show();
             $('#paginacao option').filter( ()=> parseInt(this.value)>data.length ).hide();
 
-            $(who_show).DataTable({
+            var table = $(who_show).DataTable({
                 "bDestroy": true,
                 "dom": 'Bfrtip',
                 "buttons": ['copy', 'csv', 'excel', 'print'],
@@ -80,6 +106,22 @@ function getdata(param = null){
                 "pageLength" : 10
             });
 
+            if (step = 'step0') 
+                $('#tabela_step_0 tbody').on('click', 'td.details-control', function () {
+                    var tr = $(this).closest('tr');
+                    var row = table.row( tr );
+                    console.log('entrou aqui');
+                    if ( row.child.isShown() ) {
+                        // This row is already open - close it
+                        row.child.hide();
+                        tr.removeClass('shown');
+                    }
+                    else {
+                        // Open this row
+                        row.child( format(row.data()) ).show();
+                        tr.addClass('shown');
+                    }
+                });
         });
 
         // Destroy unchecked table to remove duplicated export buttons
@@ -99,10 +141,11 @@ $(document).ready(function(){ // ONLOAD
 
     // Se radio = step 0 então radio de tipo de usuário não filtra
     $('input[type=radio][name=tipo_do_filtro]').change( ()=> {
-        if (this.value == 'step0')
-            $('#tipo_de_usuario_div').hide()
+        checked = $('input[type=radio][name=tipo_do_filtro]:checked').val();
+        if (checked == 'step0')
+            $('#tipo_de_usuario_div').hide();
         else
-            $('#tipo_de_usuario_div').show()
+            $('#tipo_de_usuario_div').show();
     });
     var qtd = 10; //$("#paginacao").children("option:selected").val();
 

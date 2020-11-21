@@ -5,6 +5,14 @@
         margin: 1em;
         padding: 1em;
     }
+
+    td.details-control {
+        background: url('/resources/img/details_open.png') no-repeat center center;
+        cursor: pointer;
+    }
+    tr.shown td.details-control {
+        background: url('/resources/img/details_close.png') no-repeat center center;
+    }
 </style>
 
 <section class="main-api" id="api">
@@ -85,6 +93,7 @@
     <table id="tabela_step_0" class="display" style="display: none;">
         <thead>
             <tr>
+                <th></th>
                 <th>Username</th>
                 <th>Jurisdiction_label</th>
                 <th>Jurisdiction_osmid</th>
