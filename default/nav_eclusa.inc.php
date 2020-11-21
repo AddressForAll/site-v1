@@ -93,7 +93,7 @@
     <table id="tabela_step_0" class="display" style="display: none;">
         <thead>
             <tr>
-                <th></th>
+                <th title="Pack Info"></th>
                 <th>Username</th>
                 <th>Jurisdiction_label</th>
                 <th>Jurisdiction_osmid</th>

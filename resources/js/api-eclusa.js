@@ -49,7 +49,10 @@ function getdata(param = null){
                     "data" : null,
                     "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/jurisdiction/${data.jurisdiction_label}" target_blank>${data.jurisdiction_label}</a>`
                 },
-                {"data" : "jurisdiction_osmid"},
+                {
+                    "data" : null,
+                    "render" : data=> `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.jurisdiction_osmid}" target_blank>${data.jurisdiction_osmid}</a>`
+                },
                 {
                     "data" : null,
                     "render" : data=> `<a href="http://api-test.addressforall.org/v1.htm/vw_core/donatedpack/${data.pack_id}" target_blank>${data.pack_id}</a>`
@@ -105,12 +108,15 @@ function getdata(param = null){
                 "responsive": true,
                 "pageLength" : 10
             });
+            
+            // Add title at first column (+)(-)
+            $(".details-control").attr("title","Pack Info");
+            console.log($(".details-control"));
 
             if (step = 'step0') 
                 $('#tabela_step_0 tbody').on('click', 'td.details-control', function () {
                     var tr = $(this).closest('tr');
                     var row = table.row( tr );
-                    console.log('entrou aqui');
                     if ( row.child.isShown() ) {
                         // This row is already open - close it
                         row.child.hide();
@@ -130,10 +136,12 @@ function getdata(param = null){
         // Changes automatically the GET LINK at Annotation for Developers Section
         $('#get_url').text(url);
         $('#get_url').attr("href", url);
+
     }
     else {
         alert('Inserir usuário para completar.')
     }
+
 }
 
 
