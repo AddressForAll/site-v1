@@ -108,10 +108,9 @@ function getdata(param = null){
                 "responsive": true,
                 "pageLength" : 10
             });
-            
+
             // Add title at first column (+)(-)
             $(".details-control").attr("title","Pack Info");
-            console.log($(".details-control"));
 
             if (step = 'step0') 
                 $('#tabela_step_0 tbody').on('click', 'td.details-control', function () {
