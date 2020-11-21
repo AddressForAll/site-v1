@@ -106,7 +106,8 @@ function getdata(param = null){
                 "columns" : columns,
                 "paging": true,
                 "responsive": true,
-                "pageLength" : 10
+                "pageLength" : 10,
+                stateSave: true
             });
 
             // Add title at first column (+)(-)
