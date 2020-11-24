@@ -127,7 +127,7 @@
         // Calling the function that build the html and render  
         $('#api_default_preview tbody').on('click', 'td.details-control', function () {
             var tr = $(this).closest('tr');
-            var row = table.row( tr );
+            var row = table.row(tr);
             if ( row.child.isShown() ) {
                 // This row is already open - close it
                 row.child.hide();
