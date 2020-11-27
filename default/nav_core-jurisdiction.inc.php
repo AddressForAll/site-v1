@@ -6,18 +6,33 @@
         margin: 1em;
         padding: 1em;
     }
+    td.details-control {
+        background: url('/resources/img/details_open.png') no-repeat center center;
+        cursor: pointer;
+    }
+    tr.shown td.details-control {
+        background: url('/resources/img/details_close.png') no-repeat center center;
+    }
 </style>
 <section class="main-api" id="api">
     <h1>API - Resgatar dados</h1>
     <span>
         <strong>Dados: </strong>Jurisdiction
     </span>
-    <br>
-
+    <h3>&#x2198; Especificações de Entrada</h3>
+    <div class="parametros">
+        <!-- COMBOS -->
+        <div id="div_abbrev" style="">
+            <label><strong>Parent Abbrev: </strong></label>
+            <select id="abbrev"></select>
+        </div>
+        <hr style="opacity: 0.1;">
+        <button onclick="getdata();"><strong>Consultar</strong></button>
+        <br>
+    </div>
     <div id="definepaginacao" style="display: none;">
         <h3>&#x2197; Especificações de Saída</h3>
         <div class="parametros">
-            <strong>Paginar Resultado: </strong><input type="checkbox" id="paginar" checked>
             <strong>Configurar resultados por página</strong>
             <select id="paginacao">
                 <option value="10" selected>10</option>
@@ -28,9 +43,6 @@
             </select>
         </div>
     </div>
-    <br>
-    <br>
-    <button onclick="getdata();"><strong>Consultar</strong></button>
     <br>
     <br>
 

@@ -1,28 +1,47 @@
+/**
+ * JURISDICTION, reactive form interface, multiple APIs.
+ */
 
+/* Formatting function for row details - modify as you need */
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+        '<tr>'+
+            '<td>notes:</td>'+
+            '<td>'+d.info.notes+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>creation:</td>'+
+            '<td>'+d.info.creation+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>extinction:</td>'+
+            '<td>'+d.info.extinction+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>postalCode_ranges:</td>'+
+            '<td>'+d.info.postalCode_ranges+'</td>'+
+        '</tr>'+
+    '</table>';
+}
+
+        
     function getdata(param = null){
-        /*
-        var valor, atributo, url;
-        if (param != null){
-            valor = param;
-            atributo = "donor_id";
-        }
-        else if ($('input[type=radio][name=tipo_do_filtro]:checked').val() == "estado") {
-            valor = $("#estados").children("option:selected").val();
-            atributo = "jurisd_state";
-        }
-        else {
-            valor = $("#donors").children("option:selected").val();
-            atributo = "donor_id";
-        }
-        */
 
-        url = "http://api-test.addressforall.org/v1/vw_core/jurisdiction?limit=1000";
-        //url += valor != "all" ? atributo + ".eq." + valor : "";
+        // Filtro
+        abbrev = $("#abbrev").children("option:selected").val();
+        url = "http://api-test.addressforall.org/v1/vw_core/jurisdiction/parent_abbrev.eq." + abbrev + "?limit=1000";
+        
 
         $.getJSON(url, function(data) {
             $('#tabela').show();
             $('#definepaginacao').show();
-            $('#tabela').DataTable({
+
+            // Changes automatically html pagination options from select based on data length
+            $('#paginacao option').show();
+            $('#paginacao option').filter(function(){ return parseInt(this.value) > data.length}).hide();
+
+            var table = $('#tabela').DataTable({
                 "bDestroy": true,
                 "dom": 'Bfrtip',
                 "buttons": ['copy', 'csv', 'excel', 'print'],
@@ -39,21 +58,40 @@
                     {"data": "abbrev"},
                     {
                         "data" : null,
-                        "render": function(data, type, row) {
-                            return (data["wikidata_id"]) ? '<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : ''
-                        
-                        }
+                        "render": data=> (data["wikidata_id"]) ? `<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q${data.wikidata_id}" target_blank>${data.wikidata_id}</a>` : ''
                     },
                     {"data": "lexlabel"},
                     {"data": "isolabel_ext"},
                     {"data": "ddd"},
-                    {"data": "info"},
+                    {
+                        "className": 'details-control',
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": ''
+                    },
                     {"data": "admin_level"},
                     {"data": "parent_id"}
                 ],
                 "paging": $('#paginar').prop('checked'),
                 "responsive": true,
                 "pageLength" : 10
+            });
+            
+            // Add title at info column (+)(-)
+            $(".details-control").attr("title","Pack Info");
+            $('#tabela tbody').on('click', 'td.details-control', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row( tr );
+                if ( row.child.isShown() ) {
+                    // This row is already open - close it
+                    row.child.hide();
+                    tr.removeClass('shown');
+                }
+                else {
+                    // Open this row
+                    row.child( format(row.data()) ).show();
+                    tr.addClass('shown');
+                }
             });
 
             /* Changes automatically the GET LINK at Annotation for Developers Section */
@@ -68,10 +106,19 @@
 
         // Páginação controlda
         $('#definepaginacao').on('change', function () {
-        var qtd = $("#paginacao").children("option:selected").val();
-        $('#tabela').DataTable().page.len(qtd).draw();
+            var qtd = $("#paginacao").children("option:selected").val();
+            $('#tabela').DataTable().page.len(qtd).draw();
         });
 
+    
+        // Carregar option dos parent abbrevs
+        $.getJSON('http://api-test.addressforall.org/_sql/vw_jurisdiction_parent_abbrev' , data=> {
+            var options = '' //"<option selected value='all'>Trazer Tudo</option>";
+            for (var i=0; i<data.length; i++) 
+                options += `<option value="${data[i].parent_abbrev}">${data[i].parent_abbrev} - (${data[i].qtd} )</option>`;
+            $('#abbrev').html(options)
+        });
+        
         // Considera ordenação correta em PT, A, À, Á, B, C ... Z
         $.fn.dataTable.ext.order.intl = function ( locales, options ) {
         if ( window.Intl ) {
@@ -87,12 +134,4 @@
         };
         $.fn.dataTable.ext.order.intl( 'pt' );
 
-        $('#paginar').on('change', ()=> {
-            if (!$('#paginar').prop('checked'))
-                $('#tabela').DataTable().page.len(-1).draw()
-            else if (qtd)
-                $('#tabela').DataTable().page.len(qtd).draw()
-            else
-                $('#tabela').DataTable().page.len(10).draw()
-        });
     });

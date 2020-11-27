@@ -96,7 +96,7 @@ function getdata(param = null){
 
             // Changes automatically html pagination options from select based on data length
             $('#paginacao option').show();
-            $('#paginacao option').filter( ()=> parseInt(this.value)>data.length ).hide();
+            $('#paginacao option').filter(function(){ return parseInt(this.value) > data.length}).hide();
 
             var table = $(who_show).DataTable({
                 "bDestroy": true,
