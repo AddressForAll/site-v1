@@ -33,7 +33,9 @@ function getdata(param = null){
     // Filtro
     abbrev = $("#abbrev").children("option:selected").val();
     console.log(param);
-    url = (param) ? param : "http://api-test.addressforall.org/v1/vw_core/jurisdiction/parent_abbrev.eq." + abbrev + "?limit=1000";
+
+    url = "http://api-test.addressforall.org/v1/vw_core/jurisdiction/"; 
+    url += (param) ? param : "parent_abbrev.eq." + abbrev + "?limit=1000";
 
     $.getJSON(url, function(data) {
         $('#tabela').show();
