@@ -1,6 +1,8 @@
 /**
  * JURISDICTION, reactive form interface, multiple APIs.
+ * 
  */
+
 
 /* Formatting function for row details - modify as you need */
 function format ( d ) {
@@ -25,113 +27,129 @@ function format ( d ) {
     '</table>';
 }
 
-        
-    function getdata(param = null){
-
-        // Filtro
-        abbrev = $("#abbrev").children("option:selected").val();
-        url = "http://api-test.addressforall.org/v1/vw_core/jurisdiction/parent_abbrev.eq." + abbrev + "?limit=1000";
-        
-
-        $.getJSON(url, function(data) {
-            $('#tabela').show();
-            $('#definepaginacao').show();
-
-            // Changes automatically html pagination options from select based on data length
-            $('#paginacao option').show();
-            $('#paginacao option').filter(function(){ return parseInt(this.value) > data.length}).hide();
-
-            var table = $('#tabela').DataTable({
-                "bDestroy": true,
-                "dom": 'Bfrtip',
-                "buttons": ['copy', 'csv', 'excel', 'print'],
-                "data" : data,
-                "columns" : [
-                    {
-                        "data" : null,
-                        "render" : data=> `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.osm_id}" target_blank>${data.osm_id}</a>`
-                    },
-                    {"data": "jurisd_base_id"},
-                    {"data": "jurisd_local_id"},
-                    {"data": "name"},
-                    {"data": "parent_abbrev"},
-                    {"data": "abbrev"},
-                    {
-                        "data" : null,
-                        "render": data=> (data["wikidata_id"]) ? `<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q${data.wikidata_id}" target_blank>${data.wikidata_id}</a>` : ''
-                    },
-                    {"data": "lexlabel"},
-                    {"data": "isolabel_ext"},
-                    {"data": "ddd"},
-                    {
-                        "className": 'details-control',
-                        "orderable": false,
-                        "data": null,
-                        "defaultContent": ''
-                    },
-                    {"data": "admin_level"},
-                    {"data": "parent_id"}
-                ],
-                "paging": $('#paginar').prop('checked'),
-                "responsive": true,
-                "pageLength" : 10
-            });
-            
-            // Add title at info column (+)(-)
-            $(".details-control").attr("title","Pack Info");
-            $('#tabela tbody').on('click', 'td.details-control', function () {
-                var tr = $(this).closest('tr');
-                var row = table.row( tr );
-                if ( row.child.isShown() ) {
-                    // This row is already open - close it
-                    row.child.hide();
-                    tr.removeClass('shown');
-                }
-                else {
-                    // Open this row
-                    row.child( format(row.data()) ).show();
-                    tr.addClass('shown');
-                }
-            });
-
-            /* Changes automatically the GET LINK at Annotation for Developers Section */
-            $('#get_url').text(url);
-            $('#get_url').attr("href", url);
-
-        }); // \getJSON
-
-    } // \getdata
-
-    $(document).ready(function(){
-
-        // Páginação controlda
-        $('#definepaginacao').on('change', function () {
-            var qtd = $("#paginacao").children("option:selected").val();
-            $('#tabela').DataTable().page.len(qtd).draw();
-        });
-
     
-        // Carregar option dos parent abbrevs
-        $.getJSON('http://api-test.addressforall.org/_sql/vw_jurisdiction_parent_abbrev' , data=> {
-            var options = '' //"<option selected value='all'>Trazer Tudo</option>";
-            for (var i=0; i<data.length; i++) 
-                options += `<option value="${data[i].parent_abbrev}">${data[i].parent_abbrev} - (${data[i].qtd} )</option>`;
-            $('#abbrev').html(options)
+function getdata(param = null){
+
+    // Filtro
+    abbrev = $("#abbrev").children("option:selected").val();
+    console.log(param);
+    url = (param) ? param : "http://api-test.addressforall.org/v1/vw_core/jurisdiction/parent_abbrev.eq." + abbrev + "?limit=1000";
+
+    $.getJSON(url, function(data) {
+        $('#tabela').show();
+        $('#definepaginacao').show();
+
+        // Changes automatically html pagination options from select based on data length
+        $('#paginacao option').show();
+        $('#paginacao option').filter(function(){ return parseInt(this.value) > data.length}).hide();
+
+        var table = $('#tabela').DataTable({
+            "bDestroy": true,
+            "dom": 'Bfrtip',
+            "buttons": ['copy', 'csv', 'excel', 'print'],
+            "data" : data,
+            "columns" : [
+                {
+                    "data" : null,
+                    "render" : data=> (data["osm_id"] > 0) ? `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.osm_id}" target_blank>${data.osm_id}</a>` : data["osm_id"]
+                },
+                {"data": "jurisd_base_id"},
+                {"data": "jurisd_local_id"},
+                {"data": "name"},
+                {"data": "parent_abbrev"},
+                {"data": "abbrev"},
+                {
+                    "data" : null,
+                    "render": data=> (data["wikidata_id"]) ? `<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q${data.wikidata_id}" target_blank>${data.wikidata_id}</a>` : ''
+                },
+                {"data": "lexlabel"},
+                {"data": "isolabel_ext"},
+                {"data": "ddd"},
+                {
+                    "className": 'details-control',
+                    "orderable": false,
+                    "data": null,
+                    "defaultContent": ''
+                },
+                {"data": "admin_level"},
+                {"data": "parent_id"}
+            ],
+            "paging": $('#paginar').prop('checked'),
+            "responsive": true,
+            "pageLength" : 10
         });
         
-        // Considera ordenação correta em PT, A, À, Á, B, C ... Z
-        $.fn.dataTable.ext.order.intl = function ( locales, options ) {
-        if ( window.Intl ) {
-            var collator = new window.Intl.Collator( locales, options );
-            var types = $.fn.dataTable.ext.type;
-
-            delete types.order['string-pre'];
-            types.order['string-asc'] = collator.compare;
-            types.order['string-desc'] = function ( a, b ) {
-                return collator.compare( a, b ) * -1;
-                };
+        // Add title at info column (+)(-)
+        $(".details-control").attr("title","Pack Info");
+        $('#tabela tbody').on('click', 'td.details-control', function () {
+            var tr = $(this).closest('tr');
+            var row = table.row( tr );
+            if ( row.child.isShown() ) {
+                // This row is already open - close it
+                row.child.hide();
+                tr.removeClass('shown');
             }
-        };
-        $.fn.dataTable.ext.order.intl( 'pt' );
+            else {
+                // Open this row
+                row.child( format(row.data()) ).show();
+                tr.addClass('shown');
+            }
+        });
 
+        /* Changes automatically the GET LINK at Annotation for Developers Section */
+        $('#get_url').text(url);
+        $('#get_url').attr("href", url);
+
+    }); // \getJSON
+
+} // \getdata
+
+$(document).ready(function(){
+
+    /* API /v1{formatoSaida}/{modulo}/{funcao}/{parametros}
+     * the code below get current url and replace host part by blank and then split the string by "/"
+     * ex: 
+     *  ===> http://api-test.addressforall.org/v1.htm/nav_core/jurisdiction/BR-ES-Serra 
+     *      ===> /v1.htm/nav_core/jurisdiction/BR-ES-Serra
+     *          ===> 0: "v1.htm"
+     *               1: "nav_core"
+     *               2: "jurisdiction"
+     *               3: "BR-ES-Serra" <=== TARGET
+     */       
+    var url =  window.location.href.replace(window.location.protocol + '//' + window.location.hostname + '/', '').split('/')[3]
+
+    // look at position 3 and call getdata if there is some value indeed
+    if (url) getdata(param = url);
+
+
+    // Páginação controlda
+    $('#definepaginacao').on('change', function () {
+        var qtd = $("#paginacao").children("option:selected").val();
+        $('#tabela').DataTable().page.len(qtd).draw();
     });
+
+
+    // Carregar option dos parent abbrevs
+    $.getJSON('http://api-test.addressforall.org/_sql/vw_jurisdiction_parent_abbrev' , data=> {
+        var options = '' //"<option selected value='all'>Trazer Tudo</option>";
+        for (var i=0; i<data.length; i++) 
+            options += `<option value="${data[i].parent_abbrev}">${data[i].parent_abbrev} - (${data[i].qtd} )</option>`;
+        $('#abbrev').html(options)
+    });
+    
+    // Considera ordenação correta em PT, A, À, Á, B, C ... Z
+    $.fn.dataTable.ext.order.intl = function ( locales, options ) {
+    if ( window.Intl ) {
+        var collator = new window.Intl.Collator( locales, options );
+        var types = $.fn.dataTable.ext.type;
+
+        delete types.order['string-pre'];
+        types.order['string-asc'] = collator.compare;
+        types.order['string-desc'] = function ( a, b ) {
+            return collator.compare( a, b ) * -1;
+            };
+        }
+    };
+    $.fn.dataTable.ext.order.intl( 'pt' );
+
+});
