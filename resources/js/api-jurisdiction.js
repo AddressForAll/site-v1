@@ -2,31 +2,51 @@
  * JURISDICTION, reactive form interface, multiple APIs.
  * 
  */
-
+function replaceAll(str, find, replace) {
+    return str.replace(new RegExp(find, 'g'), replace);
+}
 
 /* Formatting function for row details - modify as you need */
 function format ( d ) {
     // `d` is the original data object for the row
     if (d.info == null) return '<table><td>Indisponível.</td></table>'
-    else 
+
+    var request = new XMLHttpRequest();
+    var api_wikidata = `https://www.wikidata.org/w/api.php?action=wbgetclaims&format=json&property=P242&entity=Q${d.wikidata_id}&origin=*`;
+    request.open('GET', api_wikidata, false);  // `false` makes the request synchronous
+    request.send(null);
+
+    
+    data = (request.status === 200) ? JSON.parse(request.responseText) : '';
+
+   // $.getJSON(api_wikidata, data=> {
+        //console.log(replaceAll(data.claims.P242[0]["mainsnak"]["datavalue"].value,' ', '_'));         
+    file_name = replaceAll(data.claims.P242[0]["mainsnak"]["datavalue"].value,' ', '_');
+    file_path = `http://commons.wikimedia.org/wiki/Special:FilePath/${file_name}?width=300px`;
+        //console.log("File: " + file_path);
+
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
-        '<tr>'+
-            '<td>notes:</td>'+
-            '<td>'+d.info.notes+'</td>'+
-        '</tr>'+
-        '<tr>'+
-            '<td>creation:</td>'+
-            '<td>'+d.info.creation+'</td>'+
-        '</tr>'+
-        '<tr>'+
-            '<td>extinction:</td>'+
-            '<td>'+d.info.extinction+'</td>'+
-        '</tr>'+
-        '<tr>'+
-            '<td>postalCode_ranges:</td>'+
-            '<td>'+d.info.postalCode_ranges+'</td>'+
-        '</tr>'+
-    '</table>';
+    '<tr>'+
+        '<td>notes:</td>'+
+        '<td>'+d.info.notes+'</td>'+
+    '</tr>'+
+    '<tr>'+
+        '<td>creation:</td>'+
+        '<td>'+d.info.creation+'</td>'+
+    '</tr>'+
+    '<tr>'+
+        '<td>extinction:</td>'+
+        '<td>'+d.info.extinction+'</td>'+
+    '</tr>'+
+    '<tr>'+
+        '<td>postalCode_ranges:</td>'+
+        '<td>'+d.info.postalCode_ranges+'</td>'+
+    '</tr>'+
+    '</table>' + 
+    '</br><table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+    '<tr><td><strong>Mapa</strong></td></tr>' +
+    '<tr><td><a href="http://wikidata.org/entity/Q'+d.wikidata_id+'">' +
+    '<img src="'+file_path+'"></a></td></tr></table>';
 }
 
     
@@ -146,7 +166,7 @@ $(document).ready(function(){
     else {
         // look at position 3 and call getdata if there is some value indeed
         let url =  window.location.href.replace(window.location.protocol + '//' + window.location.hostname + '/', '').split('/')[3]
-        // if localhost
+        // uncomment line below if it's not production enviroment
         // url = window.location.href.replace(window.location.protocol + '//' + window.location.hostname + ':3002/', '').split('/')[3]
         getdata(param = url);
     }
