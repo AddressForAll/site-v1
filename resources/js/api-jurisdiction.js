@@ -7,6 +7,8 @@
 /* Formatting function for row details - modify as you need */
 function format ( d ) {
     // `d` is the original data object for the row
+    if (d.info == null) return '<table><td>Indisponível.</td></table>'
+    else 
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
         '<tr>'+
             '<td>notes:</td>'+
@@ -31,11 +33,11 @@ function format ( d ) {
 function getdata(param = null){
 
     // Filtro
-    abbrev = $("#abbrev").children("option:selected").val();
-    console.log(param);
+    if (param == null && abbrev == 'deny')  
+        return alert('Você deve escolher uma opção para consultar.');
 
     url = "http://api-test.addressforall.org/v1/vw_core/jurisdiction/"; 
-    url += (param) ? param : "parent_abbrev.eq." + abbrev + "?limit=1000";
+    url += (param) ? param : "?limit=10";
 
     $.getJSON(url, function(data) {
         $('#tabela').show();
@@ -108,22 +110,6 @@ function getdata(param = null){
 
 $(document).ready(function(){
 
-    /* API /v1{formatoSaida}/{modulo}/{funcao}/{parametros}
-     * the code below get current url and replace host part by blank and then split the string by "/"
-     * ex: 
-     *  ===> http://api-test.addressforall.org/v1.htm/nav_core/jurisdiction/BR-ES-Serra 
-     *      ===> /v1.htm/nav_core/jurisdiction/BR-ES-Serra
-     *          ===> 0: "v1.htm"
-     *               1: "nav_core"
-     *               2: "jurisdiction"
-     *               3: "BR-ES-Serra" <=== TARGET
-     */       
-    var url =  window.location.href.replace(window.location.protocol + '//' + window.location.hostname + '/', '').split('/')[3]
-
-    // look at position 3 and call getdata if there is some value indeed
-    if (url) getdata(param = url);
-
-
     // Páginação controlda
     $('#definepaginacao').on('change', function () {
         var qtd = $("#paginacao").children("option:selected").val();
@@ -133,12 +119,38 @@ $(document).ready(function(){
 
     // Carregar option dos parent abbrevs
     $.getJSON('http://api-test.addressforall.org/_sql/vw_jurisdiction_parent_abbrev' , data=> {
-        var options = '' //"<option selected value='all'>Trazer Tudo</option>";
+        var options = "<option selected value='deny'>Escolha um Parent Abbrev</option>";
         for (var i=0; i<data.length; i++) 
-            options += `<option value="${data[i].parent_abbrev}">${data[i].parent_abbrev} - (${data[i].qtd} )</option>`;
+            options += `<option value="${data[i].parent_abbrev}">${data[i].parent_abbrev} - (${data[i].qtd})</option>`;
         $('#abbrev').html(options)
     });
     
+    /* API /v1{formatoSaida}/{modulo}/{funcao}/{parametros}
+    * the code below get current url and replace host part by blank and then split the string by "/"
+    * ex: 
+    *  ===> http://api-test.addressforall.org/v1.htm/nav_core/jurisdiction/BR-ES-Serra 
+    *      ===> /v1.htm/nav_core/jurisdiction/BR-ES-Serra
+    *          ===> 0: "v1.htm"
+    *               1: "nav_core"
+    *               2: "jurisdiction"
+    *               3: "BR-ES-Serra" <=== TARGET
+    */       
+    
+
+
+    // seach for abbrev as a get parameter 
+    let searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.has('abbrev')){
+        getdata('parent_abbrev.eq.' + searchParams.get('abbrev'));
+    }
+    else {
+        // look at position 3 and call getdata if there is some value indeed
+        let url =  window.location.href.replace(window.location.protocol + '//' + window.location.hostname + '/', '').split('/')[3]
+        // if localhost
+        // url = window.location.href.replace(window.location.protocol + '//' + window.location.hostname + ':3002/', '').split('/')[3]
+        getdata(param = url);
+    }
+
     // Considera ordenação correta em PT, A, À, Á, B, C ... Z
     $.fn.dataTable.ext.order.intl = function ( locales, options ) {
     if ( window.Intl ) {

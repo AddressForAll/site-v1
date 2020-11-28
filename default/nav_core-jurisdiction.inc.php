@@ -21,14 +21,16 @@
     </span>
     <h3>&#x2198; Especificações de Entrada</h3>
     <div class="parametros">
-        <!-- COMBOS -->
-        <div id="div_abbrev" style="">
-            <label><strong>Parent Abbrev: </strong></label>
-            <select id="abbrev"></select>
-        </div>
-        <hr style="opacity: 0.1;">
-        <button onclick="getdata();"><strong>Consultar</strong></button>
-        <br>
+        <form action="/v1.htm/nav_core/jurisdiction/" method="GET">
+            <!-- COMBOS -->
+            <div id="div_abbrev" style="">
+                <label><strong>Parent Abbrev: </strong></label>
+                <select name="abbrev" id="abbrev"></select>
+            </div>
+            <hr style="opacity: 0.1;">
+            <button onclick="getdata();"><strong>Consultar</strong></button>
+            </br>
+        <form>
     </div>
     <div id="definepaginacao" style="display: none;">
         <h3>&#x2197; Especificações de Saída</h3>
