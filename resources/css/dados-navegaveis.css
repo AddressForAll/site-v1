@@ -1,6 +1,6 @@
   
   #br-map{
-    display: block;
+    display: flex;
     position: relative;
     top: 0;
     left: 0;
@@ -14,11 +14,7 @@
     fill: #002868 !important;
     cursor: pointer;
   }
-  #path67 {
-    fill: none !important;
-    stroke: #A9A9A9 !important;
-    cursor: default;
-  }
+
   #info-box {
     display: none;
     position: absolute;

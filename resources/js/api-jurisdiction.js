@@ -17,13 +17,10 @@ function format ( d ) {
     request.send(null);
 
     
-    data = (request.status === 200) ? JSON.parse(request.responseText) : '';
-
-   // $.getJSON(api_wikidata, data=> {
-        //console.log(replaceAll(data.claims.P242[0]["mainsnak"]["datavalue"].value,' ', '_'));         
+    data = (request.status === 200) ? JSON.parse(request.responseText) : '';    
     file_name = replaceAll(data.claims.P242[0]["mainsnak"]["datavalue"].value,' ', '_');
     file_path = `http://commons.wikimedia.org/wiki/Special:FilePath/${file_name}?width=300px`;
-        //console.log("File: " + file_path);
+        
 
     return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
     '<tr>'+
