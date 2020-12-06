@@ -31,7 +31,6 @@ li a:hover {
 }
 .grid-container {
     display: grid;
-    /*grid-template-columns: 1fr 600px;*/
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* see notes below */
 
@@ -66,6 +65,11 @@ ul.menu-uf a { cursor: pointer; }
 	<h1>Mapa de Dados</h1>
 	<p>Em desenvolvimento...</p>
 	<div>
+		<h2>Escolha o tipo de dado:</h2>
+		<?php include 'resources/img/datafigs-flow2-tabPad.svg'?>
+	</div>
+	<div>
+		<h2>Escolha um estado:</h2>
 		<ul class="menu-uf">
 			<script>document.write(create_select());</script>
 		</ul>

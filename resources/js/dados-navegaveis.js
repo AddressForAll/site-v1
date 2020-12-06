@@ -1,9 +1,9 @@
-$("path, circle").hover(function(e) {
+$("#br-map path, #br-map circle").hover(function(e) {
     $('#info-box').css('display','block');
     $('#info-box').html($(this).data('info'));
   });
   
-  $("path, circle").mouseleave(function(e) {
+  $("#br-map path, #br-map circle").mouseleave(function(e) {
     $('#info-box').css('display','none');
   });
   
@@ -14,7 +14,7 @@ $("path, circle").hover(function(e) {
   
   var ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   if(ios) {
-    $('a').on('click touchend', function() {
+    $('#br-map a').on('click touchend', function() {
       var link = $(this).attr('href');
       window.open(link,'_blank');
       return false;
