@@ -66,7 +66,7 @@ ul.menu-uf a { cursor: pointer; }
 	<p>Em desenvolvimento...</p>
 	<div>
 		<h2>Escolha o tipo de dado:</h2>
-		<?php include 'resources/img/datafigs-flow2-tabPad.svg'?>
+		<?php include 'resources/img/datafigs-flow2-tabPad2.svg'?>
 	</div>
 	<div>
 		<h2>Escolha um estado:</h2>

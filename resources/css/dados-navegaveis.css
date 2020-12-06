@@ -1,9 +1,15 @@
-  
-  #recorte-preservado:hover{
-    fill: #2756a1 !important;
-    cursor: pointer;
+  #datastate .preservado:hover {
+    fill:#61b15a;
   }
-  
+
+  #datastate .filtrado:hover {
+    fill:#fff76a;
+  }
+
+  #datastate .consolidado:hover {
+    fill:#ffce89;
+  }
+    
   #br-map{
     display: flex;
     position: relative;

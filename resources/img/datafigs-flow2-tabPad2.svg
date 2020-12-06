@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   id = "datastate"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -18,57 +18,6 @@
    width="699"
    height="120"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
-  <metadata
-     id="metadata67">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs65">
-    <rect
-       x="83.52369"
-       y="147.54699"
-       width="93.933983"
-       height="32.763561"
-       id="rect40" />
-    <rect
-       x="83.52369"
-       y="147.54699"
-       width="93.933983"
-       height="32.763561"
-       id="rect47" />
-    <rect
-       x="83.52369"
-       y="147.54699"
-       width="114.38722"
-       height="34.225053"
-       id="rect55" />
-    <rect
-       x="83.52369"
-       y="147.54699"
-       width="93.933983"
-       height="32.763561"
-       id="rect63" />
-    <rect
-       x="83.52369"
-       y="147.54699"
-       width="127.15326"
-       height="31.427237"
-       id="rect71" />
-    <rect
-       x="83.52369"
-       y="147.54699"
-       width="185.66053"
-       height="31.427237"
-       id="rect75" />
-  </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -90,150 +39,120 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg61"
      inkscape:document-rotation="0" />
-  <clipPath
-     id="p.0">
-    <path
-       d="M 0,0 H 720 V 540 H 0 Z"
-       clip-rule="nonzero"
-       id="path2" />
-  </clipPath>
-  <path
-
-     fill="#000000"
-     fill-opacity="0"
-     d="M 0,0 H 720 V 540 H 0 Z"
-     fill-rule="evenodd"
-     id="path5" />
-  <path
+ 
+  <!-- SETAS -->
+  <path    
      fill="#ffffff"
      d="m 192.35432,50.593174 h 302.5197 v 23.748035 h -302.5197 z"
-     fill-rule="evenodd"
-     id="path7" />
+     
+	 class="" /> 
+  <a href="/preservado">
+	<path
+		fill="#cfe2f3"
+		d="m 71.309711,30.339895 c 0,6.203417 27.271849,11.232283 60.913389,11.232283 33.64153,0 60.91339,-5.028866 60.91339,-11.232283 v 67.3937 c 0,6.203415 -27.27186,11.232285 -60.91339,11.232285 -33.64154,0 -60.913389,-5.02887 -60.913389,-11.232285 z"    
+		class="preservado"
+		/>
+	<path
+		fill="#e2edf7"
+		d="m 71.309711,30.339895 c 0,-6.203419 27.271849,-11.232285 60.913389,-11.232285 33.64153,0 60.91339,5.028866 60.91339,11.232285 v 0 c 0,6.203417 -27.27186,11.232283 -60.91339,11.232283 -33.64154,0 -60.913389,-5.028866 -60.913389,-11.232283 z"
+		class="preservado" />
+	<path
+		fill="#000000"
+		fill-opacity="0"
+		d="m 193.13649,30.339895 v 0 c 0,6.203417 -27.27186,11.232283 -60.91339,11.232283 -33.64154,0 -60.913387,-5.028866 -60.913387,-11.232283 0,-6.203419 27.271847,-11.232285 60.913387,-11.232285 33.64153,0 60.91339,5.028866 60.91339,11.232285 v 67.3937 c 0,6.203415 -27.27186,11.232285 -60.91339,11.232285 -33.64154,0 -60.913387,-5.02887 -60.913387,-11.232285 v -67.3937"
+		class="preservado" />
+	<path
+		stroke="#000000"
+		stroke-width="1"
+		stroke-linejoin="round"
+		stroke-linecap="butt"
+		d="m 193.13649,30.339895 v 0 c 0,6.203417 -27.27186,11.232283 -60.91339,11.232283 -33.64154,0 -60.913387,-5.028866 -60.913387,-11.232283 0,-6.203419 27.271847,-11.232285 60.913387,-11.232285 33.64153,0 60.91339,5.028866 60.91339,11.232285 v 67.3937 c 0,6.203415 -27.27186,11.232285 -60.91339,11.232285 -33.64154,0 -60.913387,-5.02887 -60.913387,-11.232285 v -67.3937"
+		class="preservado" />
+  </a>
   <path
      fill="#cfe2f3"
-     class="recorte-preservado"
-     d="m 71.309711,30.339895 c 0,6.203417 27.271849,11.232283 60.913389,11.232283 33.64153,0 60.91339,-5.028866 60.91339,-11.232283 v 67.3937 c 0,6.203415 -27.27186,11.232285 -60.91339,11.232285 -33.64154,0 -60.913389,-5.02887 -60.913389,-11.232285 z"
-     fill-rule="evenodd"
-     />
+     d="m 280.13387,43.89895 v 0 c 0,3.707268 27.27185,6.712601 60.91338,6.712601 33.64154,0 60.91339,-3.005333 60.91339,-6.712601 v 40.27559 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 z"     
+     class="filtrado" />
   <path
      fill="#e2edf7"
-     class="recorte-preservado"
-     d="m 71.309711,30.339895 c 0,-6.203419 27.271849,-11.232285 60.913389,-11.232285 33.64153,0 60.91339,5.028866 60.91339,11.232285 v 0 c 0,6.203417 -27.27186,11.232283 -60.91339,11.232283 -33.64154,0 -60.913389,-5.028866 -60.913389,-11.232283 z"
-     fill-rule="evenodd"
-     id="path11" />
-  <path
-     fill="#000000"
-     fill-opacity="0"
-     d="m 193.13649,30.339895 v 0 c 0,6.203417 -27.27186,11.232283 -60.91339,11.232283 -33.64154,0 -60.913387,-5.028866 -60.913387,-11.232283 0,-6.203419 27.271847,-11.232285 60.913387,-11.232285 33.64153,0 60.91339,5.028866 60.91339,11.232285 v 67.3937 c 0,6.203415 -27.27186,11.232285 -60.91339,11.232285 -33.64154,0 -60.913387,-5.02887 -60.913387,-11.232285 v -67.3937"
-     fill-rule="evenodd"
-     id="path13" />
-  <path
-     stroke="#000000"
-     stroke-width="1"
-     stroke-linejoin="round"
-     stroke-linecap="butt"
-     d="m 193.13649,30.339895 v 0 c 0,6.203417 -27.27186,11.232283 -60.91339,11.232283 -33.64154,0 -60.913387,-5.028866 -60.913387,-11.232283 0,-6.203419 27.271847,-11.232285 60.913387,-11.232285 33.64153,0 60.91339,5.028866 60.91339,11.232285 v 67.3937 c 0,6.203415 -27.27186,11.232285 -60.91339,11.232285 -33.64154,0 -60.913387,-5.02887 -60.913387,-11.232285 v -67.3937"
-     fill-rule="evenodd"
-     id="path15" />
-  <path
-     fill="#cfe2f3"
-     class="filtrado"
-     d="m 280.13387,43.89895 v 0 c 0,3.707268 27.27185,6.712601 60.91338,6.712601 33.64154,0 60.91339,-3.005333 60.91339,-6.712601 v 40.27559 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 z"
-     fill-rule="evenodd"
-     id="path19" />
-  <path
-     fill="#e2edf7"
-     class="filtrado-topo"
-     d="m 280.13387,43.89895 v 0 c 0,-3.707264 27.27185,-6.712597 60.91338,-6.712597 33.64154,0 60.91339,3.005333 60.91339,6.712597 v 0 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 z"
-     fill-rule="evenodd"
-     id="path21" />
+     d="m 280.13387,43.89895 v 0 c 0,-3.707264 27.27185,-6.712597 60.91338,-6.712597 33.64154,0 60.91339,3.005333 60.91339,6.712597 v 0 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 z"     
+     class="filtrado" />
   <path
      fill="#000000"
      fill-opacity="0"
      d="m 401.96063,43.89895 v 0 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 v 0 c 0,-3.707264 27.27185,-6.712597 60.91338,-6.712597 33.64154,0 60.91339,3.005333 60.91339,6.712597 v 40.27559 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 V 43.89895"
-     fill-rule="evenodd"
-     id="path23" />
+     class="filtrado" />
   <path
      stroke="#000000"
      stroke-width="1"
      stroke-linejoin="round"
      stroke-linecap="butt"
      d="m 401.96063,43.89895 v 0 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 v 0 c 0,-3.707264 27.27185,-6.712597 60.91338,-6.712597 33.64154,0 60.91339,3.005333 60.91339,6.712597 v 40.27559 c 0,3.707268 -27.27185,6.712601 -60.91339,6.712601 -33.64153,0 -60.91338,-3.005333 -60.91338,-6.712601 V 43.89895"
-     fill-rule="evenodd"
-     id="path25" />
+     class="filtrado" />
   <path
      fill="#cfe2f3"
-     class="consolidado"
      d="m 489.2126,50.087925 v 0 c 0,2.567909 30.50812,4.649609 68.14175,4.649609 37.63364,0 68.14169,-2.0817 68.14169,-4.649609 v 27.89764 c 0,2.567909 -30.50805,4.649605 -68.14169,4.649605 -37.63363,0 -68.14175,-2.081696 -68.14175,-4.649605 z"
-     fill-rule="evenodd"
-     id="path33" />
+     class="consolidado" />
   <path
      fill="#e2edf7"
-     class="consolidado-topo"
      d="m 489.2126,50.087925 v 0 c 0,-2.567905 30.50812,-4.649605 68.14175,-4.649605 37.63364,0 68.14169,2.081699 68.14169,4.649605 v 0 c 0,2.567909 -30.50805,4.649609 -68.14169,4.649609 -37.63363,0 -68.14175,-2.0817 -68.14175,-4.649609 z"
-     fill-rule="evenodd"
-     id="path35" />
+     
+     class="consolidado" />
   <path
      fill="#000000"
      fill-opacity="0"
      d="m 625.49603,50.087925 v 0 c 0,2.567909 -30.50806,4.649609 -68.14169,4.649609 -37.63364,0 -68.14175,-2.0817 -68.14175,-4.649609 v 0 c 0,-2.567905 30.50811,-4.649605 68.14175,-4.649605 37.63364,0 68.14169,2.081699 68.14169,4.649605 v 27.89764 c 0,2.567909 -30.50806,4.649605 -68.14169,4.649605 -37.63364,0 -68.14175,-2.081696 -68.14175,-4.649605 v -27.89764"
-     fill-rule="evenodd"
-     id="path37" />
+     class="consolidado" />
   <path
      stroke="#000000"
      stroke-width="1"
      stroke-linejoin="round"
      stroke-linecap="butt"
      d="m 625.49603,50.087925 v 0 c 0,2.567909 -30.50806,4.649609 -68.14169,4.649609 -37.63364,0 -68.14175,-2.0817 -68.14175,-4.649609 v 0 c 0,-2.567905 30.50811,-4.649605 68.14175,-4.649605 37.63364,0 68.14169,2.081699 68.14169,4.649605 v 27.89764 c 0,2.567909 -30.50806,4.649605 -68.14169,4.649605 -37.63364,0 -68.14175,-2.081696 -68.14175,-4.649605 v -27.89764"
-     fill-rule="evenodd"
-     id="path39" />
+     class="consolidado" />
   <path
      fill="#000000"
      fill-opacity="0"
-     d="m 401.96063,64.03674 h 87.24408"
-     fill-rule="evenodd"
-     id="path47" />
+	 d="m 401.96063,64.03674 h 87.24408"
+	 />
   <path
      stroke="#000000"
      stroke-width="2"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 401.96063,64.03674 h 80.38992"
-     fill-rule="evenodd"
-     id="path49" />
+	 d="m 401.96063,64.03674 h 80.38992"
+	 />
   <path
      fill="#000000"
      stroke="#000000"
      stroke-width="2"
      stroke-linecap="butt"
-     d="m 482.35056,64.03674 -2.24918,2.249168 6.17954,-2.249168 -6.17954,-2.249165 z"
-     fill-rule="evenodd"
-     id="path51" />
+	 d="m 482.35056,64.03674 -2.24918,2.249168 6.17954,-2.249168 -6.17954,-2.249165 z"
+	 />
   <path
      fill="#000000"
      fill-opacity="0"
-     d="m 193.13649,64.03674 h 86.99213"
-     fill-rule="evenodd"
-     id="path53" />
+	 d="m 193.13649,64.03674 h 86.99213"
+	 />
   <path
      stroke="#000000"
      stroke-width="2"
      stroke-linejoin="round"
      stroke-linecap="butt"
-     d="m 193.13649,64.03674 h 80.13796"
-     fill-rule="evenodd"
-     id="path55" />
+	 d="m 193.13649,64.03674 h 80.13796"
+	 />
   <path
      fill="#000000"
      stroke="#000000"
      stroke-width="2"
      stroke-linecap="butt"
-     d="m 273.27443,64.03674 -2.24916,2.249168 6.17953,-2.249168 -6.17953,-2.249165 z"
-     fill-rule="evenodd"
-     id="path57" />
+	 d="m 273.27443,64.03674 -2.24916,2.249168 6.17953,-2.249168 -6.17953,-2.249165 z"
+	 />
+  <a href="/preservado">
   <text
      xml:space="preserve"
-     id="text38"
+	 id="text38"
+	 class = "preservado"
      style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.35;font-family:sans-serif;white-space:pre;shape-inside:url(#rect40);fill:#000000;fill-opacity:1;stroke:none;"
      transform="translate(13.082143,-99.75818)"><tspan
        x="83.523438"
@@ -241,7 +160,8 @@
          style="font-size:18.6667px">Recorte</tspan></tspan></text>
   <text
      xml:space="preserve"
-     id="text45"
+	 id="text45"
+	 class = "preservado"
      style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.35;font-family:sans-serif;white-space:pre;shape-inside:url(#rect47);fill:#000000;fill-opacity:1;stroke:none;"
      transform="translate(13.082143,-99.75818)"><tspan
        x="83.523438"
@@ -249,35 +169,44 @@
          style="font-size:18.6667px">Recorte</tspan></tspan></text>
   <text
      xml:space="preserve"
-     id="text53"
+	 id="text53"
+	 
      style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.35;font-family:sans-serif;white-space:pre;shape-inside:url(#rect55);fill:#000000;fill-opacity:1;stroke:none;"
-     transform="translate(-5.295083,-79.081337)"><tspan
+     transform="translate(-5.295083,-79.081337)"><tspan 
        x="83.523438"
-       y="164.99587"><tspan>preservado</tspan></tspan></text>
+       y="164.99587"><tspan >preservado</tspan></tspan></text>
   <text
      xml:space="preserve"
-     id="text61"
+	 id="text61"
+	 class = "preservado"
      style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.35;font-family:sans-serif;white-space:pre;shape-inside:url(#rect63);fill:#000000;fill-opacity:1;stroke:none;"
      transform="translate(13.082143,-99.75818)"><tspan
        x="83.523438"
        y="164.99587"><tspan
-         style="font-size:18.6667px">Recorte</tspan></tspan></text>
+		 style="font-size:18.6667px">Recorte</tspan></tspan></text>
+  </a>
+  <a href="/filtrado">
   <text
      xml:space="preserve"
-     id="text69"
+	 id="text69"
+	 class = "filtrado"
      style="font-style:normal;font-weight:normal;font-size:18.6667px;line-height:1.35;font-family:sans-serif;white-space:pre;shape-inside:url(#rect71);fill:#000000;fill-opacity:1;stroke:none;"
      transform="translate(204.52057,-91.949621)"><tspan
        x="83.523438"
        y="164.99587"><tspan>Filtrado (</tspan><tspan
-         style="font-style:italic">in</tspan><tspan>)</tspan></tspan></text>
+		 style="font-style:italic">in</tspan><tspan>)</tspan></tspan></text>
+  </a>
+  <a href="/consolidado">
   <text
      xml:space="preserve"
-     id="text73"
+	 id="text73"
+	 class = "consolidado"
      style="font-style:normal;font-weight:normal;font-size:14.6667px;line-height:1.35;font-family:sans-serif;white-space:pre;shape-inside:url(#rect75);fill:#000000;fill-opacity:1;stroke:none;"
      transform="translate(409.62886,-89.437954)"><tspan
        x="83.523438"
        y="161.2568"><tspan
          style="font-size:14.6667px">Consolidado (</tspan><tspan
          style="font-style:italic;font-size:14.6667px">out</tspan><tspan
-         style="font-size:14.6667px">)</tspan></tspan></text>
+		 style="font-size:14.6667px">)</tspan></tspan></text>
+  </a>       
 </svg>
