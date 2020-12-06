@@ -96,15 +96,13 @@ function getdata(param = null){
           "columns" : [
               {
                   "data" : null,
-                  "render" : data=> (data["osm_id"] > 0) ? `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.osm_id}" target_blank>${data.osm_id}</a>` : data["osm_id"]
+                  "render" : data=> (data["osm_id"] > 0) ? `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.osm_id}" target_blank>${data.name}</a>` : data["name"]
               },
-              {"data": "name"},
               {"data": "abbrev"},
               {
                   "data" : null,
                   "render": data=> (data["wikidata_id"]) ? `<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q${data.wikidata_id}" target_blank>${data.wikidata_id}</a>` : ''
               },
-              {"data": "isolabel_ext"},
               {"data": "ddd"},
               {
                   "className": 'details-control',
@@ -122,8 +120,8 @@ function getdata(param = null){
       $(".details-control").attr("title","Pack Info");
       $('#tabela tbody').on('click', 'td.details-control', function () {
           var tr = $(this).closest('tr');
-          var row = table.row( tr );
-          if ( row.child.isShown() ) {
+          var row = table.row(tr);
+          if (row.child.isShown()) {
               // This row is already open - close it
               row.child.hide();
               tr.removeClass('shown');
@@ -154,6 +152,7 @@ $(document).ready(function(){
   let searchParams = new URLSearchParams(window.location.search);
   if (searchParams.has('abbrev')){
       getdata('parent_abbrev.eq.' + searchParams.get('abbrev'));
+      $('#'+searchParams.get('abbrev')).css({fill: '#2255c1'});
   }
 
   // Considera ordenação correta em PT, A, À, Á, B, C ... Z
