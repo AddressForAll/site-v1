@@ -40,7 +40,7 @@ function getdata(param = null){
                             qtd = data["kx"].n_files;
                           }
                         finally {
-                            let href = (qtd) ? 'href ="http://api-test.addressforall.org/v1.htm/nav_core/donor?id=' + data["id"] + '"' : '';
+                            let href = (qtd) ? 'href ="http://api-test.addressforall.org/v1.htm/nav_core/origin?donor_id=' + data["id"] + '"' : '';
                             let sclass = (href == '') ? "btn-disabled" : "btn";
                             return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+qtd+'&nbsp;'+'</a></div>' 
                         }
