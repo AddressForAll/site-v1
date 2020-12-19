@@ -1,78 +1,26 @@
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-li {
-  float: left;
-}
-.active {
-	background-color: #2255c1 !important;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none  !important;
-}
-li a:hover {
-  background-color: #111111;
-}
-.menu-uf a {
-	color: white;
-	font-weight: bold;
-}
-.menu-uf {
-	border-radius: 10px;
-}
-.grid-container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* see notes below */
-
-}
-td.details-control {
-        background: url('/resources/img/details_open.png') no-repeat center center;
-        cursor: pointer;
-}
-tr.shown td.details-control {
-        background: url('/resources/img/details_close.png') no-repeat center center;
-}
-ul.menu-uf a { cursor: pointer; }
-.active { color:#f00;font-weight:bolder; }
-</style>
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css"/>
-	<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
-<script>
-	function create_select(){
-		let states = ['BR','AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MS','MT','PA','PB','PE','PI','PR','RJ','RN','RO','RR','RS','SC','SE','SP','TO'];
-		let li_tag = '';
-		let searchParams = new URLSearchParams(window.location.search);
-		abbrev = searchParams.get('abbrev');
-		for(var n in states){
-			let c = (abbrev == states[n]) ? " class = 'active' " : '';
-			li_tag += `\n<li><a${c} href="/dados-navegaveis?abbrev=${states[n]}">${states[n]}</a></li>`;
-		}
-		return li_tag;
-	}
-</script>
+<link rel="stylesheet" href="/resources/css/api.css"> <!-- >> Estilos do botão em caso de solicitação por donor -->
 <link rel="stylesheet" href="./resources/css/dados-navegaveis.css">
 <section class="main-api" style="">
 	<h1>Mapa de Dados</h1>
-	<p>Em desenvolvimento...</p>
 	<div>
-		<h2>Escolha o tipo de dado:</h2>
-		<?php include 'resources/img/datafigs-flow2-tabPad2.svg'?>
+		<h2>Escolha a região:</h2>
+		<ul class="menu-uf" id="menu-uf"></ul></br>
 	</div>
 	<div>
-		<h2>Escolha um estado:</h2>
-		<ul class="menu-uf">
-			<script>document.write(create_select());</script>
-		</ul>
+		<h2>Escolha o tipo de dado:</h2>
+		<input checked type="radio" id="preservado" name="tipododado" value="preservado">
+		<label for="preservado">Preservado</label></br>
+		<input disabled type="radio" id="filtrado" name="tipododado" value="filtrado">
+		<label for="filtrado">Filtrado</label></br>
+		<input disabled type="radio" id="consolidado" name="tipododado" value="consolidado">
+		<label for="consolidado">Consolidado</label></br>
+	</div>
+	<div id="entidade">
+		<h2>Escolha a entidade:</h2>
+		<input checked type="radio" id="opt_jurisdiction" name="entidade" value="jurisdiction">
+		<label for="opt_jurisdiction">Jurisdiction</label></br>
+		<input type="radio" id="opt_donor" name="entidade" value="donor">
+		<label for="opt_donor">Donor</label></br>
 	</div>
 	</br>
 	<div class="grid-container">
@@ -81,7 +29,7 @@ ul.menu-uf a { cursor: pointer; }
 		</div>
 
 		<div class="grid-child"><h2>&#x1F5D2; Matriz</h2>
-			<table id="tabela" class="display responsive nowrap" style="display: none;">
+			<table id="jurisdiction" class="display responsive nowrap" style="display: none;">
 				<thead>
 					<tr>
 						<th>Name</th>
@@ -89,6 +37,16 @@ ul.menu-uf a { cursor: pointer; }
 						<th>Wikidata</th>
 						<th>DDD</th>
 						<th>Info</th>    
+					</tr> 
+				</thead>
+			</table>
+			<table id="donor" class="display responsive nowrap" style="display: none;">
+				<thead>
+					<tr>
+						<th>Scope</th>
+						<th>ShortName</th>
+						<th>Id Wikidata</th>
+						<th>Donations</th>    
 					</tr> 
 				</thead>
 			</table>

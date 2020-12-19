@@ -23,7 +23,7 @@ $("#br-map path, #br-map circle").hover(function(e) {
 
 
 /**
- * JURISDICTION, reactive form interface, multiple APIs.
+ * JURISDICTION OR DONOR, reactive form interface, multiple APIs.
  * 
  */
 function replaceAll(str, find, replace) {
@@ -71,67 +71,117 @@ function format ( d ) {
 }
 
   
-function getdata(param = null){
+function getdata(table_ = null, filter = null){
 
   // Filtro
-  if (param == null && abbrev == 'deny')  
+  if (filter == null && abbrev == 'deny')  
       return alert('Você deve escolher uma opção para consultar.');
 
-  url = "http://api-test.addressforall.org/v1/vw_core/jurisdiction/"; 
-  url += (param) ? param : "?limit=10";
+  url = `http://api-test.addressforall.org/v1/vw_core/${table_}/`;
+  filter = (table_ == "jurisdiction") ? "parent_abbrev.eq." + filter : "scope.lk.BR-" + filter; // concatena filtro de estado de acorod com a coluna de scopo da tabela
+  filter = filter.replace("BR-BR", "BR"); // as vezes o filtro é BR então o scopo de donor fica errado (BR-BR) na lógica acima, essa linha corrige isso 
+  url += (filter) ? filter : "?limit=10"; 
+  var id_table = '#' + table_;
+
 
   $.getJSON(url, function(data) {
-      $('#tabela').show();
       $('#definepaginacao').show();
-
+      
       // Changes automatically html pagination options from select based on data length
       $('#paginacao option').show();
       $('#paginacao option').filter(function(){ return parseInt(this.value) > data.length}).hide();
 
-      var table = $('#tabela').DataTable({
+      columns = (id_table == "#jurisdiction") ? 
+      [
+        {
+          "data" : null,
+          "render" : data=> (data["osm_id"] > 0) ? `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.osm_id}" target_blank>${data.name}</a>` : data["name"]
+        },
+        {"data": "abbrev"},
+        {
+            "data" : null,
+            "render": data=> (data["wikidata_id"]) ? `<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q${data.wikidata_id}" target_blank>${data.wikidata_id}</a>` : ''
+        },
+        {"data": "ddd"},
+        {
+            "className": 'details-control',
+            "orderable": false,
+            "data": null,
+            "defaultContent": ''
+        }
+      ]
+      : // Senão 
+      [
+        {"data" : "scope"},
+        {"data" : "shortname"},
+        {
+            "data" : null,
+            "render": function(data, type, row) {
+                return (data["wikidata_id"]) ? '<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q'+data["wikidata_id"]+'" target_blank>' + data["wikidata_id"] + '</a>' : ''
+            }
+        },
+        {
+            "data" : null,
+            "render" : function(data, type, row) {
+                let qtd = 0;
+                try {
+                    qtd = data["kx"].n_files;
+                  }
+                finally {
+                    let href = (qtd) ? 'href ="http://api-test.addressforall.org/v1.htm/nav_core/origin?donor_id=' + data["id"] + '"' : '';
+                    let sclass = (href == '') ? "btn-disabled" : "btn";
+                    return '<div align="center"><a style="text-decoration: none" class="'+sclass+'" '+href+' target_blank>'+'&nbsp;'+qtd+'&nbsp;'+'</a></div>' 
+                }
+            }
+        }
+      ]
+
+
+      if (id_table == "#jurisdiction"){
+        $('#donor').hide();
+        $('#jurisdiction').show();
+      }
+      else {
+        $('#jurisdiction').hide();
+        $('#donor').show();
+      }
+
+      [who_show, who_destroy] = $('#jurisdiction').is(":visible")
+          ? ['#jurisdiction', '#donor']
+          : ['#donor', '#jurisdiction']
+
+      var table = $(who_show).DataTable({
           "bDestroy": true,
           "dom": 'Bfrtip',
           "buttons": [],
           "data" : data,
-          "columns" : [
-              {
-                  "data" : null,
-                  "render" : data=> (data["osm_id"] > 0) ? `<a title="Mapa" rel="external noopener" target="_blank" href="http://osm.org/relation/${data.osm_id}" target_blank>${data.name}</a>` : data["name"]
-              },
-              {"data": "abbrev"},
-              {
-                  "data" : null,
-                  "render": data=> (data["wikidata_id"]) ? `<a target="_blank" rel="external noopener" href="http://wikidata.org/entity/Q${data.wikidata_id}" target_blank>${data.wikidata_id}</a>` : ''
-              },
-              {"data": "ddd"},
-              {
-                  "className": 'details-control',
-                  "orderable": false,
-                  "data": null,
-                  "defaultContent": ''
-              }
-          ],
+          "columns" : columns,
           "paging": $('#paginar').prop('checked'),
           "responsive": true,
           "pageLength" : 15
       });
       
       // Add title at info column (+)(-)
-      $(".details-control").attr("title","Pack Info");
-      $('#tabela tbody').on('click', 'td.details-control', function () {
-          var tr = $(this).closest('tr');
-          var row = table.row(tr);
-          if (row.child.isShown()) {
-              // This row is already open - close it
-              row.child.hide();
-              tr.removeClass('shown');
-          }
-          else {
-              // Open this row
-              row.child( format(row.data()) ).show();
-              tr.addClass('shown');
-          }
-      });
+      if (id_table = "#jurisdiction"){
+        $(".details-control").attr("title","Pack Info");
+        $(id_table + ' tbody').on('click', 'td.details-control', function () {
+            var tr = $(this).closest('tr');
+            var row = table.row(tr);
+            if (row.child.isShown()) {
+                // This row is already open - close it
+                row.child.hide();
+                tr.removeClass('shown');
+            }
+            else {
+                // Open this row
+                row.child( format(row.data()) ).show();
+                tr.addClass('shown');
+            }
+        });
+      }
+
+      // Destroy unchecked table to remove duplicated export buttons
+      $(who_destroy).DataTable().destroy();
 
       /* Changes automatically the GET LINK at Annotation for Developers Section */
       $('#get_url').text(url);
@@ -143,15 +193,27 @@ function getdata(param = null){
 
 
 $(document).ready(function(){
+  
+  $("#entidade").on('change', "input[name=entidade]", function() {                
+      table_selected = $('input[type=radio][name=entidade]:checked').val();
+      getdata(table_ = table_selected, filter = searchParams.get('abbrev'))//'parent_abbrev.eq.' + searchParams.get('abbrev'));
+  });
 
-
-
-  // getdata(param = 'parent_abbrev.eq.SP?limit=10');
+  // creates horizontal list of states 
+  let states = ['BR','AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MS','MT','PA','PB','PE','PI','PR','RJ','RN','RO','RR','RS','SC','SE','SP','TO'];
+  let li_tag = '';
+  let searchParams = new URLSearchParams(window.location.search);
+  abbrev = searchParams.get('abbrev');
+  for(var n in states){
+    let c = (abbrev == states[n]) ? " class = 'active' " : '';
+    li_tag += `\n<li><a${c} href="/dados-navegaveis?abbrev=${states[n]}">${states[n]}</a></li>`;
+  }
+  document.getElementById("menu-uf").innerHTML = li_tag;
 
   // seach for abbrev as a get parameter 
-  let searchParams = new URLSearchParams(window.location.search);
   if (searchParams.has('abbrev')){
-      getdata('parent_abbrev.eq.' + searchParams.get('abbrev'));
+      table_selected = $('input[type=radio][name=entidade]:checked').val();
+      getdata(table_ = table_selected, filter = searchParams.get('abbrev'))//'parent_abbrev.eq.' + searchParams.get('abbrev'));
       $('#'+searchParams.get('abbrev')).css({fill: '#2255c1'});
   }
 
